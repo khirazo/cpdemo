@@ -1,24 +1,24 @@
 {
     "type": "bundle",
-    "id": "bundle--f4e8b999-855a-49f9-a0ef-7e91c0eb67e7",
+    "id": "bundle--78ba69e8-2474-494e-a1c8-83e697059bb5",
     "spec_version": "2.0",
     "objects": [
         {
             "type": "identity",
-            "id": "identity-3d8b7b8f-c9d1-4f03-8e83-b05c02896096",
+            "id": "identity--3d8b7b8f-c9d1-4f03-8e83-b05c02896096",
             "name": "QRadar",
             "identity_class": "events"
         },
         {
-            "id": "observed-data--95c31dd1-256f-4e16-a93f-fb295d4104e4",
+            "id": "observed-data--373bc327-6ef7-4a67-8c8a-226e5cdd584d",
             "type": "observed-data",
-            "created_by_ref": "identity-3d8b7b8f-c9d1-4f03-8e83-b05c02896096",
-            "created": "2020-05-05T02:16:55.419Z",
-            "modified": "2020-05-05T02:16:55.419Z",
+            "created_by_ref": "identity--3d8b7b8f-c9d1-4f03-8e83-b05c02896096",
+            "created": "2020-05-05T11:52:32.881Z",
+            "modified": "2020-05-05T11:52:32.881Z",
             "objects": {
                 "0": {
                     "type": "ipv4-addr",
-                    "value": "172.30.34.105",
+                    "value": "172.30.34.1",
                     "resolves_to_refs": [
                         "2"
                     ]
@@ -26,332 +26,308 @@
                 "1": {
                     "type": "network-traffic",
                     "src_ref": "0",
-                    "src_port": 4258,
+                    "src_port": 62822,
                     "dst_ref": "3",
-                    "dst_port": 1604,
+                    "dst_port": 53,
+                    "protocols": [
+                        "udp"
+                    ]
+                },
+                "2": {
+                    "type": "mac-addr",
+                    "value": "00:00:00:00:00:00"
+                },
+                "3": {
+                    "type": "ipv4-addr",
+                    "value": "9.0.140.50",
+                    "resolves_to_refs": [
+                        "4"
+                    ]
+                },
+                "4": {
+                    "type": "mac-addr",
+                    "value": "00:00:00:00:00:00"
+                },
+                "5": {
+                    "type": "artifact",
+                    "payload_bin": "PDE5MD4lQVNBLTYtMzAyMDE1OiBCdWlsdCBvdXRib3VuZCBVRFAgY29ubmVjdGlvbiA2MDU0NTI4\nNjQgZm9yIG91dHNpZGU6OS4wLjE0MC41MC81MyAoOS4wLjE0MC41MC81MykgdG8gaW5zaWRlOjE3\nMi4zMC4zNC4xLzYyODIyICg5LjE4OS4xMjMuMTQvMzkyNDApCg=="
+                }
+            },
+            "x_com_ibm_ariel": {
+                "event_name": "Built UDP connection",
+                "qid": 3503195,
+                "category_name": "Firewall Session Opened",
+                "category_id": 4007,
+                "high_level_category_name": "Access",
+                "high_level_category_id": 4000,
+                "log_source_id": 71,
+                "log_source_type_name": "Forcepoint Sidewinder",
+                "log_source_name": "ASAFW\uff08\u30e9\u30dc\uff09",
+                "direction": "R2R",
+                "identity_ip": "0.0.0.0",
+                "magnitude": 2,
+                "severity": 3,
+                "credibility": 3,
+                "relevance": 1,
+                "geographic": "other",
+                "cre_event_list": [
+                    "100022",
+                    "100010",
+                    "100211",
+                    "100207",
+                    "100205",
+                    "100092",
+                    "109552",
+                    "110002",
+                    "100240",
+                    "130732",
+                    "137132",
+                    "100247",
+                    "100259",
+                    "100242",
+                    "100244",
+                    "136332",
+                    "145082"
+                ],
+                "rule_names": [
+                    "BB:ProtocolDefinition: Windows Protocols",
+                    "BB:PortDefinition: DNS Ports",
+                    "Source Asset Weight is Low",
+                    "Source Address is a Bogon IP",
+                    "Destination Asset Weight is Low",
+                    "BB:CategoryDefinition: Firewall or ACL Accept",
+                    "BB:NetworkServices",
+                    "Load ISO 27001:2013 Building Blocks",
+                    "BB:DeviceDefinition: FW / Router / Switch",
+                    "BB:CategoryDefinition: Firewall or ACL Accept Event for a FW/Router/Switch Device",
+                    "BB:UBA : Common Log Source Filters",
+                    "BB:NetworkDefinition: Darknet Addresses",
+                    "BB:PortDefinition: Authorized L2R Ports",
+                    "BB:DeviceDefinition: VPN",
+                    "Load Basic Building Blocks",
+                    "ECBB:CategoryDefinition: Destination IP is a Third Country/Region",
+                    "BB:CategoryDefinition: Source IP is a Third Country/Region"
+                ],
+                "domain_id": 6,
+                "device_type_name": "Cisco Adaptive Security Appliance (ASA)",
+                "device_type": 41
+            },
+            "first_observed": "2020-05-05T02:50:00.286Z",
+            "last_observed": "2020-05-05T02:50:00.286Z",
+            "number_observed": 1
+        },
+        {
+            "id": "observed-data--0062c02c-3fde-4d11-b7e9-51b9b0655567",
+            "type": "observed-data",
+            "created_by_ref": "identity--3d8b7b8f-c9d1-4f03-8e83-b05c02896096",
+            "created": "2020-05-05T11:52:33.147Z",
+            "modified": "2020-05-05T11:52:33.148Z",
+            "objects": {
+                "0": {
+                    "type": "ipv4-addr",
+                    "value": "172.30.34.1",
+                    "resolves_to_refs": [
+                        "2"
+                    ]
+                },
+                "1": {
+                    "type": "network-traffic",
+                    "src_ref": "0",
+                    "src_port": 62702,
+                    "dst_ref": "3",
+                    "dst_port": 53,
+                    "protocols": [
+                        "udp"
+                    ]
+                },
+                "2": {
+                    "type": "mac-addr",
+                    "value": "00:00:00:00:00:00"
+                },
+                "3": {
+                    "type": "ipv4-addr",
+                    "value": "9.0.140.50",
+                    "resolves_to_refs": [
+                        "4"
+                    ]
+                },
+                "4": {
+                    "type": "mac-addr",
+                    "value": "00:00:00:00:00:00"
+                },
+                "5": {
+                    "type": "artifact",
+                    "payload_bin": "PDE5MD4lQVNBLTYtMzAyMDE1OiBCdWlsdCBvdXRib3VuZCBVRFAgY29ubmVjdGlvbiA2MDU0NTI4\nOTAgZm9yIG91dHNpZGU6OS4wLjE0MC41MC81MyAoOS4wLjE0MC41MC81MykgdG8gaW5zaWRlOjE3\nMi4zMC4zNC4xLzYyNzAyICg5LjE4OS4xMjMuMTQvMjIwNjQpCg=="
+                }
+            },
+            "x_com_ibm_ariel": {
+                "event_name": "Built UDP connection",
+                "qid": 3503195,
+                "category_name": "Firewall Session Opened",
+                "category_id": 4007,
+                "high_level_category_name": "Access",
+                "high_level_category_id": 4000,
+                "log_source_id": 71,
+                "log_source_type_name": "Forcepoint Sidewinder",
+                "log_source_name": "ASAFW\uff08\u30e9\u30dc\uff09",
+                "direction": "R2R",
+                "identity_ip": "0.0.0.0",
+                "magnitude": 2,
+                "severity": 3,
+                "credibility": 3,
+                "relevance": 1,
+                "geographic": "other",
+                "cre_event_list": [
+                    "100022",
+                    "100010",
+                    "100211",
+                    "100207",
+                    "100205",
+                    "100092",
+                    "109552",
+                    "110002",
+                    "100240",
+                    "130732",
+                    "137132",
+                    "100247",
+                    "100259",
+                    "100242",
+                    "100244",
+                    "136332",
+                    "145082"
+                ],
+                "rule_names": [
+                    "BB:ProtocolDefinition: Windows Protocols",
+                    "BB:PortDefinition: DNS Ports",
+                    "Source Asset Weight is Low",
+                    "Source Address is a Bogon IP",
+                    "Destination Asset Weight is Low",
+                    "BB:CategoryDefinition: Firewall or ACL Accept",
+                    "BB:NetworkServices",
+                    "Load ISO 27001:2013 Building Blocks",
+                    "BB:DeviceDefinition: FW / Router / Switch",
+                    "BB:CategoryDefinition: Firewall or ACL Accept Event for a FW/Router/Switch Device",
+                    "BB:UBA : Common Log Source Filters",
+                    "BB:NetworkDefinition: Darknet Addresses",
+                    "BB:PortDefinition: Authorized L2R Ports",
+                    "BB:DeviceDefinition: VPN",
+                    "Load Basic Building Blocks",
+                    "ECBB:CategoryDefinition: Destination IP is a Third Country/Region",
+                    "BB:CategoryDefinition: Source IP is a Third Country/Region"
+                ],
+                "domain_id": 6,
+                "device_type_name": "Cisco Adaptive Security Appliance (ASA)",
+                "device_type": 41
+            },
+            "first_observed": "2020-05-05T02:50:00.287Z",
+            "last_observed": "2020-05-05T02:50:00.287Z",
+            "number_observed": 1
+        },
+        {
+            "id": "observed-data--dee8695d-54e0-49d1-a4fc-2cda6a2fd9b9",
+            "type": "observed-data",
+            "created_by_ref": "identity--3d8b7b8f-c9d1-4f03-8e83-b05c02896096",
+            "created": "2020-05-05T11:52:33.369Z",
+            "modified": "2020-05-05T11:52:33.369Z",
+            "objects": {
+                "0": {
+                    "type": "ipv4-addr",
+                    "value": "40.74.108.123",
+                    "resolves_to_refs": [
+                        "2"
+                    ]
+                },
+                "1": {
+                    "type": "network-traffic",
+                    "src_ref": "0",
+                    "src_port": 443,
+                    "dst_ref": "3",
+                    "dst_port": 47399,
                     "protocols": [
                         "tcp"
                     ]
                 },
                 "2": {
                     "type": "mac-addr",
-                    "value": "00:50:56:85:29:37"
+                    "value": "00:00:00:00:00:00"
                 },
                 "3": {
                     "type": "ipv4-addr",
-                    "value": "211.95.79.6",
+                    "value": "172.30.34.1",
                     "resolves_to_refs": [
                         "4"
                     ]
                 },
                 "4": {
                     "type": "mac-addr",
-                    "value": "00:50:56:85:7E:A7"
+                    "value": "00:00:00:00:00:00"
                 },
                 "5": {
                     "type": "artifact",
-                    "payload_bin": "PDE4Mj5NYXkgMDUgMTE6MTU6MDEgMTAuOTkuMS4xMCBKdWwgMjYgMTE6NTc6NDEgMTAuMy4yMzYu\nMTkzIExFRUY6MS4wfFRyZW5kIE1pY3JvfERlZXAgRGlzY292ZXJ5IEluc3BlY3RvcnwzLjgxLjIw\nNzJ8U0VDVVJJVFlfUklTS19ERVRFQ1RJT058ZGV2VGltZUZvcm1hdD1NTU0gZGQgeXl5eSBISDpt\nbTpzcyB6CXB0eXBlPUlEUwlkdmM9MTAuMy4yMzYuMTkzCWRldmljZU1hY0FkZHJlc3M9MDA6NTA6\nNTY6OUI6MUI6MzIJZHZjaG9zdD1ERElUSy0zLTgxLTIwNzItSlAJZGV2aWNlR1VJRD1CODg2OEE4\nNTQ2NzYtNDJBQkE2RjUtRDgyQy01RTI1LTQ2Q0UJZGV2VGltZT1KdWwgMjYgMjAxNiAxMTo1Njo1\nMyBHTVQrMDk6MDAJc2V2PTgJcHJvdG9Hcm91cD1UQ1AJcHJvdG89VENQCXZMQU5JZD00MDk1CWRl\ndmljZURpcmVjdGlvbj0xCWRob3N0PTIxMS45NS43OS42CWRzdD0yMTEuOTUuNzkuNglkc3RQb3J0\nPTE2MDQJZHN0TUFDPTAwOjUwOjU2Ojg1OjdlOmE3CXNob3N0PTE3Mi4zMC4zNC4xMDUJc3JjPTE3\nMi4zMC4zNC4xMDUJc3JjUG9ydD00MjU4CXNyY01BQz0wMDo1MDo1Njo4NToyOTozNwltYWxUeXBl\nPU1BTFdBUkUJZmlsZVR5cGU9MAlmc2l6ZT0wCXJ1bGVJZD02MzQJbXNnPUFQVCAtIERBUktDT01F\nVCAtIEhUVFAgKFJlcXVlc3QpCWRldmljZVJpc2tDb25maWRlbmNlTGV2ZWw9MQlib3RDb21tYW5k\nPTEwMjQJcENvbXA9TkNJRQlyaXNrVHlwZT0xCW1pdGlnYXRpb25UYXNrSWQ9MzdjYTRkYTYtY2M1\nNy00Y2FmLTk3MDYtYWUxYzVjODU5NmFiCXNyY0dyb3VwPeWIneacn+ioreWumglzcmNab25lPTEJ\nZHN0Wm9uZT0wCWRldGVjdGlvblR5cGU9MQlhY3Q9bm90IGJsb2NrZWQJdGhyZWF0VHlwZT0xCWlu\ndGVyZXN0ZWRJcD0xMC4yLjE3LjEwMAlwZWVySXA9MjExLjk1Ljc5LjYJY250PTEJYWdncmVnYXRl\nZENudD0xCWNjY2FEZXN0aW5hdGlvbkZvcm1hdD1VUkwJY2NjYURldGVjdGlvblNvdXJjZT1SRUxF\nVkFOQ0VfUlVMRQljY2NhUmlza0xldmVsPTMJY2NjYURldGVjdGlvbj0xCWV2dENhdD1UYXJnZXRl\nZCBBdHRhY2sJZXZ0U3ViQ2F0PUNhbGxiYWNrCWFwdFJlbGF0ZWQ9MQltYWxGYW1pbHk9REFSS0NP\nTUVUCXBBdHRhY2tQaGFzZT1Db21tYW5kIGFuZCBDb250cm9sIENvbW11bmljYXRpb24K"
+                    "payload_bin": "PDE5MD4lQVNBLTYtMzAyMDE0OiBUZWFyZG93biBUQ1AgY29ubmVjdGlvbiA2MDU0NTIwNTkgZm9y\nIG91dHNpZGU6NDAuNzQuMTA4LjEyMy80NDMgdG8gaW5zaWRlOjE3Mi4zMC4zNC4xLzQ3Mzk5IGR1\ncmF0aW9uIDA6MDE6MDAgYnl0ZXMgNDY3NSBUQ1AgUmVzZXQtSQo="
                 }
             },
             "x_com_ibm_ariel": {
-                "event_name": "Security Risk Detection",
-                "qid": 68250014,
-                "category_name": "Potential Misc Exploit",
-                "category_id": 13010,
-                "high_level_category_name": "Potential Exploit",
-                "high_level_category_id": 13000,
-                "log_source_id": 162,
-                "log_source_type_name": "Device type 162",
-                "log_source_name": "DDI",
+                "event_name": "Teardown TCP connection",
+                "qid": 3503194,
+                "category_name": "Firewall Session Closed",
+                "category_id": 4008,
+                "high_level_category_name": "Access",
+                "high_level_category_id": 4000,
+                "log_source_id": 71,
+                "log_source_type_name": "Forcepoint Sidewinder",
+                "log_source_name": "ASAFW\uff08\u30e9\u30dc\uff09",
                 "direction": "R2R",
                 "identity_ip": "0.0.0.0",
-                "magnitude": 6,
-                "severity": 9,
-                "credibility": 9,
+                "magnitude": 2,
+                "severity": 2,
+                "credibility": 3,
                 "relevance": 1,
-                "geographic": "other",
+                "geographic": "NorthAmerica.UnitedStates",
                 "cre_event_list": [
-                    "100153",
-                    "100135",
-                    "100107",
+                    "100090",
                     "100211",
-                    "100207",
                     "100205",
-                    "108102",
-                    "130982",
-                    "110002",
-                    "128102",
+                    "139882",
                     "100240",
-                    "135932",
                     "137132",
                     "100247",
-                    "100086",
-                    "100244",
-                    "136332",
-                    "108802",
-                    "145082"
-                ],
-                "rule_names": [
-                    "BB:CategoryDefinition: Suspicious Event Categories",
-                    "BB:CategoryDefinition: Suspicious Events",
-                    "BB:CategoryDefinition: Exploits Backdoors and Trojans",
-                    "Source Asset Weight is Low",
-                    "Source Address is a Bogon IP",
-                    "Destination Asset Weight is Low",
-                    "BB:TrendMicro DDI 1-1: APT Callbacks",
-                    "BB:DeviceDefinition: AV/AM",
-                    "Load ISO 27001:2013 Building Blocks",
-                    "BB:CategoryDefinition: Countries/Regions with Restricted Access",
-                    "BB:DeviceDefinition: FW / Router / Switch",
-                    "ECBB:DeviceDefinition: AV/AM",
-                    "BB:UBA : Common Log Source Filters",
-                    "BB:NetworkDefinition: Darknet Addresses",
-                    "BB:BehaviorDefinition: Compromise Activities",
-                    "Load Basic Building Blocks",
-                    "ECBB:CategoryDefinition: Destination IP is a Third Country/Region",
-                    "TrendMicro DDI 1-1 : APT Callbacks",
-                    "BB:CategoryDefinition: Source IP is a Third Country/Region"
-                ],
-                "domain_id": 1,
-                "device_type_name": "Trend Micro Deep Discovery Inspector",
-                "device_type": 265
-            },
-            "first_observed": "2020-05-05T02:15:01.343Z",
-            "last_observed": "2020-05-05T02:15:01.343Z",
-            "number_observed": 1
-        },
-        {
-            "id": "observed-data--a0f67a19-d6bc-433d-9b86-e3913c44685c",
-            "type": "observed-data",
-            "created_by_ref": "identity-3d8b7b8f-c9d1-4f03-8e83-b05c02896096",
-            "created": "2020-05-05T02:16:56.186Z",
-            "modified": "2020-05-05T02:16:56.186Z",
-            "objects": {
-                "0": {
-                    "type": "ipv4-addr",
-                    "value": "172.30.34.105",
-                    "resolves_to_refs": [
-                        "2"
-                    ]
-                },
-                "1": {
-                    "type": "network-traffic",
-                    "src_ref": "0",
-                    "src_port": 1147,
-                    "dst_ref": "3",
-                    "dst_port": 80,
-                    "protocols": [
-                        "reserved"
-                    ]
-                },
-                "2": {
-                    "type": "mac-addr",
-                    "value": "00:0C:29:77:82:04"
-                },
-                "3": {
-                    "type": "ipv4-addr",
-                    "value": "211.79.5.194",
-                    "resolves_to_refs": [
-                        "4"
-                    ]
-                },
-                "4": {
-                    "type": "mac-addr",
-                    "value": "00:50:56:EE:98:50"
-                },
-                "5": {
-                    "type": "artifact",
-                    "payload_bin": "PDE4Mj5NYXkgMDUgMTE6MTU6MDIgMTAuOTkuMS4xMCBKdWwgMjYgMTE6NTU6NDYgMTAuMy4yMzYu\nMTkzIExFRUY6MS4wfFRyZW5kIE1pY3JvfERlZXAgRGlzY292ZXJ5IEluc3BlY3RvcnwzLjgxLjIw\nNzJ8V0VCX1RIUkVBVF9ERVRFQ1RJT058ZGV2VGltZUZvcm1hdD1NTU0gZGQgeXl5eSBISDptbTpz\ncyB6CWR2Yz0xMC4zLjIzNi4xOTMJZGV2aWNlTWFjQWRkcmVzcz0wMDo1MDo1Njo5QjoxQjozMglk\ndmNob3N0PURESVRLLTMtODEtMjA3Mi1KUAlkZXZpY2VHVUlEPUI4ODY4QTg1NDY3Ni00MkFCQTZG\nNS1EODJDLTVFMjUtNDZDRQlwdHlwZT1JRFMJZGV2VGltZT1KdWwgMjYgMjAxNiAxMTo1Njo1MyBH\nTVQrMDk6MDAJc2V2PTgJcHJvdG9Hcm91cD1IVFRQCXByb3RvPUhUVFAJdkxBTklkPTQwOTUJZGV2\naWNlRGlyZWN0aW9uPTEJZGhvc3Q9MjExLjc5LjUuMTk0CWRzdD0yMTEuNzkuNS4xOTQJZHN0UG9y\ndD04MAlkc3RNQUM9MDA6NTA6NTY6ZWU6OTg6NTAJc2hvc3Q9MTcyLjMwLjM0LjEwNQlzcmM9MTcy\nLjMwLjM0LjEwNQlzcmNQb3J0PTExNDcJc3JjTUFDPTAwOjBjOjI5Ojc3OjgyOjA0CWhvc3ROYW1l\nPXd3dy5sb3ZlbHliYWJ5Lm15TW9tLmluZm8JY2NjYURldGVjdGlvbj0xCW1zZz1XZWIgUmVwdXRh\ndGlvbiBTZXJ2aWNlcyBkZXRlY3RlZCBhIEMmQyBVUkwgcmVxdWVzdAl1cmw9aHR0cDovL3d3dy54\neHgvZHcvaW52LnBkZglyZXF1ZXN0Q2xpZW50QXBwbGljYXRpb249d2gvMS4wCXBDb21wPVRNVUZF\nCXNyY0dyb3VwPeWIneacn+ioreWumglzcmNab25lPTEJZHN0Wm9uZT0wCXVybENhdD1DJkMgU2Vy\ndmVyCXJpc2tTY29yZT00OQl0aHJlYXRUeXBlPTUJaW50ZXJlc3RlZElwPTEwLjUuMTIuMTgJcGVl\ncklwPTIxMS43OS41LjE5NAljY2NhUmlza0xldmVsPTMJY2NjYURldGVjdGlvblNvdXJjZT1HTE9C\nQUxfSU5URUxMSUdFTkNFCg=="
-                }
-            },
-            "x_com_ibm_ariel": {
-                "event_name": "Web Threat Detection",
-                "qid": 68250020,
-                "category_name": "Web Exploit",
-                "category_id": 5011,
-                "high_level_category_name": "Exploit",
-                "high_level_category_id": 5000,
-                "log_source_id": 162,
-                "log_source_type_name": "Device type 162",
-                "log_source_name": "DDI",
-                "direction": "R2R",
-                "identity_ip": "0.0.0.0",
-                "magnitude": 6,
-                "severity": 9,
-                "credibility": 9,
-                "relevance": 1,
-                "geographic": "other",
-                "cre_event_list": [
-                    "100020",
-                    "100107",
-                    "100211",
-                    "100207",
-                    "100205",
-                    "130982",
-                    "110002",
-                    "128102",
-                    "100240",
-                    "135932",
-                    "137132",
-                    "100287",
-                    "100247",
-                    "100259",
-                    "100086",
-                    "100244",
-                    "136332",
-                    "108702",
-                    "145082"
-                ],
-                "rule_names": [
-                    "BB:PortDefinition: Web Ports",
-                    "BB:CategoryDefinition: Exploits Backdoors and Trojans",
-                    "Source Asset Weight is Low",
-                    "Source Address is a Bogon IP",
-                    "Destination Asset Weight is Low",
-                    "BB:DeviceDefinition: AV/AM",
-                    "Load ISO 27001:2013 Building Blocks",
-                    "BB:CategoryDefinition: Countries/Regions with Restricted Access",
-                    "BB:DeviceDefinition: FW / Router / Switch",
-                    "ECBB:DeviceDefinition: AV/AM",
-                    "BB:UBA : Common Log Source Filters",
-                    "BB:CategoryDefinition: Malicious Attacks",
-                    "BB:NetworkDefinition: Darknet Addresses",
-                    "BB:PortDefinition: Authorized L2R Ports",
-                    "BB:BehaviorDefinition: Compromise Activities",
-                    "Load Basic Building Blocks",
-                    "ECBB:CategoryDefinition: Destination IP is a Third Country/Region",
-                    "TrendMicro DDI 1-2 : Web Reputation (CandC)",
-                    "BB:CategoryDefinition: Source IP is a Third Country/Region"
-                ],
-                "domain_id": 1,
-                "device_type_name": "Trend Micro Deep Discovery Inspector",
-                "device_type": 265
-            },
-            "first_observed": "2020-05-05T02:15:02.497Z",
-            "last_observed": "2020-05-05T02:15:02.497Z",
-            "number_observed": 1
-        },
-        {
-            "id": "observed-data--a8f37add-034b-40b2-8206-675272001e50",
-            "type": "observed-data",
-            "created_by_ref": "identity-3d8b7b8f-c9d1-4f03-8e83-b05c02896096",
-            "created": "2020-05-05T02:16:56.232Z",
-            "modified": "2020-05-05T02:16:56.232Z",
-            "objects": {
-                "0": {
-                    "type": "ipv4-addr",
-                    "value": "172.30.34.105",
-                    "resolves_to_refs": [
-                        "2"
-                    ]
-                },
-                "1": {
-                    "type": "network-traffic",
-                    "src_ref": "0",
-                    "src_port": 5213,
-                    "dst_ref": "3",
-                    "dst_port": 1596,
-                    "protocols": [
-                        "reserved"
-                    ]
-                },
-                "2": {
-                    "type": "mac-addr",
-                    "value": "00:23:69:25:16:F0"
-                },
-                "3": {
-                    "type": "ipv4-addr",
-                    "value": "1.0.0.100",
-                    "resolves_to_refs": [
-                        "4"
-                    ]
-                },
-                "4": {
-                    "type": "mac-addr",
-                    "value": "00:11:43:1C:FB:06"
-                },
-                "5": {
-                    "type": "artifact",
-                    "payload_bin": "PDE4Mj5NYXkgMDUgMTE6MTU6MDMgMTAuOTkuMS4xMCBKdW4gMTQgMTE6MjI6NDUgMTAuMy4yMzYu\nMTkzIExFRUY6MS4wfFRyZW5kIE1pY3JvfERlZXAgRGlzY292ZXJ5IEluc3BlY3RvcnwzLjgxLjIw\nNzJ8U0VDVVJJVFlfUklTS19ERVRFQ1RJT058ZGV2VGltZUZvcm1hdD1NTU0gZGQgeXl5eSBISDpt\nbTpzcyB6CXB0eXBlPUlEUwlkdmM9MTAuMy4yMzYuMTkzCWRldmljZU1hY0FkZHJlc3M9MDA6NTA6\nNTY6OUI6MUI6MzIJZHZjaG9zdD1ERElUSy0zLTgxLTIwNzItSlAJZGV2aWNlR1VJRD1CODg2OEE4\nNTQ2NzYtNDJBQkE2RjUtRDgyQy01RTI1LTQ2Q0UJZGV2VGltZT1TZXAgMTAgMjAxNSAwMDowMjox\nMSBHTVQrMDk6MDAJc2V2PTgJcHJvdG9Hcm91cD1JUkMJcHJvdG89SVJDCXZMQU5JZD00MDk1CWRl\ndmljZURpcmVjdGlvbj0wCWRob3N0PTEuMC4wLjEwMAlkc3Q9MS4wLjAuMTAwCWRzdFBvcnQ9MTU5\nNglkc3RNQUM9MDA6MTE6NDM6MWM6ZmI6MDYJc2hvc3Q9MTcyLjMwLjM0LjEwNQlzcmM9MTcyLjMw\nLjM0LjEwNQlzcmNQb3J0PTUyMTMJc3JjTUFDPTAwOjIzOjY5OjI1OjE2OmYwCW1hbFR5cGU9TUFM\nV0FSRQlmaWxlVHlwZT0wCWZzaXplPTAJcnVsZUlkPTcJbXNnPUlSQyBCb3QgY29tbWFuZAlkZXZp\nY2VSaXNrQ29uZmlkZW5jZUxldmVsPTEJYm90Q29tbWFuZD1hc2MgLVMgLXN8IWh0dHAgaHR0cDov\nL3h4eDozNDUzL3p8IWFzYyBzIDMwIDMgMCAtYiAtciAtZSAtc3whYXNjIHMgMjAgMyAwIC1jIC1z\nfCFhc2MgcyAzMCAzIDAgLWEgLXIgLWUgLXMJcENvbXA9TkNJRQlyaXNrVHlwZT0xCXNyY1pvbmU9\nMAlkc3Rab25lPTAJZGV0ZWN0aW9uVHlwZT0xCWFjdD1ub3QgYmxvY2tlZAl0aHJlYXRUeXBlPTEJ\naW50ZXJlc3RlZElwPTEuMC4wLjEwMAlwZWVySXA9MjA1LjIwOS4xNDAuMTAJY250PTEJYWdncmVn\nYXRlZENudD0xCWNjY2FEZXN0aW5hdGlvbkZvcm1hdD1JUF9ET01BSU4JY2NjYURldGVjdGlvblNv\ndXJjZT1SRUxFVkFOQ0VfUlVMRQljY2NhUmlza0xldmVsPTIJY2NjYURlc3RpbmF0aW9uPTIwNS4y\nMDkuMTQwLjEwCWNjY2FEZXRlY3Rpb249MQlldnRDYXQ9Q2FsbGJhY2sJZXZ0U3ViQ2F0PUJvdAlw\nQXR0YWNrUGhhc2U9Q29tbWFuZCBhbmQgQ29udHJvbCBDb21tdW5pY2F0aW9uCg=="
-                }
-            },
-            "x_com_ibm_ariel": {
-                "event_name": "Security Risk Detection",
-                "qid": 68250014,
-                "category_name": "Potential Misc Exploit",
-                "category_id": 13010,
-                "high_level_category_name": "Potential Exploit",
-                "high_level_category_id": 13000,
-                "log_source_id": 162,
-                "log_source_type_name": "Device type 162",
-                "log_source_name": "DDI",
-                "direction": "R2R",
-                "identity_ip": "0.0.0.0",
-                "magnitude": 6,
-                "severity": 9,
-                "credibility": 9,
-                "relevance": 1,
-                "geographic": "other",
-                "cre_event_list": [
-                    "100153",
-                    "100135",
-                    "100107",
-                    "100211",
-                    "100207",
-                    "100205",
-                    "108152",
-                    "130982",
-                    "110002",
-                    "128102",
-                    "108952",
-                    "100240",
-                    "135932",
-                    "137132",
-                    "100247",
-                    "100086",
+                    "100242",
                     "100244",
                     "136332",
                     "145082"
                 ],
                 "rule_names": [
-                    "BB:CategoryDefinition: Suspicious Event Categories",
-                    "BB:CategoryDefinition: Suspicious Events",
-                    "BB:CategoryDefinition: Exploits Backdoors and Trojans",
+                    "BB:NetworkDefinition: Honeypot like Addresses",
                     "Source Asset Weight is Low",
-                    "Source Address is a Bogon IP",
                     "Destination Asset Weight is Low",
-                    "BB:TrendMicro DDI 1-3: IRC Bot command",
-                    "BB:DeviceDefinition: AV/AM",
-                    "Load ISO 27001:2013 Building Blocks",
-                    "BB:CategoryDefinition: Countries/Regions with Restricted Access",
-                    "TrendMicro DDI 1-3 : IRC Bot command",
+                    "BB:UBA : Excluded Geographic Locations",
                     "BB:DeviceDefinition: FW / Router / Switch",
-                    "ECBB:DeviceDefinition: AV/AM",
                     "BB:UBA : Common Log Source Filters",
                     "BB:NetworkDefinition: Darknet Addresses",
-                    "BB:BehaviorDefinition: Compromise Activities",
+                    "BB:DeviceDefinition: VPN",
                     "Load Basic Building Blocks",
                     "ECBB:CategoryDefinition: Destination IP is a Third Country/Region",
                     "BB:CategoryDefinition: Source IP is a Third Country/Region"
                 ],
-                "domain_id": 1,
-                "device_type_name": "Trend Micro Deep Discovery Inspector",
-                "device_type": 265
+                "domain_id": 6,
+                "device_type_name": "Cisco Adaptive Security Appliance (ASA)",
+                "device_type": 41
             },
-            "first_observed": "2020-05-05T02:15:03.456Z",
-            "last_observed": "2020-05-05T02:15:03.456Z",
+            "first_observed": "2020-05-05T02:50:10.854Z",
+            "last_observed": "2020-05-05T02:50:10.854Z",
             "number_observed": 1
         },
         {
-            "id": "observed-data--6216c8c7-e864-46f2-b8ec-7e8002b57b1b",
+            "id": "observed-data--229cf8da-0651-42da-9f47-f19445d30373",
             "type": "observed-data",
-            "created_by_ref": "identity-3d8b7b8f-c9d1-4f03-8e83-b05c02896096",
-            "created": "2020-05-05T02:16:56.264Z",
-            "modified": "2020-05-05T02:16:56.264Z",
+            "created_by_ref": "identity--3d8b7b8f-c9d1-4f03-8e83-b05c02896096",
+            "created": "2020-05-05T11:52:33.586Z",
+            "modified": "2020-05-05T11:52:33.586Z",
             "objects": {
                 "0": {
                     "type": "ipv4-addr",
-                    "value": "172.30.34.105",
+                    "value": "172.30.34.1",
                     "resolves_to_refs": [
                         "2"
                     ]
@@ -359,112 +335,94 @@
                 "1": {
                     "type": "network-traffic",
                     "src_ref": "0",
-                    "src_port": 1056,
+                    "src_port": 0,
                     "dst_ref": "3",
-                    "dst_port": 80,
+                    "dst_port": 0,
                     "protocols": [
                         "reserved"
                     ]
                 },
                 "2": {
                     "type": "mac-addr",
-                    "value": "FE:ED:BE:EF:0C:38"
+                    "value": "00:00:00:00:00:00"
                 },
                 "3": {
                     "type": "ipv4-addr",
-                    "value": "84.22.109.10",
+                    "value": "172.30.34.1",
                     "resolves_to_refs": [
                         "4"
                     ]
                 },
                 "4": {
                     "type": "mac-addr",
-                    "value": "00:50:56:A0:00:1B"
+                    "value": "00:00:00:00:00:00"
                 },
                 "5": {
                     "type": "artifact",
-                    "payload_bin": "PDE4Mj5NYXkgMDUgMTE6MTU6MDQgMTAuOTkuMS4xMCBKdWwgMjYgMTE6NTc6NDMgMTAuMy4yMzYu\nMTkzIExFRUY6MS4wfFRyZW5kIE1pY3JvfERlZXAgRGlzY292ZXJ5IEluc3BlY3RvcnwzLjgxLjIw\nNzJ8U0VDVVJJVFlfUklTS19ERVRFQ1RJT058ZGV2VGltZUZvcm1hdD1NTU0gZGQgeXl5eSBISDpt\nbTpzcyB6CXB0eXBlPUlEUwlkdmM9MTAuMy4yMzYuMTkzCWRldmljZU1hY0FkZHJlc3M9MDA6NTA6\nNTY6OUI6MUI6MzIJZHZjaG9zdD1ERElUSy0zLTgxLTIwNzItSlAJZGV2aWNlR1VJRD1CODg2OEE4\nNTQ2NzYtNDJBQkE2RjUtRDgyQy01RTI1LTQ2Q0UJZGV2VGltZT1KdWwgMjYgMjAxNiAxMTo1Nzoy\nNSBHTVQrMDk6MDAJc2V2PTgJcHJvdG9Hcm91cD1IVFRQCXByb3RvPUhUVFAJdkxBTklkPTQwOTUJ\nZGV2aWNlRGlyZWN0aW9uPTEJZGhvc3Q9dnBzLTEwMTQ1LTA1ODUuY2xvdWQudGlsYWEuY29tCWRz\ndD04NC4yMi4xMDkuMTAJZHN0UG9ydD04MAlkc3RNQUM9MDA6NTA6NTY6YTA6MDA6MWIJc2hvc3Q9\nMTcyLjMwLjM0LjEwNQlzcmM9MTcyLjMwLjM0LjEwNQlzcmNQb3J0PTEwNTYJc3JjTUFDPWZlOmVk\nOmJlOmVmOjBjOjM4CW1hbFR5cGU9TUFMV0FSRQlmaWxlVHlwZT0wCWZzaXplPTAJcnVsZUlkPTEw\nOTUJbXNnPVJFVkVUT04gSFRUUCByZXF1ZXN0IC0gQ2xhc3MgMQlkZXZpY2VSaXNrQ29uZmlkZW5j\nZUxldmVsPTEJYm90Q29tbWFuZD0xMDE4CXVybD1odHRwOi8veHh4L2cucGhwCXJlcXVlc3RDbGll\nbnRBcHBsaWNhdGlvbj1Nb3ppbGxhLzQuMCAoY29tcGF0aWJsZTsgTVNJRSA3LjA7IFdpbmRvd3Mg\nTlQgNi4wKQlwQ29tcD1OQ0lFCXJpc2tUeXBlPTEJbWl0aWdhdGlvblRhc2tJZD1lNWJmYWVmOC00\nNzExLTQ2NDQtOTNjMy1iYzUzNDIwNjVjOGYJc3JjR3JvdXA95Yid5pyf6Kit5a6aCXNyY1pvbmU9\nMQlkc3Rab25lPTAJZGV0ZWN0aW9uVHlwZT0xCWFjdD1ub3QgYmxvY2tlZAl0aHJlYXRUeXBlPTEJ\naW50ZXJlc3RlZElwPTEwLjIwLjEzLjExNQlwZWVySXA9ODQuMjIuMTA5LjEwCWhvc3ROYW1lPXcu\nZWZ1a2tpdC5jb20JY250PTEJc09TTmFtZT1XaW5kb3dzIFZpc3RhCWFnZ3JlZ2F0ZWRDbnQ9MQlj\nY2NhRGVzdGluYXRpb25Gb3JtYXQ9VVJMCWNjY2FEZXRlY3Rpb25Tb3VyY2U9UkVMRVZBTkNFX1JV\nTEUJY2NjYVJpc2tMZXZlbD0zCWNjY2FEZXN0aW5hdGlvbj1odHRwOi8veHh4L2cucGhwCWNjY2FE\nZXRlY3Rpb249MQlldnRDYXQ9Q2FsbGJhY2sJZXZ0U3ViQ2F0PVJhbnNvbXdhcmUJbWFsRmFtaWx5\nPVJFVkVUT04JcEF0dGFja1BoYXNlPUNvbW1hbmQgYW5kIENvbnRyb2wgQ29tbXVuaWNhdGlvbgo="
+                    "payload_bin": "PDEzPk1heSAwNSAxMTo0NzowOCAxNzIuMzAuMzQuMSBBZ2VudERldmljZT1XaW5kb3dzTG9nCUFn\nZW50TG9nRmlsZT1TZWN1cml0eQlQbHVnaW5WZXJzaW9uPTcuMi44LjE0NQlTb3VyY2U9TWljcm9z\nb2Z0LVdpbmRvd3MtU2VjdXJpdHktQXVkaXRpbmcJQ29tcHV0ZXI9SVNTbGFiZGMuaXNzLmxvY2Fs\nCU9yaWdpbmF0aW5nQ29tcHV0ZXI9MTcyLjMwLjM0LjEJVXNlcj0JRG9tYWluPQlFdmVudElEPTQ2\nMzQJRXZlbnRJRENvZGU9NDYzNAlFdmVudFR5cGU9OAlFdmVudENhdGVnb3J5PTEyNTQ1CVJlY29y\nZE51bWJlcj00MzkyMjA2NQlUaW1lR2VuZXJhdGVkPTE1ODg2NDY4MjcJVGltZVdyaXR0ZW49MTU4\nODY0NjgyNwlMZXZlbD1Mb2cgQWx3YXlzCUtleXdvcmRzPUF1ZGl0IFN1Y2Nlc3MJVGFzaz1TRV9B\nRFRfTE9HT05fTE9HT0ZGCU9wY29kZT1JbmZvCU1lc3NhZ2U944Ki44Kr44Km44Oz44OI44GM44Ot\n44Kw44Kq44OV44GX44G+44GX44Gf44CCICDjgrXjg5bjgrjjgqfjgq/jg4g6ICDjgrvjgq3jg6Xj\ng6rjg4bjgqMgSUQ6ICBOVCBBVVRIT1JJVFlcU1lTVEVNICDjgqLjgqvjgqbjg7Pjg4jlkI06ICBJ\nU1NMQUJEQyQgIOOCouOCq+OCpuODs+ODiCDjg4njg6HjgqTjg7M6ICBJU1MgIOODreOCsOOCquOD\nsyBJRDogIDB4YWFlZjhiMCAg44Ot44Kw44Kq44OzIOOCv+OCpOODlzogICAzICDjgZPjga7jgqTj\ng5njg7Pjg4jjga/jgIHjg63jgrDjgqrjg7Mg44K744OD44K344On44Oz44GM56C05qOE44GV44KM\n44Gf5aC05ZCI44Gr55Sf5oiQ44GV44KM44G+44GZ44CC44GT44KM44Gv44CB44Ot44Kw44Kq44Oz\nIElEIOOBruWApOOCkuS9v+eUqOOBl+OBpuOAgeODreOCsOOCquODsyDjgqTjg5njg7Pjg4jjgavp\nlqLpgKPku5jjgZHjgonjgozjgovloLTlkIjjgYzjgYLjgorjgb7jgZnjgILjg63jgrDjgqrjg7Mg\nSUQg44Gv44CB5ZCM5LiA44Kz44Oz44OU44Ol44O844K/44O844GM5qyh44Gr5YaN6LW35YuV44GZ\n44KL44G+44Gn44Gu6ZaT44Gu44G/5LiA5oSP44Gn44GZ44CCCg=="
                 }
             },
             "x_com_ibm_ariel": {
-                "event_name": "Security Risk Detection",
-                "qid": 68250014,
-                "category_name": "Potential Misc Exploit",
-                "category_id": 13010,
-                "high_level_category_name": "Potential Exploit",
-                "high_level_category_id": 13000,
-                "log_source_id": 162,
-                "log_source_type_name": "Device type 162",
-                "log_source_name": "DDI",
+                "event_name": "Success Audit: An account was logged off",
+                "qid": 5000832,
+                "category_name": "Host Logout",
+                "category_id": 3056,
+                "high_level_category_name": "Authentication",
+                "high_level_category_id": 3000,
+                "log_source_id": 1262,
+                "log_source_type_name": "Device type 1262",
+                "log_source_name": "IBMDC",
                 "direction": "R2R",
                 "identity_ip": "0.0.0.0",
-                "magnitude": 6,
-                "severity": 9,
-                "credibility": 9,
+                "magnitude": 2,
+                "severity": 2,
+                "credibility": 5,
                 "relevance": 1,
                 "geographic": "other",
                 "cre_event_list": [
-                    "100153",
-                    "100135",
-                    "100020",
-                    "100107",
+                    "100090",
                     "100211",
                     "100207",
                     "100205",
-                    "108402",
-                    "130982",
-                    "110002",
-                    "108752",
-                    "128102",
-                    "100240",
-                    "135932",
                     "137132",
                     "100247",
-                    "100259",
-                    "100086",
+                    "148782",
+                    "100245",
                     "100244",
+                    "136332",
                     "145082"
                 ],
                 "rule_names": [
-                    "BB:CategoryDefinition: Suspicious Event Categories",
-                    "BB:CategoryDefinition: Suspicious Events",
-                    "BB:PortDefinition: Web Ports",
-                    "BB:CategoryDefinition: Exploits Backdoors and Trojans",
+                    "BB:NetworkDefinition: Honeypot like Addresses",
                     "Source Asset Weight is Low",
                     "Source Address is a Bogon IP",
                     "Destination Asset Weight is Low",
-                    "BB:TrendMicro DDI 3-2: Ransomware Connection detect",
-                    "BB:DeviceDefinition: AV/AM",
-                    "Load ISO 27001:2013 Building Blocks",
-                    "TrendMicro DDI 3-2 : Ransomware Connection detect",
-                    "BB:CategoryDefinition: Countries/Regions with Restricted Access",
-                    "BB:DeviceDefinition: FW / Router / Switch",
-                    "ECBB:DeviceDefinition: AV/AM",
                     "BB:UBA : Common Log Source Filters",
                     "BB:NetworkDefinition: Darknet Addresses",
-                    "BB:PortDefinition: Authorized L2R Ports",
-                    "BB:BehaviorDefinition: Compromise Activities",
+                    "BB:DeviceDefinition: Operating System",
+                    "BB:CategoryDefinition: Logout Events",
                     "Load Basic Building Blocks",
+                    "ECBB:CategoryDefinition: Destination IP is a Third Country/Region",
                     "BB:CategoryDefinition: Source IP is a Third Country/Region"
                 ],
-                "domain_id": 1,
-                "device_type_name": "Trend Micro Deep Discovery Inspector",
-                "device_type": 265
+                "domain_id": 6,
+                "device_type_name": "Microsoft Windows Security Event Log",
+                "device_type": 12
             },
-            "first_observed": "2020-05-05T02:15:04.548Z",
-            "last_observed": "2020-05-05T02:15:04.548Z",
+            "first_observed": "2020-05-05T02:50:14.029Z",
+            "last_observed": "2020-05-05T02:50:14.029Z",
             "number_observed": 1
         },
         {
-            "id": "observed-data--22aa0b2c-e500-460b-b5c3-8cd91e42d361",
+            "id": "observed-data--08b1c92a-94b3-45c2-a31d-9fafcaaaac3e",
             "type": "observed-data",
-            "created_by_ref": "identity-3d8b7b8f-c9d1-4f03-8e83-b05c02896096",
-            "created": "2020-05-05T02:16:56.302Z",
-            "modified": "2020-05-05T02:16:56.302Z",
+            "created_by_ref": "identity--3d8b7b8f-c9d1-4f03-8e83-b05c02896096",
+            "created": "2020-05-05T11:52:33.818Z",
+            "modified": "2020-05-05T11:52:33.818Z",
             "objects": {
                 "0": {
-                    "type": "ipv4-addr",
-                    "value": "172.30.34.105",
+                    "type": "ipv6-addr",
+                    "value": "0:0:0:0:0:0:0:1",
                     "resolves_to_refs": [
                         "2"
                     ]
@@ -472,223 +430,296 @@
                 "1": {
                     "type": "network-traffic",
                     "src_ref": "0",
-                    "src_port": 1123,
+                    "src_port": 47401,
                     "dst_ref": "3",
-                    "dst_port": 35107,
+                    "dst_port": 0,
                     "protocols": [
                         "reserved"
                     ]
                 },
                 "2": {
                     "type": "mac-addr",
-                    "value": "00:50:56:85:7E:9B"
+                    "value": "00:00:00:00:00:00"
                 },
                 "3": {
                     "type": "ipv4-addr",
-                    "value": "211.95.79.6",
+                    "value": "172.30.34.1",
                     "resolves_to_refs": [
                         "4"
                     ]
                 },
                 "4": {
                     "type": "mac-addr",
-                    "value": "00:50:56:85:7E:97"
+                    "value": "00:00:00:00:00:00"
                 },
                 "5": {
                     "type": "artifact",
-                    "payload_bin": "PDE4Mj5NYXkgMDUgMTE6MTU6MDUgMTAuOTkuMS4xMCBKdWwgMjYgMTE6NTc6NDEgMTAuMy4yMzYu\nMTkzIExFRUY6MS4wfFRyZW5kIE1pY3JvfERlZXAgRGlzY292ZXJ5IEluc3BlY3RvcnwzLjgxLjIw\nNzJ8U0VDVVJJVFlfUklTS19ERVRFQ1RJT058ZGV2VGltZUZvcm1hdD1NTU0gZGQgeXl5eSBISDpt\nbTpzcyB6CXB0eXBlPUlEUwlkdmM9MTAuMy4yMzYuMTkzCWRldmljZU1hY0FkZHJlc3M9MDA6NTA6\nNTY6OUI6MUI6MzIJZHZjaG9zdD1ERElUSy0zLTgxLTIwNzItSlAJZGV2aWNlR1VJRD1CODg2OEE4\nNTQ2NzYtNDJBQkE2RjUtRDgyQy01RTI1LTQ2Q0UJZGV2VGltZT1KdWwgMjYgMjAxNiAxMTo1Njo1\nNSBHTVQrMDk6MDAJc2V2PTIJcHJvdG9Hcm91cD1GVFAJcHJvdG89RmlsZSBUcmFuc2Zlcgl2TEFO\nSWQ9NDA5NQlkZXZpY2VEaXJlY3Rpb249MQlkaG9zdD0yMTEuOTUuNzkuNglkc3Q9MjExLjk1Ljc5\nLjYJZHN0UG9ydD0zNTEwNwlkc3RNQUM9MDA6NTA6NTY6ODU6N2U6OTcJc2hvc3Q9MTcyLjMwLjM0\nLjEwNQlzcmM9MTcyLjMwLjM0LjEwNQlzcmNQb3J0PTExMjMJc3JjTUFDPTAwOjUwOjU2Ojg1Ojdl\nOjliCW1hbFR5cGU9T1RIRVJTCWZpbGVUeXBlPTI2MjM0MDYwOAlmc2l6ZT0xMTEwOAlydWxlSWQ9\nNjExCW1zZz1BcmNoaXZlIFVwbG9hZAlkZXZpY2VSaXNrQ29uZmlkZW5jZUxldmVsPTMJcENvbXA9\nTkNJRQlyaXNrVHlwZT0xCWNvbXByZXNzZWRGaWxlTmFtZT05LmJpbglzcmNHcm91cD3liJ3mnJ/o\nqK3lrpoJc3JjWm9uZT0xCWRzdFpvbmU9MAlkZXRlY3Rpb25UeXBlPTEJYWN0PW5vdCBibG9ja2Vk\nCXRocmVhdFR5cGU9MglpbnRlcmVzdGVkSXA9MTAuMi4xNy4xMDAJcGVlcklwPTIxMS45NS43OS42\nCWZpbGVIYXNoPTVFM0JDNjUwMEQ4MDM0RjcyRDQ4NUFBMEY3QkVGRjU3Njk5MTI1RDgJY250PTEJ\nYWdncmVnYXRlZENudD0xCWV2dENhdD1TdXNwaWNpb3VzIFRyYWZmaWMJZXZ0U3ViQ2F0PUFyY2hp\ndmUgRmlsZSBVcGxvYWQJcEF0dGFja1BoYXNlPURhdGEgRXhmaWx0cmF0aW9uCg=="
+                    "payload_bin": "PDEzPk1heSAwNSAxMTo0NzowOCAxNzIuMzAuMzQuMSBBZ2VudERldmljZT1XaW5kb3dzTG9nCUFn\nZW50TG9nRmlsZT1TZWN1cml0eQlQbHVnaW5WZXJzaW9uPTcuMi44LjE0NQlTb3VyY2U9TWljcm9z\nb2Z0LVdpbmRvd3MtU2VjdXJpdHktQXVkaXRpbmcJQ29tcHV0ZXI9SVNTbGFiZGMuaXNzLmxvY2Fs\nCU9yaWdpbmF0aW5nQ29tcHV0ZXI9MTcyLjMwLjM0LjEJVXNlcj0JRG9tYWluPQlFdmVudElEPTQ2\nMjQJRXZlbnRJRENvZGU9NDYyNAlFdmVudFR5cGU9OAlFdmVudENhdGVnb3J5PTEyNTQ0CVJlY29y\nZE51bWJlcj00MzkyMjA2NAlUaW1lR2VuZXJhdGVkPTE1ODg2NDY4MjcJVGltZVdyaXR0ZW49MTU4\nODY0NjgyNwlMZXZlbD1Mb2cgQWx3YXlzCUtleXdvcmRzPUF1ZGl0IFN1Y2Nlc3MJVGFzaz1TRV9B\nRFRfTE9HT05fTE9HT04JT3Bjb2RlPUluZm8JTWVzc2FnZT3jgqLjgqvjgqbjg7Pjg4jjgYzmraPl\nuLjjgavjg63jgrDjgqrjg7PjgZfjgb7jgZfjgZ/jgIIgIOOCteODluOCuOOCp+OCr+ODiDogIOOC\nu+OCreODpeODquODhuOCoyBJRDogIE5VTEwgU0lEICDjgqLjgqvjgqbjg7Pjg4jlkI06ICAtICDj\ngqLjgqvjgqbjg7Pjg4gg44OJ44Oh44Kk44OzOiAgLSAg44Ot44Kw44Kq44OzIElEOiAgMHgwICDj\ng63jgrDjgqrjg7Mg44K/44Kk44OXOiAgIDMgIOaWsOOBl+OBhOODreOCsOOCquODszogIOOCu+OC\nreODpeODquODhuOCoyBJRDogIE5UIEFVVEhPUklUWVxTWVNURU0gIOOCouOCq+OCpuODs+ODiOWQ\njTogIElTU0xBQkRDJCAg44Ki44Kr44Km44Oz44OIIOODieODoeOCpOODszogIElTUyAg44Ot44Kw\n44Kq44OzIElEOiAgMHhhYWVmOGIwICDjg63jgrDjgqrjg7MgR1VJRDogIHs5M0MxNDc3Qi0wRjBG\nLTI1NDItQ0E1MC1CNDBEMkJBNzlCNDB9ICDjg5fjg63jgrvjgrnmg4XloLE6ICDjg5fjg63jgrvj\ngrkgSUQ6ICAweDAgIOODl+ODreOCu+OCueWQjTogIC0gIOODjeODg+ODiOODr+ODvOOCr+aDheWg\nsTogIOODr+ODvOOCr+OCueODhuODvOOCt+ODp+ODs+WQjTogICDjgr3jg7zjgrkg44ON44OD44OI\n44Ov44O844KvIOOCouODieODrOOCuTogOjoxICDjgr3jg7zjgrkg44Od44O844OIOiAgNDc0MDEg\nIOips+e0sOOBquiqjeiovOaDheWgsTogIOODreOCsOOCquODsyDjg5fjg63jgrvjgrk6ICBLZXJi\nZXJvcyAg6KqN6Ki844OR44OD44Kx44O844K4OiBLZXJiZXJvcyAg56e76KGM44GV44KM44Gf44K1\n44O844OT44K5OiAtICDjg5Hjg4PjgrHjg7zjgrjlkI0gKE5UTE0g44Gu44G/KTogLSAg44Kt44O8\n44Gu6ZW344GVOiAgMCAg44GT44Gu44Kk44OZ44Oz44OI44Gv44CB44Ot44Kw44Kq44OzIOOCu+OD\ng+OCt+ODp+ODs+OBruS9nOaIkOaZguOBq+eUn+aIkOOBleOCjOOBvuOBmeOAguOBk+OBruOCpOOD\nmeODs+ODiOOBr+OAgeOCouOCr+OCu+OCueWFiOOBruOCs+ODs+ODlOODpeODvOOCv+ODvOOBp+eU\nn+aIkOOBleOCjOOBvuOBmeOAgiAg44K144OW44K444Kn44Kv44OI44Gu44OV44Kj44O844Or44OJ\n44Gv44CB44Ot44Kw44Kq44Oz44KS6KaB5rGC44GX44Gf44Ot44O844Kr44OrIOOCt+OCueODhuOD\noOS4iuOBruOCouOCq+OCpuODs+ODiOOCkuekuuOBl+OBvuOBmeOAguOBk+OCjOOBr+OCteODvOOD\nkOODvCDjgrXjg7zjg5Pjgrnjgarjganjga7jgrXjg7zjg5Pjgrnjgb7jgZ/jga8gV2lubG9nb24u\nZXhlIOOChCBTZXJ2aWNlcy5leGUg44Gq44Gp44Gu44Ot44O844Kr44OrIOODl+ODreOCu+OCueOB\np+OBguOCi+OBk+OBqOOBjOacgOOCguS4gOiIrOeahOOBp+OBmeOAgiAg44Ot44Kw44Kq44OzIOOC\nv+OCpOODl+OBruODleOCo+ODvOODq+ODieOBr+OAgeeZuueUn+OBl+OBn+ODreOCsOOCquODs+OB\nrueorumhnuOCkuekuuOBl+OBvuOBmeOAguacgOOCguS4gOiIrOeahOOBquOCv+OCpOODl+OBr+OA\ngTIgKOWvvuipseWeiykg44GoIDMgKOODjeODg+ODiOODr+ODvOOCrykg44Gn44GZ44CCICDmlrDj\ngZfjgYTjg63jgrDjgqrjg7Pjga7jg5XjgqPjg7zjg6vjg4njga/jgIHmlrDjgZfjgYTjg63jgrDj\ngqrjg7PjgpLkvZzmiJDjgZnjgovjgqLjgqvjgqbjg7Pjg4jjgIHjgaTjgb7jgorjg63jgrDjgqrj\ng7PlhYjjga7jgqLjgqvjgqbjg7Pjg4jjgpLnpLrjgZfjgb7jgZnjgIIgIOODjeODg+ODiOODr+OD\nvOOCr+OBruODleOCo+ODvOODq+ODieOBr+OAgeODquODouODvOODiCDjg63jgrDjgqrjg7PopoHm\nsYLjga7pgIHkv6HlhYPjgpLnpLrjgZfjgb7jgZnjgILjg6/jg7zjgq/jgrnjg4bjg7zjgrfjg6fj\ng7PlkI3jga/luLjjgavooajnpLrjgZXjgozjgovjgajjga/pmZDjgonjgZrjgIHloLTlkIjjgavj\ngojjgaPjgabjga/nqbrnmb3jga7jgb7jgb7jgafjgYLjgovjgZPjgajjgYzjgYLjgorjgb7jgZnj\ngIIgIOiqjeiovOaDheWgseOBruODleOCo+ODvOODq+ODieOBr+OAgeOBk+OBrueJueWumuOBruOD\nreOCsOOCquODs+imgeaxguOBq+mWouOBmeOCi+ips+e0sOaDheWgseOCkuekuuOBl+OBvuOBmeOA\ngiAgLSDjg63jgrDjgqrjg7MgR1VJRCDjga/jgIHjgZPjga7jgqTjg5njg7Pjg4jjgpIgS0RDIOOC\npOODmeODs+ODiOOBq+mWoumAo+S7mOOBkeOCi+WgtOWQiOOBq+S9v+eUqOOBp+OBjeOCi+S4gOaE\nj+OBruitmOWIpeWtkOOBp+OBmeOAgiAgLSDnp7vooYzjgZXjgozjgZ/jgrXjg7zjg5Pjgrnjga/j\ngIHjgZPjga7jg63jgrDjgqrjg7PopoHmsYLjgavplqLkuI7jgZfjgZ/kuK3plpPjgrXjg7zjg5Pj\ngrnjgpLnpLrjgZfjgb7jgZnjgIIgIC0g44OR44OD44Kx44O844K45ZCN44Gv44CBTlRMTSDjg5fj\ng63jg4jjgrPjg6vjga7jgYbjgaHkvb/nlKjjgZXjgozjgZ/jgrXjg5bjg5fjg63jg4jjgrPjg6vj\ngpLnpLrjgZfjgb7jgZnjgIIgIC0g44Kt44O844Gu6ZW344GV44Gv44CB55Sf5oiQ44GV44KM44Gf\n44K744OD44K344On44OzIOOCreODvOOBrumVt+OBleOCkuekuuOBl+OBvuOBmeOAguOBk+OCjOOB\nr+OAgeOCu+ODg+OCt+ODp+ODsyDjgq3jg7zjgYzopoHmsYLjgZXjgozjgarjgYvjgaPjgZ/loLTl\nkIjjga8gMCDjgavjgarjgorjgb7jgZnjgIIK"
                 }
             },
             "x_com_ibm_ariel": {
-                "event_name": "Security Risk Detection",
-                "qid": 68250014,
-                "category_name": "Potential Misc Exploit",
-                "category_id": 13010,
-                "high_level_category_name": "Potential Exploit",
-                "high_level_category_id": 13000,
-                "log_source_id": 162,
-                "log_source_type_name": "Device type 162",
-                "log_source_name": "DDI",
+                "event_name": "Success Audit: An account was successfully logged on",
+                "qid": 5000830,
+                "category_name": "User Login Success",
+                "category_id": 3115,
+                "high_level_category_name": "Authentication",
+                "high_level_category_id": 3000,
+                "log_source_id": 1262,
+                "log_source_type_name": "Device type 1262",
+                "log_source_name": "IBMDC",
                 "direction": "R2R",
                 "identity_ip": "0.0.0.0",
-                "magnitude": 3,
+                "magnitude": 2,
+                "severity": 1,
+                "credibility": 5,
+                "relevance": 1,
+                "geographic": "other",
+                "cre_event_list": [
+                    "100090",
+                    "100211",
+                    "100005",
+                    "100205",
+                    "137132",
+                    "100247",
+                    "148782",
+                    "100244",
+                    "135782",
+                    "136332",
+                    "145082"
+                ],
+                "rule_names": [
+                    "BB:NetworkDefinition: Honeypot like Addresses",
+                    "Source Asset Weight is Low",
+                    "BB:CategoryDefinition: Authentication Success",
+                    "Destination Asset Weight is Low",
+                    "BB:UBA : Common Log Source Filters",
+                    "BB:NetworkDefinition: Darknet Addresses",
+                    "BB:DeviceDefinition: Operating System",
+                    "Load Basic Building Blocks",
+                    "EC: User Account - Add Account Name to EC UserAccountUsed",
+                    "ECBB:CategoryDefinition: Destination IP is a Third Country/Region",
+                    "BB:CategoryDefinition: Source IP is a Third Country/Region"
+                ],
+                "domain_id": 6,
+                "device_type_name": "Microsoft Windows Security Event Log",
+                "device_type": 12
+            },
+            "first_observed": "2020-05-05T02:50:14.029Z",
+            "last_observed": "2020-05-05T02:50:14.029Z",
+            "number_observed": 1
+        },
+        {
+            "id": "observed-data--bb745e91-37eb-432d-a311-25c9559ee7e2",
+            "type": "observed-data",
+            "created_by_ref": "identity--3d8b7b8f-c9d1-4f03-8e83-b05c02896096",
+            "created": "2020-05-05T11:52:34.030Z",
+            "modified": "2020-05-05T11:52:34.030Z",
+            "objects": {
+                "0": {
+                    "type": "ipv4-addr",
+                    "value": "9.0.140.50",
+                    "resolves_to_refs": [
+                        "2"
+                    ]
+                },
+                "1": {
+                    "type": "network-traffic",
+                    "src_ref": "0",
+                    "src_port": 53,
+                    "dst_ref": "3",
+                    "dst_port": 63366,
+                    "protocols": [
+                        "udp"
+                    ]
+                },
+                "2": {
+                    "type": "mac-addr",
+                    "value": "00:00:00:00:00:00"
+                },
+                "3": {
+                    "type": "ipv4-addr",
+                    "value": "172.30.34.1",
+                    "resolves_to_refs": [
+                        "4"
+                    ]
+                },
+                "4": {
+                    "type": "mac-addr",
+                    "value": "00:00:00:00:00:00"
+                },
+                "5": {
+                    "type": "artifact",
+                    "payload_bin": "PDE5MD4lQVNBLTYtMzAyMDE2OiBUZWFyZG93biBVRFAgY29ubmVjdGlvbiA2MDU0NTA4MDMgZm9y\nIG91dHNpZGU6OS4wLjE0MC41MC81MyB0byBpbnNpZGU6MTcyLjMwLjM0LjEvNjMzNjYgZHVyYXRp\nb24gMDowMjowMSBieXRlcyAyMDMK"
+                }
+            },
+            "x_com_ibm_ariel": {
+                "event_name": "Teardown UDP connection",
+                "qid": 3503196,
+                "category_name": "Firewall Session Closed",
+                "category_id": 4008,
+                "high_level_category_name": "Access",
+                "high_level_category_id": 4000,
+                "log_source_id": 71,
+                "log_source_type_name": "Forcepoint Sidewinder",
+                "log_source_name": "ASAFW\uff08\u30e9\u30dc\uff09",
+                "direction": "R2R",
+                "identity_ip": "0.0.0.0",
+                "magnitude": 2,
+                "severity": 2,
+                "credibility": 3,
+                "relevance": 1,
+                "geographic": "NorthAmerica.UnitedStates",
+                "cre_event_list": [
+                    "100022",
+                    "100090",
+                    "100211",
+                    "100205",
+                    "139882",
+                    "100240",
+                    "137132",
+                    "100247",
+                    "100242",
+                    "100244",
+                    "136332",
+                    "145082"
+                ],
+                "rule_names": [
+                    "BB:ProtocolDefinition: Windows Protocols",
+                    "BB:NetworkDefinition: Honeypot like Addresses",
+                    "Source Asset Weight is Low",
+                    "Destination Asset Weight is Low",
+                    "BB:UBA : Excluded Geographic Locations",
+                    "BB:DeviceDefinition: FW / Router / Switch",
+                    "BB:UBA : Common Log Source Filters",
+                    "BB:NetworkDefinition: Darknet Addresses",
+                    "BB:DeviceDefinition: VPN",
+                    "Load Basic Building Blocks",
+                    "ECBB:CategoryDefinition: Destination IP is a Third Country/Region",
+                    "BB:CategoryDefinition: Source IP is a Third Country/Region"
+                ],
+                "domain_id": 6,
+                "device_type_name": "Cisco Adaptive Security Appliance (ASA)",
+                "device_type": 41
+            },
+            "first_observed": "2020-05-05T02:50:22.241Z",
+            "last_observed": "2020-05-05T02:50:22.241Z",
+            "number_observed": 1
+        },
+        {
+            "id": "observed-data--17cc25d0-a1fd-4bba-92f9-81d2b2386ebf",
+            "type": "observed-data",
+            "created_by_ref": "identity--3d8b7b8f-c9d1-4f03-8e83-b05c02896096",
+            "created": "2020-05-05T11:52:34.240Z",
+            "modified": "2020-05-05T11:52:34.240Z",
+            "objects": {
+                "0": {
+                    "type": "ipv4-addr",
+                    "value": "172.30.34.1",
+                    "resolves_to_refs": [
+                        "2"
+                    ]
+                },
+                "1": {
+                    "type": "network-traffic",
+                    "src_ref": "0",
+                    "src_port": 47384,
+                    "dst_ref": "3",
+                    "dst_port": 135,
+                    "protocols": [
+                        "tcp"
+                    ]
+                },
+                "2": {
+                    "type": "mac-addr",
+                    "value": "00:00:00:00:00:00"
+                },
+                "3": {
+                    "type": "ipv4-addr",
+                    "value": "9.189.123.45",
+                    "resolves_to_refs": [
+                        "4"
+                    ]
+                },
+                "4": {
+                    "type": "mac-addr",
+                    "value": "00:00:00:00:00:00"
+                },
+                "5": {
+                    "type": "artifact",
+                    "payload_bin": "PDE5MD4lQVNBLTYtMTA2MTAwOiBhY2Nlc3MtbGlzdCBpbnNpZGVfYWNjZXNzX2luIGRlbmllZCB0\nY3AgaW5zaWRlLzE3Mi4zMC4zNC4xKDQ3Mzg0KSAtPiBvdXRzaWRlLzkuMTg5LjEyMy40NSgxMzUp\nIGhpdC1jbnQgMiAzMDAtc2Vjb25kIGludGVydmFsIFsweGI2NzAxOTdhLCAweDBdCg=="
+                }
+            },
+            "x_com_ibm_ariel": {
+                "event_name": "Packet denied by ACL",
+                "qid": 3504430,
+                "category_name": "Firewall Deny",
+                "category_id": 4003,
+                "high_level_category_name": "Access",
+                "high_level_category_id": 4000,
+                "log_source_id": 71,
+                "log_source_type_name": "Forcepoint Sidewinder",
+                "log_source_name": "ASAFW\uff08\u30e9\u30dc\uff09",
+                "direction": "R2R",
+                "identity_ip": "0.0.0.0",
+                "magnitude": 2,
                 "severity": 3,
-                "credibility": 9,
+                "credibility": 3,
                 "relevance": 1,
                 "geographic": "other",
                 "cre_event_list": [
+                    "100021",
                     "100153",
                     "100135",
-                    "100107",
+                    "122802",
                     "100211",
                     "100207",
                     "100205",
-                    "108252",
-                    "130982",
-                    "110002",
-                    "128102",
+                    "100093",
+                    "100260",
                     "100240",
-                    "135932",
                     "137132",
                     "100247",
-                    "100086",
-                    "100244",
-                    "136332",
-                    "145082",
-                    "108902"
-                ],
-                "rule_names": [
-                    "BB:CategoryDefinition: Suspicious Event Categories",
-                    "BB:CategoryDefinition: Suspicious Events",
-                    "BB:CategoryDefinition: Exploits Backdoors and Trojans",
-                    "Source Asset Weight is Low",
-                    "Source Address is a Bogon IP",
-                    "Destination Asset Weight is Low",
-                    "BB:TrendMicro DDI 2-1b : Suspicios archive file upload behavior",
-                    "BB:DeviceDefinition: AV/AM",
-                    "Load ISO 27001:2013 Building Blocks",
-                    "BB:CategoryDefinition: Countries/Regions with Restricted Access",
-                    "BB:DeviceDefinition: FW / Router / Switch",
-                    "ECBB:DeviceDefinition: AV/AM",
-                    "BB:UBA : Common Log Source Filters",
-                    "BB:NetworkDefinition: Darknet Addresses",
-                    "BB:BehaviorDefinition: Compromise Activities",
-                    "Load Basic Building Blocks",
-                    "ECBB:CategoryDefinition: Destination IP is a Third Country/Region",
-                    "BB:CategoryDefinition: Source IP is a Third Country/Region",
-                    "TrendMicro DDI 2-1 : Suspicious archive file upload behavior"
-                ],
-                "domain_id": 1,
-                "device_type_name": "Trend Micro Deep Discovery Inspector",
-                "device_type": 265
-            },
-            "first_observed": "2020-05-05T02:15:05.618Z",
-            "last_observed": "2020-05-05T02:15:05.618Z",
-            "number_observed": 1
-        },
-        {
-            "id": "observed-data--1758635a-7138-4af9-b9dc-07c481960879",
-            "type": "observed-data",
-            "created_by_ref": "identity-3d8b7b8f-c9d1-4f03-8e83-b05c02896096",
-            "created": "2020-05-05T02:16:56.333Z",
-            "modified": "2020-05-05T02:16:56.333Z",
-            "objects": {
-                "0": {
-                    "type": "ipv4-addr",
-                    "value": "172.30.34.105",
-                    "resolves_to_refs": [
-                        "2"
-                    ]
-                },
-                "1": {
-                    "type": "network-traffic",
-                    "src_ref": "0",
-                    "src_port": 49180,
-                    "dst_ref": "3",
-                    "dst_port": 8080,
-                    "protocols": [
-                        "reserved"
-                    ]
-                },
-                "2": {
-                    "type": "mac-addr",
-                    "value": "00:0C:29:10:DD:06"
-                },
-                "3": {
-                    "type": "ipv4-addr",
-                    "value": "192.168.72.141",
-                    "resolves_to_refs": [
-                        "4"
-                    ]
-                },
-                "4": {
-                    "type": "mac-addr",
-                    "value": "00:0C:29:F8:90:BA"
-                },
-                "5": {
-                    "type": "artifact",
-                    "payload_bin": "PDE4Mj5NYXkgMDUgMTE6MTU6MDcgMTAuOTkuMS4xMCBKdW4gMTQgMTE6MjU6MTQgMTAuMy4yMzYu\nMTkzIExFRUY6MS4wfFRyZW5kIE1pY3JvfERlZXAgRGlzY292ZXJ5IEluc3BlY3RvcnwzLjgxLjIw\nNzJ8U0VDVVJJVFlfUklTS19ERVRFQ1RJT058ZGV2VGltZUZvcm1hdD1NTU0gZGQgeXl5eSBISDpt\nbTpzcyB6CXB0eXBlPUlEUwlkdmM9MTAuMy4yMzYuMTkzCWRldmljZU1hY0FkZHJlc3M9MDA6NTA6\nNTY6OUI6MUI6MzIJZHZjaG9zdD1ERElUSy0zLTgxLTIwNzItSlAJZGV2aWNlR1VJRD1CODg2OEE4\nNTQ2NzYtNDJBQkE2RjUtRDgyQy01RTI1LTQ2Q0UJZGV2VGltZT1TZXAgMTYgMjAxNSAwODoxNzo1\nNCBHTVQrMDk6MDAJc2V2PTgJcHJvdG9Hcm91cD1IVFRQCXByb3RvPUhUVFAJdkxBTklkPTQwOTUJ\nZGV2aWNlRGlyZWN0aW9uPTEJZGhvc3Q9MTkyLjE2OC43Mi4xNDEJZHN0PTE5Mi4xNjguNzIuMTQx\nCWRzdFBvcnQ9ODA4MAlkc3RNQUM9MDA6MGM6Mjk6Zjg6OTA6YmEJc2hvc3Q9MTcyLjMwLjM0LjEw\nNQlzcmM9MTcyLjMwLjM0LjEwNQlzcmNQb3J0PTQ5MTgwCXNyY01BQz0wMDowYzoyOToxMDpkZDow\nNgltYWxUeXBlPU1BTFdBUkUJZm5hbWU9My5odG1sCWZpbGVUeXBlPTAJZnNpemU9MAlydWxlSWQ9\nMTA5CW1zZz1EYXRhIFN0ZWFsaW5nIE1hbHdhcmUgVVJMIGZvciBQaG9uZWhvbWUgYW5kIERvd25s\nb2FkIFNpdGUJZGV2aWNlUmlza0NvbmZpZGVuY2VMZXZlbD0xCXVybD1odHRwOi8veHh4LzMuaHRt\nbAlyZXF1ZXN0Q2xpZW50QXBwbGljYXRpb249TW96aWxsYS81LjAgKGNvbXBhdGlibGU7IE1TSUUg\nOS4wOyBXaW5kb3dzIE5UIDYuMTsgVHJpZGVudC81LjApCXBDb21wPUNBVglyaXNrVHlwZT0xCW1p\ndGlnYXRpb25UYXNrSWQ9ZjkzODk5ZjgtNzI3Ni00YzNkLWE0YTMtNjdjOGEzZTBlOGUyCXNyY0dy\nb3VwPURlZmF1bHQJc3JjWm9uZT0xCWRzdEdyb3VwPURlZmF1bHQJZHN0Wm9uZT0xCWRldGVjdGlv\nblR5cGU9MQlhY3Q9bm90IGJsb2NrZWQJdGhyZWF0VHlwZT0xCWludGVyZXN0ZWRJcD0xMC40LjU4\nLjEwMQlwZWVySXA9MTkyLjE2OC43Mi4xNDEJaG9zdE5hbWU9bW91c2VsaWZlLmV1CWNudD0yCXNP\nU05hbWU9V2luZG93cyA3CWRPU05hbWU9V2luZG93cyA3CWFnZ3JlZ2F0ZWRDbnQ9MQljY2NhRGVz\ndGluYXRpb25Gb3JtYXQ9VVJMCWNjY2FEZXRlY3Rpb25Tb3VyY2U9R0xPQkFMX0lOVEVMTElHRU5D\nRQljY2NhUmlza0xldmVsPTMJY2NjYURlc3RpbmF0aW9uPWh0dHA6Ly94eHgvMy5odG1sCWNjY2FE\nZXRlY3Rpb249MQlwQXR0YWNrUGhhc2U9Q29tbWFuZCBhbmQgQ29udHJvbCBDb21tdW5pY2F0aW9u\nCg=="
-                }
-            },
-            "x_com_ibm_ariel": {
-                "event_name": "Security Risk Detection",
-                "qid": 68250014,
-                "category_name": "Potential Misc Exploit",
-                "category_id": 13010,
-                "high_level_category_name": "Potential Exploit",
-                "high_level_category_id": 13000,
-                "log_source_id": 162,
-                "log_source_type_name": "Device type 162",
-                "log_source_name": "DDI",
-                "direction": "R2R",
-                "identity_ip": "0.0.0.0",
-                "magnitude": 6,
-                "severity": 9,
-                "credibility": 9,
-                "relevance": 1,
-                "geographic": "other",
-                "cre_event_list": [
-                    "100090",
-                    "100153",
-                    "100135",
-                    "100020",
-                    "100107",
-                    "108302",
-                    "109102",
-                    "100211",
-                    "100207",
-                    "100205",
-                    "130982",
-                    "110002",
-                    "100240",
-                    "135932",
-                    "137132",
-                    "100247",
-                    "100086",
+                    "100242",
                     "100244",
                     "136332",
                     "145082"
                 ],
                 "rule_names": [
-                    "BB:NetworkDefinition: Honeypot like Addresses",
+                    "BB:PortDefinition: Windows Ports",
                     "BB:CategoryDefinition: Suspicious Event Categories",
                     "BB:CategoryDefinition: Suspicious Events",
-                    "BB:PortDefinition: Web Ports",
-                    "BB:CategoryDefinition: Exploits Backdoors and Trojans",
-                    "BB:TrendMicro DDI 2-2: Data Stealing Malware URI for Dropsite",
-                    "TrendMicro DDI 2-2 : Data Stealing Malware URI for Dropsite",
+                    "BB:UBA : Access Denies",
                     "Source Asset Weight is Low",
                     "Source Address is a Bogon IP",
                     "Destination Asset Weight is Low",
-                    "BB:DeviceDefinition: AV/AM",
-                    "Load ISO 27001:2013 Building Blocks",
+                    "BB:CategoryDefinition: Firewall or ACL Denies",
+                    "BB:PortDefinition: Common Worm Ports",
                     "BB:DeviceDefinition: FW / Router / Switch",
-                    "ECBB:DeviceDefinition: AV/AM",
                     "BB:UBA : Common Log Source Filters",
                     "BB:NetworkDefinition: Darknet Addresses",
-                    "BB:BehaviorDefinition: Compromise Activities",
+                    "BB:DeviceDefinition: VPN",
                     "Load Basic Building Blocks",
                     "ECBB:CategoryDefinition: Destination IP is a Third Country/Region",
                     "BB:CategoryDefinition: Source IP is a Third Country/Region"
                 ],
-                "domain_id": 1,
-                "device_type_name": "Trend Micro Deep Discovery Inspector",
-                "device_type": 265
+                "domain_id": 6,
+                "device_type_name": "Cisco Adaptive Security Appliance (ASA)",
+                "device_type": 41
             },
-            "first_observed": "2020-05-05T02:15:07.560Z",
-            "last_observed": "2020-05-05T02:15:07.560Z",
+            "first_observed": "2020-05-05T02:50:27.545Z",
+            "last_observed": "2020-05-05T02:50:27.545Z",
             "number_observed": 1
         },
         {
-            "id": "observed-data--244fee54-6fae-4246-8b36-ed3438dd07a2",
+            "id": "observed-data--c5863ed2-16e6-4466-889c-7cce3993dc74",
             "type": "observed-data",
-            "created_by_ref": "identity-3d8b7b8f-c9d1-4f03-8e83-b05c02896096",
-            "created": "2020-05-05T02:16:56.371Z",
-            "modified": "2020-05-05T02:16:56.371Z",
+            "created_by_ref": "identity--3d8b7b8f-c9d1-4f03-8e83-b05c02896096",
+            "created": "2020-05-05T11:52:34.451Z",
+            "modified": "2020-05-05T11:52:34.451Z",
             "objects": {
                 "0": {
                     "type": "ipv4-addr",
-                    "value": "192.168.1.1",
+                    "value": "172.30.34.1",
                     "resolves_to_refs": [
                         "2"
                     ]
@@ -696,126 +727,11 @@
                 "1": {
                     "type": "network-traffic",
                     "src_ref": "0",
-                    "src_port": 1033,
+                    "src_port": 47402,
                     "dst_ref": "3",
-                    "dst_port": 80,
+                    "dst_port": 135,
                     "protocols": [
-                        "reserved"
-                    ]
-                },
-                "2": {
-                    "type": "mac-addr",
-                    "value": "00:0C:29:DB:64:FB"
-                },
-                "3": {
-                    "type": "ipv4-addr",
-                    "value": "192.168.1.254",
-                    "resolves_to_refs": [
-                        "4"
-                    ]
-                },
-                "4": {
-                    "type": "mac-addr",
-                    "value": "00:0C:29:6E:67:BB"
-                },
-                "5": {
-                    "type": "artifact",
-                    "payload_bin": "PDE4Mj5NYXkgMDUgMTE6MTU6MDggMTAuOTkuMS4xMCBKdW4gMTQgMTE6MjQ6NDIgMTAuMy4yMzYu\nMTkzIExFRUY6MS4wfFRyZW5kIE1pY3JvfERlZXAgRGlzY292ZXJ5IEluc3BlY3RvcnwzLjgxLjIw\nNzJ8U0VDVVJJVFlfUklTS19ERVRFQ1RJT058ZGV2VGltZUZvcm1hdD1NTU0gZGQgeXl5eSBISDpt\nbTpzcyB6CXB0eXBlPUlEUwlkdmM9MTAuMy4yMzYuMTkzCWRldmljZU1hY0FkZHJlc3M9MDA6NTA6\nNTY6OUI6MUI6MzIJZHZjaG9zdD1ERElUSy0zLTgxLTIwNzItSlAJZGV2aWNlR1VJRD1CODg2OEE4\nNTQ2NzYtNDJBQkE2RjUtRDgyQy01RTI1LTQ2Q0UJZGV2VGltZT1TZXAgMTAgMjAxNSAwMTowODoz\nNiBHTVQrMDk6MDAJc2V2PTgJcHJvdG9Hcm91cD1IVFRQCXByb3RvPUhUVFAJdkxBTklkPTQwOTUJ\nZGV2aWNlRGlyZWN0aW9uPTEJZGhvc3Q9MTkyLjE2OC4xLjI1NAlkc3Q9MTkyLjE2OC4xLjI1NAlk\nc3RQb3J0PTgwCWRzdE1BQz0wMDowYzoyOTo2ZTo2NzpiYglzaG9zdD0xOTIuMTY4LjEuMQlzcmM9\nMTkyLjE2OC4xLjEJc3JjUG9ydD0xMDMzCXNyY01BQz0wMDowYzoyOTpkYjo2NDpmYgltYWxUeXBl\nPU1BTFdBUkUJZmlsZVR5cGU9MAlmc2l6ZT0wCXJ1bGVJZD05MDkJbXNnPUlYRVNIRSBIVFRQIFJl\ncXVlc3QgLSBDbGFzcyAxCWRldmljZVJpc2tDb25maWRlbmNlTGV2ZWw9MQlib3RDb21tYW5kPTEw\nMTgJdXJsPWh0dHA6Ly94eHgvQVdTOTYuanNwP1RnUC9UYVAzSW5yUDE9UXhZPVFySTVSVmpzOUto\nL0R3ajQ5S0lPbU09TGJqajUwZllaSkEJcmVxdWVzdENsaWVudEFwcGxpY2F0aW9uPU1vemlsbGEv\nNC4wIChjb21wYXRpYmxlOyBNU0lFIDUuMDE7IFdpbmRvd3MgTlQgNS4wKQlwQ29tcD1OQ0lFCXJp\nc2tUeXBlPTEJbWl0aWdhdGlvblRhc2tJZD1hYTEyY2NkZi01MmNjLTQ4MTgtOTI0OS05YjJkODAw\nMjQyMDgJc3JjR3JvdXA9RGVmYXVsdAlzcmNab25lPTEJZHN0R3JvdXA9RGVmYXVsdAlkc3Rab25l\nPTEJZGV0ZWN0aW9uVHlwZT0xCWFjdD1ub3QgYmxvY2tlZAl0aHJlYXRUeXBlPTEJaW50ZXJlc3Rl\nZElwPTE5Mi4xNjguMS4xCXBlZXJJcD0xOTIuMTY4LjEuMjU0CWhvc3ROYW1lPXdpbmRvd3MudXBk\nYXRlLnR3aWxpZ2h0cGFyYWRveC5jb20JY250PTEJc09TTmFtZT1XaW5kb3dzIDIwMDAJYWdncmVn\nYXRlZENudD0xCWNjY2FEZXN0aW5hdGlvbkZvcm1hdD1VUkwJY2NjYURldGVjdGlvblNvdXJjZT1S\nRUxFVkFOQ0VfUlVMRQljY2NhUmlza0xldmVsPTMJY2NjYURlc3RpbmF0aW9uPWh0dHA6Ly94eHgv\nQVdTOTYuanNwP1RnUC9UYVAzSW5yUDE9UXhZPVFySTVSVmpzOUtoL0R3ajQ5S0lPbU09TGJqajUw\nZllaSkEJY2NjYURldGVjdGlvbj0xCWV2dENhdD1UYXJnZXRlZCBBdHRhY2sJZXZ0U3ViQ2F0PUNh\nbGxiYWNrCWFwdFJlbGF0ZWQ9MQloYWNrZXJHcm91cD1JeGVzaGUJbWFsRmFtaWx5PUlYRVNIRQlw\nQXR0YWNrUGhhc2U9Q29tbWFuZCBhbmQgQ29udHJvbCBDb21tdW5pY2F0aW9uCg=="
-                }
-            },
-            "x_com_ibm_ariel": {
-                "event_name": "Security Risk Detection",
-                "qid": 68250014,
-                "category_name": "Potential Misc Exploit",
-                "category_id": 13010,
-                "high_level_category_name": "Potential Exploit",
-                "high_level_category_id": 13000,
-                "log_source_id": 162,
-                "log_source_type_name": "Device type 162",
-                "log_source_name": "DDI",
-                "direction": "R2R",
-                "identity_ip": "0.0.0.0",
-                "magnitude": 6,
-                "severity": 9,
-                "credibility": 9,
-                "relevance": 1,
-                "geographic": "other",
-                "cre_event_list": [
-                    "100090",
-                    "100153",
-                    "100135",
-                    "100020",
-                    "100107",
-                    "100211",
-                    "100207",
-                    "100205",
-                    "108352",
-                    "130982",
-                    "110002",
-                    "108852",
-                    "100240",
-                    "135932",
-                    "137132",
-                    "100247",
-                    "100259",
-                    "100086",
-                    "100244",
-                    "136332",
-                    "145082"
-                ],
-                "rule_names": [
-                    "BB:NetworkDefinition: Honeypot like Addresses",
-                    "BB:CategoryDefinition: Suspicious Event Categories",
-                    "BB:CategoryDefinition: Suspicious Events",
-                    "BB:PortDefinition: Web Ports",
-                    "BB:CategoryDefinition: Exploits Backdoors and Trojans",
-                    "Source Asset Weight is Low",
-                    "Source Address is a Bogon IP",
-                    "Destination Asset Weight is Low",
-                    "BB:TrendMicro DDI 3-1: Malware Callback detect(High Risk Malware)",
-                    "BB:DeviceDefinition: AV/AM",
-                    "Load ISO 27001:2013 Building Blocks",
-                    "TrendMicro DDI 3-1 : Malware Callback detect (High Risk Malware)",
-                    "BB:DeviceDefinition: FW / Router / Switch",
-                    "ECBB:DeviceDefinition: AV/AM",
-                    "BB:UBA : Common Log Source Filters",
-                    "BB:NetworkDefinition: Darknet Addresses",
-                    "BB:PortDefinition: Authorized L2R Ports",
-                    "BB:BehaviorDefinition: Compromise Activities",
-                    "Load Basic Building Blocks",
-                    "ECBB:CategoryDefinition: Destination IP is a Third Country/Region",
-                    "BB:CategoryDefinition: Source IP is a Third Country/Region"
-                ],
-                "domain_id": 1,
-                "device_type_name": "Trend Micro Deep Discovery Inspector",
-                "device_type": 265
-            },
-            "first_observed": "2020-05-05T02:15:08.675Z",
-            "last_observed": "2020-05-05T02:15:08.675Z",
-            "number_observed": 1
-        },
-        {
-            "id": "observed-data--475baa37-3180-4ea2-8f3a-ee66364b6619",
-            "type": "observed-data",
-            "created_by_ref": "identity-3d8b7b8f-c9d1-4f03-8e83-b05c02896096",
-            "created": "2020-05-05T02:16:56.418Z",
-            "modified": "2020-05-05T02:16:56.418Z",
-            "objects": {
-                "0": {
-                    "type": "ipv4-addr",
-                    "value": "104.28.10.192",
-                    "resolves_to_refs": [
-                        "2"
-                    ]
-                },
-                "1": {
-                    "type": "network-traffic",
-                    "src_ref": "0",
-                    "src_port": 80,
-                    "dst_ref": "3",
-                    "dst_port": 49238,
-                    "protocols": [
-                        "reserved"
+                        "tcp"
                     ]
                 },
                 "2": {
@@ -824,7 +740,7 @@
                 },
                 "3": {
                     "type": "ipv4-addr",
-                    "value": "10.20.13.47",
+                    "value": "9.189.123.45",
                     "resolves_to_refs": [
                         "4"
                     ]
@@ -835,199 +751,80 @@
                 },
                 "5": {
                     "type": "artifact",
-                    "payload_bin": "PDE4Mj5NYXkgMDUgMTE6MTU6MDkgMTAuOTkuMS4xMCBKdWwgMjYgMTE6NTc6NDMgMTAuMy4yMzYu\nMTkzIExFRUY6MS4wfFRyZW5kIE1pY3JvfERlZXAgRGlzY292ZXJ5IEluc3BlY3RvcnwzLjgxLjIw\nNzJ8U0VDVVJJVFlfUklTS19ERVRFQ1RJT058ZGV2VGltZUZvcm1hdD1NTU0gZGQgeXl5eSBISDpt\nbTpzcyB6CXB0eXBlPUlEUwlkdmM9MTAuMy4yMzYuMTkzCWRldmljZU1hY0FkZHJlc3M9MDA6NTA6\nNTY6OUI6MUI6MzIJZHZjaG9zdD1ERElUSy0zLTgxLTIwNzItSlAJZGV2aWNlR1VJRD1CODg2OEE4\nNTQ2NzYtNDJBQkE2RjUtRDgyQy01RTI1LTQ2Q0UJZGV2VGltZT1KdWwgMjYgMjAxNiAxMTo1Nzow\nNiBHTVQrMDk6MDAJc2V2PTgJcHJvdG9Hcm91cD1IVFRQCXByb3RvPUhUVFAJdkxBTklkPTQwOTUJ\nZGV2aWNlRGlyZWN0aW9uPTAJZGhvc3Q9MTAuMjAuMTMuNDcJZHN0PTEwLjIwLjEzLjQ3CWRzdFBv\ncnQ9NDkyMzgJZHN0TUFDPTAwOjAwOjAwOjAwOjAwOjAwCXNob3N0PTEwNC4yOC4xMC4xOTIJc3Jj\nPTEwNC4yOC4xMC4xOTIJc3JjUG9ydD04MAlzcmNNQUM9MDA6MDA6MDA6MDA6MDA6MDAJbWFsVHlw\nZT1NQUxXQVJFCWZpbGVUeXBlPTAJZnNpemU9MAlydWxlSWQ9MTgwOQltc2c9UkFOU09NIENSWVBU\nRVNMQSBIVFRQIFJlc3BvbnNlCWRldmljZVJpc2tDb25maWRlbmNlTGV2ZWw9MQlib3RDb21tYW5k\nPTEwNDIJcENvbXA9TkNJRQlyaXNrVHlwZT0xCW1pdGlnYXRpb25UYXNrSWQ9NTY0MjNkZTgtY2Zi\nMy00MWU0LTlhYzAtOTBiMzZkMTVhOTJjCXNyY1pvbmU9MAlkc3RHcm91cD3liJ3mnJ/oqK3lrpoJ\nZHN0Wm9uZT0xCWRldGVjdGlvblR5cGU9MQlhY3Q9bm90IGJsb2NrZWQJdGhyZWF0VHlwZT0xCWlu\ndGVyZXN0ZWRJcD0xMC4yMC4xMy40NwlwZWVySXA9MTA0LjI4LjEwLjE5MgljbnQ9MQlkT1NOYW1l\nPVdpbmRvd3MgWFAJYWdncmVnYXRlZENudD0xCWNjY2FEZXN0aW5hdGlvbkZvcm1hdD1JUF9ET01B\nSU4JY2NjYURldGVjdGlvblNvdXJjZT1SRUxFVkFOQ0VfUlVMRQljY2NhUmlza0xldmVsPTMJY2Nj\nYURlc3RpbmF0aW9uPTEwNC4yOC4xMC4xOTIJY2NjYURldGVjdGlvbj0xCWV2dENhdD1DYWxsYmFj\nawlldnRTdWJDYXQ9UmFuc29td2FyZQlwQXR0YWNrUGhhc2U9Q29tbWFuZCBhbmQgQ29udHJvbCBD\nb21tdW5pY2F0aW9uCg=="
+                    "payload_bin": "PDE5MD4lQVNBLTYtMTA2MTAwOiBhY2Nlc3MtbGlzdCBpbnNpZGVfYWNjZXNzX2luIGRlbmllZCB0\nY3AgaW5zaWRlLzE3Mi4zMC4zNC4xKDQ3NDAyKSAtPiBvdXRzaWRlLzkuMTg5LjEyMy40NSgxMzUp\nIGhpdC1jbnQgMSBmaXJzdCBoaXQgWzB4YjY3MDE5N2EsIDB4MF0K"
                 }
             },
             "x_com_ibm_ariel": {
-                "event_name": "Security Risk Detection",
-                "qid": 68250014,
-                "category_name": "Potential Misc Exploit",
-                "category_id": 13010,
-                "high_level_category_name": "Potential Exploit",
-                "high_level_category_id": 13000,
-                "log_source_id": 162,
-                "log_source_type_name": "Device type 162",
-                "log_source_name": "DDI",
+                "event_name": "Packet denied by ACL",
+                "qid": 3504430,
+                "category_name": "Firewall Deny",
+                "category_id": 4003,
+                "high_level_category_name": "Access",
+                "high_level_category_id": 4000,
+                "log_source_id": 71,
+                "log_source_type_name": "Forcepoint Sidewinder",
+                "log_source_name": "ASAFW\uff08\u30e9\u30dc\uff09",
                 "direction": "R2R",
                 "identity_ip": "0.0.0.0",
-                "magnitude": 5,
-                "severity": 8,
-                "credibility": 9,
-                "relevance": 1,
-                "geographic": "null.null",
-                "cre_event_list": [
-                    "100090",
-                    "100153",
-                    "100135",
-                    "100107",
-                    "100211",
-                    "100205",
-                    "139882",
-                    "108402",
-                    "130982",
-                    "110002",
-                    "108752",
-                    "100240",
-                    "135932",
-                    "137132",
-                    "100247",
-                    "100086",
-                    "100244",
-                    "136332",
-                    "145082"
-                ],
-                "rule_names": [
-                    "BB:NetworkDefinition: Honeypot like Addresses",
-                    "BB:CategoryDefinition: Suspicious Event Categories",
-                    "BB:CategoryDefinition: Suspicious Events",
-                    "BB:CategoryDefinition: Exploits Backdoors and Trojans",
-                    "Source Asset Weight is Low",
-                    "Destination Asset Weight is Low",
-                    "BB:UBA : Excluded Geographic Locations",
-                    "BB:TrendMicro DDI 3-2: Ransomware Connection detect",
-                    "BB:DeviceDefinition: AV/AM",
-                    "Load ISO 27001:2013 Building Blocks",
-                    "TrendMicro DDI 3-2 : Ransomware Connection detect",
-                    "BB:DeviceDefinition: FW / Router / Switch",
-                    "ECBB:DeviceDefinition: AV/AM",
-                    "BB:UBA : Common Log Source Filters",
-                    "BB:NetworkDefinition: Darknet Addresses",
-                    "BB:BehaviorDefinition: Compromise Activities",
-                    "Load Basic Building Blocks",
-                    "ECBB:CategoryDefinition: Destination IP is a Third Country/Region",
-                    "BB:CategoryDefinition: Source IP is a Third Country/Region"
-                ],
-                "domain_id": 1,
-                "device_type_name": "Trend Micro Deep Discovery Inspector",
-                "device_type": 265
-            },
-            "first_observed": "2020-05-05T02:15:09.645Z",
-            "last_observed": "2020-05-05T02:15:09.645Z",
-            "number_observed": 1
-        },
-        {
-            "id": "observed-data--45b0a632-8422-499c-a6ae-b70b3bfef90c",
-            "type": "observed-data",
-            "created_by_ref": "identity-3d8b7b8f-c9d1-4f03-8e83-b05c02896096",
-            "created": "2020-05-05T02:16:56.454Z",
-            "modified": "2020-05-05T02:16:56.454Z",
-            "objects": {
-                "0": {
-                    "type": "ipv4-addr",
-                    "value": "192.168.221.134",
-                    "resolves_to_refs": [
-                        "2"
-                    ]
-                },
-                "1": {
-                    "type": "network-traffic",
-                    "src_ref": "0",
-                    "src_port": 50418,
-                    "dst_ref": "3",
-                    "dst_port": 80,
-                    "protocols": [
-                        "reserved"
-                    ]
-                },
-                "2": {
-                    "type": "mac-addr",
-                    "value": "00:00:00:00:00:00"
-                },
-                "3": {
-                    "type": "ipv4-addr",
-                    "value": "66.96.133.6",
-                    "resolves_to_refs": [
-                        "4"
-                    ]
-                },
-                "4": {
-                    "type": "mac-addr",
-                    "value": "00:00:00:00:00:00"
-                },
-                "5": {
-                    "type": "artifact",
-                    "payload_bin": "PDE4Mj5NYXkgMDUgMTE6MTU6MTAgMTAuOTkuMS4xMCBKdWwgMTIgMTA6MDM6NDkgMTAuMy4yMzYu\nMTkzIExFRUY6MS4wfFRyZW5kIE1pY3JvfERlZXAgRGlzY292ZXJ5IEluc3BlY3RvcnwzLjgxLjIw\nNzJ8U0VDVVJJVFlfUklTS19ERVRFQ1RJT058ZGV2VGltZUZvcm1hdD1NTU0gZGQgeXl5eSBISDpt\nbTpzcyB6CXB0eXBlPUlEUwlkdmM9MTAuMy4yMzYuMTkzCWRldmljZU1hY0FkZHJlc3M9MDA6NTA6\nNTY6OUI6MUI6MzIJZHZjaG9zdD1ERElUSy0zLTgxLTIwNzItSlAJZGV2aWNlR1VJRD1CODg2OEE4\nNTQ2NzYtNDJBQkE2RjUtRDgyQy01RTI1LTQ2Q0UJZGV2VGltZT1KdWwgMTIgMjAxNiAxMDowMjoy\nNSBHTVQrMDk6MDAJc2V2PTgJcHJvdG9Hcm91cD1IVFRQCXByb3RvPUhUVFAJdkxBTklkPTQwOTUJ\nZGV2aWNlRGlyZWN0aW9uPTEJZGhvc3Q9NjYuOTYuMTMzLjYJZHN0PTY2Ljk2LjEzMy42CWRzdFBv\ncnQ9ODAJZHN0TUFDPTAwOjAwOjAwOjAwOjAwOjAwCXNob3N0PTE5Mi4xNjguMjIxLjEzNAlzcmM9\nMTkyLjE2OC4yMjEuMTM0CXNyY1BvcnQ9NTA0MTgJc3JjTUFDPTAwOjAwOjAwOjAwOjAwOjAwCW1h\nbFR5cGU9TUFMV0FSRQlmaWxlVHlwZT0wCWZzaXplPTAJcnVsZUlkPTE0OTEJbXNnPVJPVk5JWCBI\nVFRQIFJlcXVlc3QgLSBDbGFzcyAxCWRldmljZVJpc2tDb25maWRlbmNlTGV2ZWw9MQlib3RDb21t\nYW5kPTEwMTgJdXJsPWh0dHA6Ly94eHgvYjY4NWNmOWZkYzg4NWY5MGFiYmIzOWIxMzAyMmQxYzQu\ncGhwP3E9MDcyYWMwMjIzNzFjN2IzNWI4NGFhYzMzZWMxZGFlOTYJcmVxdWVzdENsaWVudEFwcGxp\nY2F0aW9uPU1vemlsbGEvNC4wIChjb21wYXRpYmxlOyBNU0lFIDguMDsgV2luZG93cyBOVCA2LjE7\nIFdPVzY0OyBUcmlkZW50LzQuMDsgU0xDQzI7IC5ORVQgQ0xSIDIuMC41MDcyNzsgLk5FVCBDTFIg\nMy41LjMwNzI5OyAuTkVUIENMUiAzLjAuMzA3Mjk7IE1lZGlhIENlbnRlciBQQyA2LjApCXBDb21w\nPU5DSUUJcmlza1R5cGU9MQltaXRpZ2F0aW9uVGFza0lkPTVmZjgyYTYyLTBkMGYtNDRlZi04NDU1\nLTBiZjJkODU4MTBlOQlzcmNHcm91cD3liJ3mnJ/oqK3lrpoJc3JjWm9uZT0xCWRzdFpvbmU9MAlk\nZXRlY3Rpb25UeXBlPTEJYWN0PW5vdCBibG9ja2VkCXRocmVhdFR5cGU9MQlpbnRlcmVzdGVkSXA9\nMTkyLjE2OC4yMjEuMTM0CXBlZXJJcD02Ni45Ni4xMzMuNglob3N0TmFtZT1jYW5hZGFoYWxhbGVj\nLmNvbQljbnQ9MQlzT1NOYW1lPVdpbmRvd3MgNyA2NGJpdAlhZ2dyZWdhdGVkQ250PTEJY2NjYURl\nc3RpbmF0aW9uRm9ybWF0PVVSTAljY2NhRGV0ZWN0aW9uU291cmNlPVJFTEVWQU5DRV9SVUxFCWNj\nY2FSaXNrTGV2ZWw9MwljY2NhRGVzdGluYXRpb249aHR0cDovL3h4eC9iNjg1Y2Y5ZmRjODg1Zjkw\nYWJiYjM5YjEzMDIyZDFjNC5waHA/cT0wNzJhYzAyMjM3MWM3YjM1Yjg0YWFjMzNlYzFkYWU5Nglj\nY2NhRGV0ZWN0aW9uPTEJZXZ0Q2F0PUNhbGxiYWNrCWV2dFN1YkNhdD1Cb3QJbWFsRmFtaWx5PVJP\nVk5JWAlwQXR0YWNrUGhhc2U9Q29tbWFuZCBhbmQgQ29udHJvbCAK"
-                }
-            },
-            "x_com_ibm_ariel": {
-                "event_name": "Security Risk Detection",
-                "qid": 68250014,
-                "category_name": "Potential Misc Exploit",
-                "category_id": 13010,
-                "high_level_category_name": "Potential Exploit",
-                "high_level_category_id": 13000,
-                "log_source_id": 162,
-                "log_source_type_name": "Device type 162",
-                "log_source_name": "DDI",
-                "direction": "R2R",
-                "identity_ip": "0.0.0.0",
-                "magnitude": 6,
-                "severity": 9,
-                "credibility": 9,
+                "magnitude": 2,
+                "severity": 3,
+                "credibility": 3,
                 "relevance": 1,
                 "geographic": "other",
                 "cre_event_list": [
+                    "100021",
                     "100153",
                     "100135",
-                    "100020",
-                    "100107",
+                    "122802",
                     "100211",
                     "100207",
                     "100205",
-                    "108452",
-                    "130982",
-                    "110002",
-                    "109152",
+                    "100093",
+                    "100260",
                     "100240",
-                    "135932",
                     "137132",
                     "100247",
-                    "100259",
-                    "100086",
+                    "100242",
                     "100244",
                     "136332",
                     "145082"
                 ],
                 "rule_names": [
+                    "BB:PortDefinition: Windows Ports",
                     "BB:CategoryDefinition: Suspicious Event Categories",
                     "BB:CategoryDefinition: Suspicious Events",
-                    "BB:PortDefinition: Web Ports",
-                    "BB:CategoryDefinition: Exploits Backdoors and Trojans",
+                    "BB:UBA : Access Denies",
                     "Source Asset Weight is Low",
                     "Source Address is a Bogon IP",
                     "Destination Asset Weight is Low",
-                    "BB:TrendMicro DDI 3-3: Banking Malware Connection detect",
-                    "BB:DeviceDefinition: AV/AM",
-                    "Load ISO 27001:2013 Building Blocks",
-                    "TrendMicro DDI 3-3 : Banking Malware Connection detect",
+                    "BB:CategoryDefinition: Firewall or ACL Denies",
+                    "BB:PortDefinition: Common Worm Ports",
                     "BB:DeviceDefinition: FW / Router / Switch",
-                    "ECBB:DeviceDefinition: AV/AM",
                     "BB:UBA : Common Log Source Filters",
                     "BB:NetworkDefinition: Darknet Addresses",
-                    "BB:PortDefinition: Authorized L2R Ports",
-                    "BB:BehaviorDefinition: Compromise Activities",
+                    "BB:DeviceDefinition: VPN",
                     "Load Basic Building Blocks",
                     "ECBB:CategoryDefinition: Destination IP is a Third Country/Region",
                     "BB:CategoryDefinition: Source IP is a Third Country/Region"
                 ],
-                "domain_id": 1,
-                "device_type_name": "Trend Micro Deep Discovery Inspector",
-                "device_type": 265
+                "domain_id": 6,
+                "device_type_name": "Cisco Adaptive Security Appliance (ASA)",
+                "device_type": 41
             },
-            "first_observed": "2020-05-05T02:15:10.693Z",
-            "last_observed": "2020-05-05T02:15:10.693Z",
+            "first_observed": "2020-05-05T02:50:27.758Z",
+            "last_observed": "2020-05-05T02:50:27.758Z",
             "number_observed": 1
         },
         {
-            "id": "observed-data--629b99f7-ca8a-4183-bd46-e862cbab7681",
+            "id": "observed-data--6ad5dd7a-2e66-43bb-aa38-632d6a1f685f",
             "type": "observed-data",
-            "created_by_ref": "identity-3d8b7b8f-c9d1-4f03-8e83-b05c02896096",
-            "created": "2020-05-05T02:16:56.487Z",
-            "modified": "2020-05-05T02:16:56.487Z",
+            "created_by_ref": "identity--3d8b7b8f-c9d1-4f03-8e83-b05c02896096",
+            "created": "2020-05-05T11:52:34.669Z",
+            "modified": "2020-05-05T11:52:34.669Z",
             "objects": {
                 "0": {
                     "type": "ipv4-addr",
-                    "value": "2.2.2.1",
+                    "value": "172.30.34.1",
                     "resolves_to_refs": [
                         "2"
                     ]
@@ -1035,94 +832,197 @@
                 "1": {
                     "type": "network-traffic",
                     "src_ref": "0",
-                    "src_port": 80,
+                    "src_port": 47385,
                     "dst_ref": "3",
-                    "dst_port": 17092,
+                    "dst_port": 135,
                     "protocols": [
-                        "reserved"
+                        "tcp"
                     ]
                 },
                 "2": {
                     "type": "mac-addr",
-                    "value": "00:50:56:8E:16:76"
+                    "value": "00:00:00:00:00:00"
                 },
                 "3": {
                     "type": "ipv4-addr",
-                    "value": "10.20.13.33",
+                    "value": "9.189.123.45",
                     "resolves_to_refs": [
                         "4"
                     ]
                 },
                 "4": {
                     "type": "mac-addr",
-                    "value": "00:50:56:8E:41:E9"
+                    "value": "00:00:00:00:00:00"
                 },
                 "5": {
                     "type": "artifact",
-                    "payload_bin": "PDE4Mj5NYXkgMDUgMTE6MTU6MTEgMTAuOTkuMS4xMCBKdWwgMjYgMTE6NTc6NDMgMTAuMy4yMzYu\nMTkzIExFRUY6MS4wfFRyZW5kIE1pY3JvfERlZXAgRGlzY292ZXJ5IEluc3BlY3RvcnwzLjgxLjIw\nNzJ8TUFMV0FSRV9ERVRFQ1RJT058ZGV2VGltZUZvcm1hdD1NTU0gZGQgeXl5eSBISDptbTpzcyB6\nCXB0eXBlPUlEUwlkdmM9MTAuMy4yMzYuMTkzCWRldmljZU1hY0FkZHJlc3M9MDA6NTA6NTY6OUI6\nMUI6MzIJZHZjaG9zdD1ERElUSy0zLTgxLTIwNzItSlAJZGV2aWNlR1VJRD1CODg2OEE4NTQ2NzYt\nNDJBQkE2RjUtRDgyQy01RTI1LTQ2Q0UJZGV2VGltZT1KdWwgMjYgMjAxNiAxMTo1NzoxNCBHTVQr\nMDk6MDAJc2V2PTgJcHJvdG9Hcm91cD1IVFRQCXByb3RvPUhUVFAJdkxBTklkPTQwOTUJZGV2aWNl\nRGlyZWN0aW9uPTAJZGhvc3Q9MTAuMjAuMTMuMzMJZHN0PTEwLjIwLjEzLjMzCWRzdFBvcnQ9MTcw\nOTIJZHN0TUFDPTAwOjUwOjU2OjhlOjQxOmU5CXNob3N0PTIuMi4yLjEJc3JjPTIuMi4yLjEJc3Jj\nUG9ydD04MAlzcmNNQUM9MDA6NTA6NTY6OGU6MTY6NzYJbWFsTmFtZT1UUk9KX0NSWVBXQUxMLlNN\nSkMJbWFsVHlwZT1Ucm9qYW4JZm5hbWU9VFJPSl9DUllQV0FMTC5TTUpDCWZpbGVUeXBlPTQ1ODc1\nNAlmc2l6ZT0xNTk3NDQJcnVsZUlkPTAJbXNnPU1vbml0b3JlZCBob3N0IGlzIGRvd25sb2FkaW5n\nIGEgbWFsd2FyZS4JZGV2aWNlUmlza0NvbmZpZGVuY2VMZXZlbD0wCXVybD1odHRwOi8veHh4L2Rs\nZXIvUmFuc29td2FyZS9UUk9KX0NSWVBXQUxMLlNNSkMJcmVxdWVzdENsaWVudEFwcGxpY2F0aW9u\nPU1vemlsbGEvNC4wIChjb21wYXRpYmxlOyBNU0lFIDguMDsgV2luZG93cyBOVCA1LjE7IFRyaWRl\nbnQvNC4wKQlwQ29tcD1WU0FQSQlyaXNrVHlwZT0wCW1pdGlnYXRpb25UYXNrSWQ9NmNhM2YyYTYt\nYzNiZS00Y2M1LTkwZmMtZTc2ZGMyNzYxODEwCXNyY1pvbmU9MAlkc3RHcm91cD3liJ3mnJ/oqK3l\nrpoJZHN0Wm9uZT0xCWRldGVjdGlvblR5cGU9MAlhY3Q9bm90IGJsb2NrZWQJdGhyZWF0VHlwZT0w\nCWludGVyZXN0ZWRJcD0xMC4yMC4xMy4zMwlwZWVySXA9Mi4yLjIuMQlmaWxlSGFzaD0zNzA0NTBC\nRTE1NzVBOEVBRDMxN0Y1ODNFRUQ1OTlGQjAzQjI0MjU4CWhvc3ROYW1lPTIuMi4yLjEJY250PTEJ\nZE9TTmFtZT1XaW5kb3dzIFhQCWFnZ3JlZ2F0ZWRDbnQ9MQlldnRDYXQ9TWFsd2FyZQlldnRTdWJD\nYXQ9VHJvamFuCXBBdHRhY2tQaGFzZT1Qb2ludCBvZiBFbnRyeQo="
+                    "payload_bin": "PDE5MD4lQVNBLTYtMTA2MTAwOiBhY2Nlc3MtbGlzdCBpbnNpZGVfYWNjZXNzX2luIGRlbmllZCB0\nY3AgaW5zaWRlLzE3Mi4zMC4zNC4xKDQ3Mzg1KSAtPiBvdXRzaWRlLzkuMTg5LjEyMy40NSgxMzUp\nIGhpdC1jbnQgMiAzMDAtc2Vjb25kIGludGVydmFsIFsweGI2NzAxOTdhLCAweDBdCg=="
                 }
             },
             "x_com_ibm_ariel": {
-                "event_name": "Malware Detection",
-                "qid": 68250006,
-                "category_name": "Malicious Software",
-                "category_id": 6004,
-                "high_level_category_name": "Malware",
-                "high_level_category_id": 6000,
-                "log_source_id": 162,
-                "log_source_type_name": "Device type 162",
-                "log_source_name": "DDI",
+                "event_name": "Packet denied by ACL",
+                "qid": 3504430,
+                "category_name": "Firewall Deny",
+                "category_id": 4003,
+                "high_level_category_name": "Access",
+                "high_level_category_id": 4000,
+                "log_source_id": 71,
+                "log_source_type_name": "Forcepoint Sidewinder",
+                "log_source_name": "ASAFW\uff08\u30e9\u30dc\uff09",
                 "direction": "R2R",
                 "identity_ip": "0.0.0.0",
-                "magnitude": 5,
-                "severity": 8,
-                "credibility": 9,
+                "magnitude": 2,
+                "severity": 3,
+                "credibility": 3,
                 "relevance": 1,
-                "geographic": "Europe.France",
+                "geographic": "other",
                 "cre_event_list": [
-                    "100090",
-                    "100107",
+                    "100021",
+                    "100153",
+                    "100135",
+                    "122802",
                     "100211",
+                    "100207",
                     "100205",
-                    "139882",
-                    "108502",
-                    "130982",
-                    "110002",
-                    "128102",
-                    "109052",
+                    "100093",
+                    "100260",
                     "100240",
-                    "135932",
                     "137132",
                     "100247",
-                    "100086",
+                    "100242",
                     "100244",
-                    "136332"
+                    "136332",
+                    "145082"
                 ],
                 "rule_names": [
-                    "BB:NetworkDefinition: Honeypot like Addresses",
-                    "BB:CategoryDefinition: Exploits Backdoors and Trojans",
+                    "BB:PortDefinition: Windows Ports",
+                    "BB:CategoryDefinition: Suspicious Event Categories",
+                    "BB:CategoryDefinition: Suspicious Events",
+                    "BB:UBA : Access Denies",
                     "Source Asset Weight is Low",
+                    "Source Address is a Bogon IP",
                     "Destination Asset Weight is Low",
-                    "BB:UBA : Excluded Geographic Locations",
-                    "BB:TrendMicro DDI 4-1 : Malware detect (High Risk Malware)",
-                    "BB:DeviceDefinition: AV/AM",
-                    "Load ISO 27001:2013 Building Blocks",
-                    "BB:CategoryDefinition: Countries/Regions with Restricted Access",
-                    "TrendMicro DDI 4-1 : Malware detect (High Risk Malware)",
+                    "BB:CategoryDefinition: Firewall or ACL Denies",
+                    "BB:PortDefinition: Common Worm Ports",
                     "BB:DeviceDefinition: FW / Router / Switch",
-                    "ECBB:DeviceDefinition: AV/AM",
                     "BB:UBA : Common Log Source Filters",
                     "BB:NetworkDefinition: Darknet Addresses",
-                    "BB:BehaviorDefinition: Compromise Activities",
+                    "BB:DeviceDefinition: VPN",
                     "Load Basic Building Blocks",
-                    "ECBB:CategoryDefinition: Destination IP is a Third Country/Region"
+                    "ECBB:CategoryDefinition: Destination IP is a Third Country/Region",
+                    "BB:CategoryDefinition: Source IP is a Third Country/Region"
                 ],
-                "domain_id": 1,
-                "device_type_name": "Trend Micro Deep Discovery Inspector",
-                "device_type": 265
+                "domain_id": 6,
+                "device_type_name": "Cisco Adaptive Security Appliance (ASA)",
+                "device_type": 41
             },
-            "first_observed": "2020-05-05T02:15:11.736Z",
-            "last_observed": "2020-05-05T02:15:11.736Z",
+            "first_observed": "2020-05-05T02:50:28.653Z",
+            "last_observed": "2020-05-05T02:50:28.653Z",
+            "number_observed": 1
+        },
+        {
+            "id": "observed-data--151ad6ef-c34d-47e0-a5d0-34da20f13d3d",
+            "type": "observed-data",
+            "created_by_ref": "identity--3d8b7b8f-c9d1-4f03-8e83-b05c02896096",
+            "created": "2020-05-05T11:52:34.896Z",
+            "modified": "2020-05-05T11:52:34.896Z",
+            "objects": {
+                "0": {
+                    "type": "ipv4-addr",
+                    "value": "172.30.34.1",
+                    "resolves_to_refs": [
+                        "2"
+                    ]
+                },
+                "1": {
+                    "type": "network-traffic",
+                    "src_ref": "0",
+                    "src_port": 47403,
+                    "dst_ref": "3",
+                    "dst_port": 135,
+                    "protocols": [
+                        "tcp"
+                    ]
+                },
+                "2": {
+                    "type": "mac-addr",
+                    "value": "00:00:00:00:00:00"
+                },
+                "3": {
+                    "type": "ipv4-addr",
+                    "value": "9.189.123.45",
+                    "resolves_to_refs": [
+                        "4"
+                    ]
+                },
+                "4": {
+                    "type": "mac-addr",
+                    "value": "00:00:00:00:00:00"
+                },
+                "5": {
+                    "type": "artifact",
+                    "payload_bin": "PDE5MD4lQVNBLTYtMTA2MTAwOiBhY2Nlc3MtbGlzdCBpbnNpZGVfYWNjZXNzX2luIGRlbmllZCB0\nY3AgaW5zaWRlLzE3Mi4zMC4zNC4xKDQ3NDAzKSAtPiBvdXRzaWRlLzkuMTg5LjEyMy40NSgxMzUp\nIGhpdC1jbnQgMSBmaXJzdCBoaXQgWzB4YjY3MDE5N2EsIDB4MF0K"
+                }
+            },
+            "x_com_ibm_ariel": {
+                "event_name": "Packet denied by ACL",
+                "qid": 3504430,
+                "category_name": "Firewall Deny",
+                "category_id": 4003,
+                "high_level_category_name": "Access",
+                "high_level_category_id": 4000,
+                "log_source_id": 71,
+                "log_source_type_name": "Forcepoint Sidewinder",
+                "log_source_name": "ASAFW\uff08\u30e9\u30dc\uff09",
+                "direction": "R2R",
+                "identity_ip": "0.0.0.0",
+                "magnitude": 2,
+                "severity": 3,
+                "credibility": 3,
+                "relevance": 1,
+                "geographic": "other",
+                "cre_event_list": [
+                    "100021",
+                    "100153",
+                    "100135",
+                    "122802",
+                    "100211",
+                    "100207",
+                    "100205",
+                    "100093",
+                    "100260",
+                    "100240",
+                    "137132",
+                    "100247",
+                    "100242",
+                    "100244",
+                    "136332",
+                    "145082"
+                ],
+                "rule_names": [
+                    "BB:PortDefinition: Windows Ports",
+                    "BB:CategoryDefinition: Suspicious Event Categories",
+                    "BB:CategoryDefinition: Suspicious Events",
+                    "BB:UBA : Access Denies",
+                    "Source Asset Weight is Low",
+                    "Source Address is a Bogon IP",
+                    "Destination Asset Weight is Low",
+                    "BB:CategoryDefinition: Firewall or ACL Denies",
+                    "BB:PortDefinition: Common Worm Ports",
+                    "BB:DeviceDefinition: FW / Router / Switch",
+                    "BB:UBA : Common Log Source Filters",
+                    "BB:NetworkDefinition: Darknet Addresses",
+                    "BB:DeviceDefinition: VPN",
+                    "Load Basic Building Blocks",
+                    "ECBB:CategoryDefinition: Destination IP is a Third Country/Region",
+                    "BB:CategoryDefinition: Source IP is a Third Country/Region"
+                ],
+                "domain_id": 6,
+                "device_type_name": "Cisco Adaptive Security Appliance (ASA)",
+                "device_type": 41
+            },
+            "first_observed": "2020-05-05T02:50:28.878Z",
+            "last_observed": "2020-05-05T02:50:28.878Z",
             "number_observed": 1
         }
     ]
