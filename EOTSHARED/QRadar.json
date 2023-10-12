@@ -1,1 +1,527 @@
-{"payload":{"allShortcutsEnabled":false,"fileTree":{"EOTSHARED":{"items":[{"name":"Crowdstrike.json","path":"EOTSHARED/Crowdstrike.json","contentType":"file"},{"name":"Defender.json","path":"EOTSHARED/Defender.json","contentType":"file"},{"name":"QRadar.json","path":"EOTSHARED/QRadar.json","contentType":"file"},{"name":"readme.md","path":"EOTSHARED/readme.md","contentType":"file"}],"totalCount":4},"":{"items":[{"name":"AWS","path":"AWS","contentType":"directory"},{"name":"AWSGK","path":"AWSGK","contentType":"directory"},{"name":"EOTSHARED","path":"EOTSHARED","contentType":"directory"},{"name":"GLADYSAWS","path":"GLADYSAWS","contentType":"directory"},{"name":"MIKEKEHOE","path":"MIKEKEHOE","contentType":"directory"},{"name":"ReaQtaAndDarkTracce","path":"ReaQtaAndDarkTracce","contentType":"directory"},{"name":"SIGMADEMO","path":"SIGMADEMO","contentType":"directory"},{"name":"TESTCASE","path":"TESTCASE","contentType":"directory"},{"name":"Telstra","path":"Telstra","contentType":"directory"},{"name":"XDRDemo","path":"XDRDemo","contentType":"directory"},{"name":"baneAndOxPhishing","path":"baneAndOxPhishing","contentType":"directory"},{"name":"baneandoxgi","path":"baneandoxgi","contentType":"directory"},{"name":"library","path":"library","contentType":"directory"},{"name":"28c73fe691c9fc333774e4df31a59157.json","path":"28c73fe691c9fc333774e4df31a59157.json","contentType":"file"},{"name":"GuardDuty.json","path":"GuardDuty.json","contentType":"file"},{"name":"STIX-Frank-Initial-URLStep2.json","path":"STIX-Frank-Initial-URLStep2.json","contentType":"file"},{"name":"STIX-Frank-Malware-File-CreationStep3.json","path":"STIX-Frank-Malware-File-CreationStep3.json","contentType":"file"},{"name":"STIX-Frank-Malware-Process-CreationStep4.json","path":"STIX-Frank-Malware-Process-CreationStep4.json","contentType":"file"},{"name":"STIX-Frank-lateral-MovementStep5.json","path":"STIX-Frank-lateral-MovementStep5.json","contentType":"file"},{"name":"STIX-Frank.json","path":"STIX-Frank.json","contentType":"file"},{"name":"STIX-ProofpointStep1.json","path":"STIX-ProofpointStep1.json","contentType":"file"},{"name":"attack_simulation_bundle_01_10_23.json","path":"attack_simulation_bundle_01_10_23.json","contentType":"file"},{"name":"cbserver.json","path":"cbserver.json","contentType":"file"},{"name":"file_movement_stix.json","path":"file_movement_stix.json","contentType":"file"},{"name":"stix-full-demo.json","path":"stix-full-demo.json","contentType":"file"}],"totalCount":25}},"fileTreeProcessingTime":10.875335999999999,"foldersToFetch":[],"reducedMotionEnabled":null,"repo":{"id":617711082,"defaultBranch":"main","name":"stixbundles","ownerLogin":"jasoneflood","currentUserCanPush":false,"isFork":false,"isEmpty":false,"createdAt":"2023-03-23T00:20:05.000Z","ownerAvatar":"https://avatars.githubusercontent.com/u/3356877?v=4","public":true,"private":false,"isOrgOwned":false},"symbolsExpanded":false,"treeExpanded":true,"refInfo":{"name":"main","listCacheKey":"v0:1686133527.1274428","canEdit":false,"refType":"branch","currentOid":"f67ae1a9c90cebb0b349c8df2169c887f2be51a8"},"path":"EOTSHARED/QRadar.json","currentUser":null,"blob":{"rawLines":["{","\t\"type\": \"bundle\",","\t\"id\": \"bundle--281fe97a-35d8-4b84-be2e-253047cc6274\",","\t\"spec_version\": \"2.0\",","\t\"objects\": [{","\t\t\t\"type\": \"identity\",","\t\t\t\"id\": \"identity--f431f809-377b-45e0-aa1c-6a4751cae5ff\",","\t\t\t\"name\": \"shifter_proxy\",","\t\t\t\"identity_class\": \"events\",","\t\t\t\"created\": \"2023-10-11T13:01:38.295Z\",","\t\t\t\"modified\": \"2023-10-11T13:01:38.295Z\"","\t\t},","\t\t{","\t\t\t\"id\": \"observed-data--41376883-01d2-4ed7-9f11-80349bce4a1b\",","\t\t\t\"type\": \"observed-data\",","\t\t\t\"created\": \"2023-10-11T12:13:20.874Z\",","\t\t\t\"objects\": {","\t\t\t\t\"0\": {","\t\t\t\t\t\"id\": \"CIDD706957\",","\t\t\t\t\t\"type\": \"x-mss-customer\"","\t\t\t\t},","\t\t\t\t\"1\": {","\t\t\t\t\t\"id\": \"PR0000000037382\",","\t\t\t\t\t\"ip\": \"198.23.124.4\",","\t\t\t\t\t\"name\": \"bao-us-pa1\",","\t\t\t\t\t\"type\": \"x-mss-device\",","\t\t\t\t\t\"vendor\": \"49\",","\t\t\t\t\t\"version\": \"Palo Alto 9.1.8\"","\t\t\t\t},","\t\t\t\t\"2\": {","\t\t\t\t\t\"type\": \"network-traffic\",","\t\t\t\t\t\"dst_ref\": \"6\",","\t\t\t\t\t\"src_ref\": \"5\",","\t\t\t\t\t\"dst_port\": 80,","\t\t\t\t\t\"src_port\": 49888,","\t\t\t\t\t\"protocols\": [","\t\t\t\t\t\t\"tcp\"","\t\t\t\t\t]","\t\t\t\t},","\t\t\t\t\"3\": {","\t\t\t\t\t\"type\": \"artifact\",","\t\t\t\t\t\"payload_bin\": \"T2N0IDExIDEyOjEzOjEzIDEwLjEwLjIwLjEgIDEsMjAyMy8xMC8xMSAxMjoxMzoxMiwwMDc5NTEwMDAwMzU1OTIsVFJBRkZJQyxlbmQsMjMxMCwyMDIzLzEwLzExIDEyOjEzOjEyLDEwLjEwLjIwLjEwLDEyOC4yMTAuMTU3LjI1MSwwLjAuMC4wLDAuMC4wLjAsUEEtdG8tQ1AtcW94LCwsd2ViLWJyb3dzaW5nLHZzeXMxLFByaXZhdGUsVlBOLGV0aGVybmV0MS8yLHR1bm5lbC4yLE1TUyBMb2cgRm9yd2FyZGluZywyMDIzLzEwLzExIDEyOjI0OjEyLDIxMzM1MCwxLDQ5ODg4LDgwLDAsMCwweDcwLHRjcCxhbGxvdywzNTMyLDc1NCwyNzc4LDE0LDIwMjMvMTAvMTEgMTI6MjQ6MDAsMCxwcml2YXRlLWlwLWFkZHJlc3NlcywwLDgyNTY5NDgzMTksMHgwLDEwLjEwLjAuMC0xMC4zMS4yNTUuMjU1LDEwLjEwLjAuMC0xMC4zMS4yNTUuMjU1LDAsNyw3LHRjcC1maW4sMCwwLDAsMCwseGZyLXVzLXBhMSxmcm9tLXBvbGljeSwsLDAsLDAsLE4vQSwwLDAsMCwwLGQ0YzM0ZmRlLWU5MDctNDU4Ny1iMmU3LTc4ZjA2YjIxMGQzYywwLDAsLCwsLCws\"","\t\t\t\t},","\t\t\t\t\"4\": {","\t\t\t\t\t\"type\": \"x-oca-event\",","\t\t\t\t\t\"action\": \"ACCEPT\",","\t\t\t\t\t\"ip_refs\": [","\t\t\t\t\t\t\"5\",","\t\t\t\t\t\t\"6\"","\t\t\t\t\t],","\t\t\t\t\t\"host_ref\": \"7\",","\t\t\t\t\t\"network_ref\": \"2\",","\t\t\t\t\t\"original_ref\": \"3\"","\t\t\t\t},","\t\t\t\t\"5\": {","\t\t\t\t\t\"type\": \"ipv4-addr\",","\t\t\t\t\t\"value\": \"10.10.20.10\"","\t\t\t\t},","\t\t\t\t\"6\": {","\t\t\t\t\t\"type\": \"ipv4-addr\",","\t\t\t\t\t\"value\": \"128.210.157.251\"","\t\t\t\t},","\t\t\t\t\"7\": {","\t\t\t\t\t\"type\": \"x-oca-asset\",","\t\t\t\t\t\"ip_refs\": [","\t\t\t\t\t\t\"5\"","\t\t\t\t\t]","\t\t\t\t}","\t\t\t},","\t\t\t\"modified\": \"2023-10-11T12:13:20.874Z\",","\t\t\t\"last_observed\": \"2023-10-11T12:13:20.874Z\",","\t\t\t\"created_by_ref\": \"identity--c8241623-3a47-4afc-80cb-36593f29642d\",","\t\t\t\"first_observed\": \"2023-10-11T12:13:20.874Z\",","\t\t\t\"number_observed\": 1","\t\t},","\t\t{","\t\t\t\"id\": \"observed-data--9054384e-5f99-4bf0-acd4-8f746cbedce2\",","\t\t\t\"type\": \"observed-data\",","\t\t\t\"created\": \"2023-10-11T12:15:55.950Z\",","\t\t\t\"objects\": {","\t\t\t\t\"0\": {","\t\t\t\t\t\"code\": 1,","\t\t\t\t\t\"type\": \"x-oca-event\",","\t\t\t\t\t\"agent\": \"WindowsAuthServer @ frank-adams-pc\",","\t\t\t\t\t\"action\": \"Process Create\",","\t\t\t\t\t\"created\": \"2023-10-11T12:15:55.950Z\",","\t\t\t\t\t\"outcome\": \"Process Creation Success\",","\t\t\t\t\t\"category\": [","\t\t\t\t\t\t\"System\"","\t\t\t\t\t],","\t\t\t\t\t\"file_ref\": \"6\",","\t\t\t\t\t\"host_ref\": \"2\",","\t\t\t\t\t\"provider\": \"Microsoft Windows Security Event Log\",","\t\t\t\t\t\"user_ref\": \"3\",","\t\t\t\t\t\"process_ref\": \"4\",","\t\t\t\t\t\"original_ref\": \"5\",","\t\t\t\t\t\"parent_process_ref\": \"11\"","\t\t\t\t},","\t\t\t\t\"1\": {","\t\t\t\t\t\"type\": \"ipv4-addr\",","\t\t\t\t\t\"value\": \"10.10.20.10\",","\t\t\t\t\t\"resolves_to_refs\": [","\t\t\t\t\t\t\"12\"","\t\t\t\t\t]","\t\t\t\t},","\t\t\t\t\"2\": {","\t\t\t\t\t\"type\": \"x-oca-asset\",","                    \"hostname\": \"frank-adams-pc.baneandox.com\",","\t\t\t\t\t\"ip_refs\": [","\t\t\t\t\t\t\"1\"","\t\t\t\t\t]","\t\t\t\t},","\t\t\t\t\"3\": {","\t\t\t\t\t\"type\": \"user-account\",","\t\t\t\t\t\"user_id\": \"frank-adams@baneandox.com\"","\t\t\t\t},","\t\t\t\t\"4\": {","\t\t\t\t\t\"pid\": 26326,","\t\t\t\t\t\"name\": \"net.exe\",","\t\t\t\t\t\"type\": \"process\",","\t\t\t\t\t\"binary_ref\": \"7\",","\t\t\t\t\t\"parent_ref\": \"11\",","\t\t\t\t\t\"command_line\": \"\\\"C:\\\\WINDOWS\\\\SysWOW64\\\\net.exe\\\" view\",","\t\t\t\t\t\"creator_user_ref\": \"3\"","\t\t\t\t},","\t\t\t\t\"5\": {","\t\t\t\t\t\"type\": \"artifact\",","\t\t\t\t\t\"payload_bin\": \"PDEzPk9jdCAxMSAxMjoxNTo0OCBmcmFuay1hZGFtcy1wYyBBZ2VudERldmljZT1XaW5kb3dzTG9nICAgQWdlbnRMb2dGaWxlPU1pY3Jvc29mdC1XaW5kb3dzLVN5c21vbi9PcGVyYXRpb25hbCAgIFBsdWdpblZlcnNpb249Ny4yLjkuNzIgIFNvdXJjZT1NaWNyb3NvZnQtV2luZG93cy1TeXNtb24gQ29tcHV0ZXI9ZnJhbmstYWRhbXMtcGMgT3JpZ2luYXRpbmdDb21wdXRlcj1mcmFuay1hZGFtcy1wYyBVc2VyPVNZU1RFTSAgRG9tYWluPU5UIEFVVEhPUklUWSBFdmVudElEPTEgICBFdmVudElEQ29kZT0xICAgRXZlbnRUeXBlPTQgRXZlbnRDYXRlZ29yeT0xIFJlY29yZE51bWJlcj0xODYxNzIxICAgIFRpbWVHZW5lcmF0ZWQ9MTY5NjQyMTc0OCBUaW1lV3JpdHRlbj0xNjk1OTg5NzQ4IExldmVsPUluZm9ybWF0aW9uYWwgS2V5d29yZHM9MHg4MDAwMDAwMDAwMDAwMDAwIFRhc2s9U3lzbW9uVGFzay1TWVNNT05fQ1JFQVRFX1BST0NFU1MgICBPcGNvZGU9SW5mbyBNZXNzYWdlPVByb2Nlc3MgQ3JlYXRlOiBSdWxlTmFtZTogLSBVdGNUaW1lOiAyMDIzLTEwLTExIDEyOjE1OjQ2LjExNyBQcm9jZXNzR3VpZDogezI1M2FjZjY3LTNhNjYtNjAwMC02ZjcwLTAxMDAwMDAwMGIwMH0gUHJvY2Vzc0lkOiAyNjMyNCBJbWFnZTogQzpcV2luZG93c1xTeXNXT1c2NFxuZXQuZXhlIEZpbGVWZXJzaW9uOiAxMC4wLjE5MDQxLjU0NiAoV2luQnVpbGQuMTYwMTAxLjA4MDApIERlc2NyaXB0aW9uOiBDT00gU3Vycm9nYXRlIFByb2R1Y3Q6IE1pY3Jvc29mdNS54oCmIFdpbmRvd3PUueKApiBPcGVyYXRpbmcgU3lzdGVtIENvbXBhbnk6IE1pY3Jvc29mdCBDb3Jwb3JhdGlvbiBPcmlnaW5hbEZpbGVOYW1lOiBuZXQuZXhlIENvbW1hbmRMaW5lOiAiQzpcV0lORE9XU1xTeXNXT1c2NFxuZXQuZXhlIHZpZXciIEN1cnJlbnREaXJlY3Rvcnk6IEM6XFdJTkRPV1Ncc3lzdGVtMzJcIFVzZXI6IEF6dXJlQURcUy0xLTUtOCBMb2dvbkd1aWQ6IHsyNTNhY2Y2Ny0zNWQ4LTVmZTgtMzRhYy02MjE4MDAwMDAwMDB9IExvZ29uSWQ6IDB4MTg2MkFDMzQgVGVybWluYWxTZXNzaW9uSWQ6IDIgSW50ZWdyaXR5TGV2ZWw6IE1lZGl1bSBIYXNoZXM6IE1ENT0zRjNDOTQ4NUY4Rjk3QUMwNEM4RTQzRUY0NDYzQTY4RCxTSEEyNTY9M0VENjlDQUFCMDM1MjU4RTAwOEVGQkNGNDBEQjMwNTg5MUI0MEJBMDJDQTI3MzdFMjBERUZBN0MyRDRBRkFGNyxJTVBIQVNIPUI2QTZDNTI0N0VGQkQyNjEwRTNERUE0NDY0OUQ3MDQxIFBhcmVudFByb2Nlc3NHdWlkOiB7MjUzYWNmNjctMjA1OS01ZmU1LTBmMDAtMDAwMDAwMDAwYjAwfSBQYXJlbnRQcm9jZXNzSWQ6IDExNjQgUGFyZW50SW1hZ2U6IEM6XFdpbmRvd3NcU3lzdGVtMzJcc3ZjaG9zdC5leGUgUGFyZW50Q29tbWFuZExpbmU6IEM6XFdJTkRPV1Ncc3lzdGVtMzJcc3ZjaG9zdC5leGUgLWsgRGNvbUxhdW5jaCAtcA==\"","\t\t\t\t},","\t\t\t\t\"6\": {","\t\t\t\t\t\"type\": \"file\",","\t\t\t\t\t\"hashes\": {","\t\t\t\t\t\t\"MD5\": \"3F3C9485F8F97AC04C8E43EF4463A68D\"","\t\t\t\t\t}","\t\t\t\t},","\t\t\t\t\"7\": {","\t\t\t\t\t\"name\": \"net.exe\",","\t\t\t\t\t\"type\": \"file\",","\t\t\t\t\t\"parent_directory_ref\": \"8\"","\t\t\t\t},","\t\t\t\t\"8\": {","\t\t\t\t\t\"path\": \"C:\\\\Windows\\\\SysWOW64\",","\t\t\t\t\t\"type\": \"directory\"","\t\t\t\t},","\t\t\t\t\"9\": {","\t\t\t\t\t\"name\": \"svchost.exe\",","\t\t\t\t\t\"type\": \"file\",","\t\t\t\t\t\"parent_directory_ref\": \"10\"","\t\t\t\t},","\t\t\t\t\"10\": {","\t\t\t\t\t\"path\": \"C:\\\\Windows\\\\System32\",","\t\t\t\t\t\"type\": \"directory\"","\t\t\t\t},","\t\t\t\t\"11\": {","\t\t\t\t\t\"pid\": 1164,","\t\t\t\t\t\"type\": \"process\",","\t\t\t\t\t\"binary_ref\": \"9\",","\t\t\t\t\t\"command_line\": \"C:\\\\WINDOWS\\\\system32\\\\svchost.exe -k DcomLaunch -p\"","\t\t\t\t},","\t\t\t\t\"12\": {","\t\t\t\t\t\"type\": \"domain-name\",","\t\t\t\t\t\"value\": \"frank-adams-pc.baneandox.com\"","\t\t\t\t},","\t\t\t\t\"13\": {","\t\t\t\t\t\"type\": \"x-ibm-finding\",","\t\t\t\t\t\"severity\": 100,","\t\t\t\t\t\"name\": \"Windows Network Enumeration\",","\t\t\t\t\t\"ttp_tagging_refs\": [","\t\t\t\t\t\t\"14\",","\t\t\t\t\t\t\"16\"","\t\t\t\t\t]","\t\t\t\t},","\t\t\t\t\"14\": {","\t\t\t\t\t\"type\": \"x-ibm-ttp-tagging\",","\t\t\t\t\t\"extensions\": {","\t\t\t\t\t\t\"mitre-attack-ext\": {","\t\t\t\t\t\t\t\"tactic_name\": \"Discovery\"","\t\t\t\t\t\t}","\t\t\t\t\t},","\t\t\t\t\t\"kill_chain_phases\": [","\t\t\t\t\t\t\"15\"","\t\t\t\t\t]","\t\t\t\t},","\t\t\t\t\"15\": {","\t\t\t\t\t\"type\": \"kill-chain-phase\",","\t\t\t\t\t\"phase_name\": \"Discovery\"","\t\t\t\t},","\t\t\t\t\"16\": {","\t\t\t\t\t\"type\": \"x-ibm-ttp-tagging\",","\t\t\t\t\t\"extensions\": {","\t\t\t\t\t\t\"mitre-attack-ext\": {","\t\t\t\t\t\t\t\"technique_name\": \"Remote System Discovery (T1018)\"","\t\t\t\t\t\t}","\t\t\t\t\t}","\t\t\t\t}","\t\t\t},","\t\t\t\"modified\": \"2023-10-11T12:15:55.950Z\",","\t\t\t\"last_observed\": \"2023-10-11T12:15:55.950Z\",","\t\t\t\"created_by_ref\": \"identity--3079a446-1a08-40d0-a1bb-e998f369b1e6\",","\t\t\t\"first_observed\": \"2023-10-11T12:15:55.950Z\",","\t\t\t\"number_observed\": 1","\t\t},","\t\t{","\t\t\t\"id\": \"observed-data--3054384e-5f99-4bf0-acd4-8f746cbedce2\",","\t\t\t\"type\": \"observed-data\",","\t\t\t\"created\": \"2023-10-11T12:17:10.940Z\",","\t\t\t\"objects\": {","\t\t\t\t\"0\": {","\t\t\t\t\t\"code\": 1,","\t\t\t\t\t\"type\": \"x-oca-event\",","\t\t\t\t\t\"agent\": \"WindowsAuthServer @ frank-adams-pc\",","\t\t\t\t\t\"action\": \"Process Create\",","\t\t\t\t\t\"nt_ref\": \"2\",","\t\t\t\t\t\"created\": \"2023-10-11T12:17:10.940Z\",","\t\t\t\t\t\"outcome\": \"Process Creation Success\",","\t\t\t\t\t\"category\": [","\t\t\t\t\t\t\"System\"","\t\t\t\t\t],","\t\t\t\t\t\"file_ref\": \"7\",","\t\t\t\t\t\"host_ref\": \"3\",","\t\t\t\t\t\"provider\": \"Microsoft Windows Security Event Log\",","\t\t\t\t\t\"user_ref\": \"4\",","\t\t\t\t\t\"process_ref\": \"5\",","\t\t\t\t\t\"original_ref\": \"6\",","\t\t\t\t\t\"parent_process_ref\": \"12\"","\t\t\t\t},","\t\t\t\t\"1\": {","\t\t\t\t\t\"type\": \"ipv4-addr\",","\t\t\t\t\t\"value\": \"10.10.20.10\",","\t\t\t\t\t\"resolves_to_refs\": [","\t\t\t\t\t\t\"13\"","\t\t\t\t\t]","\t\t\t\t},","\t\t\t\t\"2\": {","\t\t\t\t\t\"type\": \"network-traffic\",","\t\t\t\t\t\"dst_ref\": \"14\",","\t\t\t\t\t\"src_ref\": \"1\",","\t\t\t\t\t\"dst_port\": 5985,","\t\t\t\t\t\"src_port\": 23178,","\t\t\t\t\t\"protocols\": [","\t\t\t\t\t\t\"tcp\"","\t\t\t\t\t]","\t\t\t\t},","\t\t\t\t\"3\": {","\t\t\t\t\t\"type\": \"x-oca-asset\",","                    \"hostname\": \"frank-adams-pc.baneandox.com\",","\t\t\t\t\t\"ip_refs\": [","\t\t\t\t\t\t\"1\"","\t\t\t\t\t]","\t\t\t\t},","\t\t\t\t\"4\": {","\t\t\t\t\t\"type\": \"user-account\",","\t\t\t\t\t\"user_id\": \"frank-adams@baneandox.com\"","\t\t\t\t},","\t\t\t\t\"5\": {","\t\t\t\t\t\"pid\": 26329,","\t\t\t\t\t\"name\": \"wsmprovhost.exe\",","\t\t\t\t\t\"type\": \"process\",","\t\t\t\t\t\"binary_ref\": \"8\",","\t\t\t\t\t\"parent_ref\": \"12\",","\t\t\t\t\t\"command_line\": \"\\\"C:\\\\WINDOWS\\\\SysWOW64\\\\wsmprovhost.exe\\\" connect sales-database.baneandox.com\",","\t\t\t\t\t\"creator_user_ref\": \"4\"","\t\t\t\t},","\t\t\t\t\"6\": {","\t\t\t\t\t\"type\": \"artifact\",","\t\t\t\t\t\"payload_bin\": \"PDEzPk9jdCAxMSAxMjoxNzoxMiBmcmFuay1hZGFtcy1wYyBBZ2VudERldmljZT1XaW5kb3dzTG9nICAgQWdlbnRMb2dGaWxlPU1pY3Jvc29mdC1XaW5kb3dzLVN5c21vbi9PcGVyYXRpb25hbCAgIFBsdWdpblZlcnNpb249Ny4yLjkuNzIgIFNvdXJjZT1NaWNyb3NvZnQtV2luZG93cy1TeXNtb24gQ29tcHV0ZXI9ZnJhbmstYWRhbXMtcGMgT3JpZ2luYXRpbmdDb21wdXRlcj1mcmFuay1hZGFtcy1wYyBVc2VyPVNZU1RFTSAgRG9tYWluPU5UIEFVVEhPUklUWSBFdmVudElEPTEgICBFdmVudElEQ29kZT0xICAgRXZlbnRUeXBlPTQgRXZlbnRDYXRlZ29yeT0xIFJlY29yZE51bWJlcj0xODYxNzIxICAgIFRpbWVHZW5lcmF0ZWQ9MTY5NjQyMTgzMiAgVGltZVdyaXR0ZW49MTY5NjQyMTgzMiAgTGV2ZWw9SW5mb3JtYXRpb25hbCBLZXl3b3Jkcz0weDgwMDAwMDAwMDAwMDAwMDAgVGFzaz1TeXNtb25UYXNrLVNZU01PTl9DUkVBVEVfUFJPQ0VTUyAgIE9wY29kZT1JbmZvIE1lc3NhZ2U9UHJvY2VzcyBDcmVhdGU6IFJ1bGVOYW1lOiAtIFV0Y1RpbWU6IDIwMjMtMTAtMTEgMTI6MTc6MTIuMTE3IFByb2Nlc3NHdWlkOiB7MjUzYWNmNjctM2E2Ni02MDAwLTZmNzAtMDEwMDAwMDAwYjAwfSBQcm9jZXNzSWQ6IDI2MzI0IEltYWdlOiBDOlxXaW5kb3dzXFN5c1dPVzY0XG5ldC5leGUgRmlsZVZlcnNpb246IDEwLjAuMTkwNDEuNTQ2IChXaW5CdWlsZC4xNjAxMDEuMDgwMCkgRGVzY3JpcHRpb246IENPTSBTdXJyb2dhdGUgUHJvZHVjdDogTWljcm9zb2Z01LnigKYgV2luZG93c9S54oCmIE9wZXJhdGluZyBTeXN0ZW0gQ29tcGFueTogTWljcm9zb2Z0IENvcnBvcmF0aW9uIE9yaWdpbmFsRmlsZU5hbWU6IG5ldC5leGUgQ29tbWFuZExpbmU6ICJDOlxXSU5ET1dTXFN5c1dPVzY0XG5ldC5leGUgdmlldyIgQ3VycmVudERpcmVjdG9yeTogQzpcV0lORE9XU1xzeXN0ZW0zMlwgVXNlcjogQXp1cmVBRFxmcmFuay1hZGFtc0xvZ29uR3VpZDogezI1M2FjZjY3LTM1ZDgtNWZlOC0zNGFjLTYyMTgwMDAwMDAwMH0gTG9nb25JZDogMHgxODYyQUMzNCBUZXJtaW5hbFNlc3Npb25JZDogMiBJbnRlZ3JpdHlMZXZlbDogTWVkaXVtIEhhc2hlczogTUQ1PTZGM0M5NDg1RjhGOTdBQzA0QzhFNDNFRjQ0NjNBNjhDLFNIQTI1Nj0zRUQ2OUNBQUIwMzUyNThFMDA4RUZCQ0Y0MERCMzA1ODkxQjQwQkEwMkNBMjczN0UyMERFRkE3QzJENEFGQUY3LElNUEhBU0g9QjZBNkM1MjQ3RUZCRDI2MTBFM0RFQTQ0NjQ5RDcwNDEgUGFyZW50UHJvY2Vzc0d1aWQ6IHsyNTNhY2Y2Ny0yMDU5LTVmZTUtMGYwMC0wMDAwMDAwMDBiMDB9IFBhcmVudFByb2Nlc3NJZDogMTE2NCBQYXJlbnRJbWFnZTogQzpcV2luZG93c1xTeXN0ZW0zMlxzdmNob3N0LmV4ZSBQYXJlbnRDb21tYW5kTGluZTogQzpcV0lORE9XU1xzeXN0ZW0zMlxzdmNob3N0LmV4ZSAtayBEY29tTGF1bmNoIC1w\"","\t\t\t\t},","\t\t\t\t\"7\": {","\t\t\t\t\t\"type\": \"file\",","\t\t\t\t\t\"hashes\": {","\t\t\t\t\t\t\"MD5\": \"2F3C9485F8F97AC04C8E43EF4463A68D\"","\t\t\t\t\t}","\t\t\t\t},","\t\t\t\t\"8\": {","\t\t\t\t\t\"name\": \"wsmprovhost.exe\",","\t\t\t\t\t\"type\": \"file\",","\t\t\t\t\t\"parent_directory_ref\": \"9\"","\t\t\t\t},","\t\t\t\t\"9\": {","\t\t\t\t\t\"path\": \"C:\\\\Windows\\\\SysWOW64\",","\t\t\t\t\t\"type\": \"directory\"","\t\t\t\t},","\t\t\t\t\"10\": {","\t\t\t\t\t\"name\": \"svchost.exe\",","\t\t\t\t\t\"type\": \"file\",","\t\t\t\t\t\"parent_directory_ref\": \"11\"","\t\t\t\t},","\t\t\t\t\"11\": {","\t\t\t\t\t\"path\": \"C:\\\\Windows\\\\System32\",","\t\t\t\t\t\"type\": \"directory\"","\t\t\t\t},","\t\t\t\t\"12\": {","\t\t\t\t\t\"pid\": 1164,","\t\t\t\t\t\"type\": \"process\",","\t\t\t\t\t\"binary_ref\": \"10\",","\t\t\t\t\t\"command_line\": \"C:\\\\WINDOWS\\\\system32\\\\svchost.exe -k DcomLaunch -p\"","\t\t\t\t},","\t\t\t\t\"13\": {","\t\t\t\t\t\"type\": \"domain-name\",","\t\t\t\t\t\"value\": \"frank-adams-pc.baneandox.com\"","\t\t\t\t},","\t\t\t\t\"14\": {","\t\t\t\t\t\"type\": \"ipv4-addr\",","\t\t\t\t\t\"value\": \"172.20.18.20\",","\t\t\t\t\t\"resolves_to_refs\": [","\t\t\t\t\t\t\"15\"","\t\t\t\t\t]","\t\t\t\t},","\t\t\t\t\"15\": {","\t\t\t\t\t\"type\": \"domain-name\",","\t\t\t\t\t\"value\": \"sales-database.baneandox.com\"","\t\t\t\t},","\t\t\t\t\"16\": {","\t\t\t\t\t\"type\": \"x-ibm-finding\",","\t\t\t\t\t\"severity\": 100,","\t\t\t\t\t\"name\": \"Remote PowerShell Session Host Process (WinRM)\",","\t\t\t\t\t\"ttp_tagging_refs\": [","\t\t\t\t\t\t\"17\",","\t\t\t\t\t\t\"19\"","\t\t\t\t\t]","\t\t\t\t},","\t\t\t\t\"17\": {","\t\t\t\t\t\"type\": \"x-ibm-ttp-tagging\",","\t\t\t\t\t\"extensions\": {","\t\t\t\t\t\t\"mitre-attack-ext\": {","\t\t\t\t\t\t\t\"tactic_name\": \"LateralMovement\"","\t\t\t\t\t\t}","\t\t\t\t\t},","\t\t\t\t\t\"kill_chain_phases\": [","\t\t\t\t\t\t\"18\"","\t\t\t\t\t]","\t\t\t\t},","\t\t\t\t\"18\": {","\t\t\t\t\t\"type\": \"kill-chain-phase\",","\t\t\t\t\t\"phase_name\": \"LateralMovement\"","\t\t\t\t},","\t\t\t\t\"19\": {","\t\t\t\t\t\"type\": \"x-ibm-ttp-tagging\",","\t\t\t\t\t\"extensions\": {","\t\t\t\t\t\t\"mitre-attack-ext\": {","\t\t\t\t\t\t\t\"technique_name\": \"Windows Remote Management (T1021.006)\"","\t\t\t\t\t\t}","\t\t\t\t\t}","\t\t\t\t}","\t\t\t},","\t\t\t\"modified\": \"2023-10-11T12:17:10.940Z\",","\t\t\t\"last_observed\": \"2023-10-11T12:17:10.940Z\",","\t\t\t\"created_by_ref\": \"identity--3079a446-1a08-40d0-a1bb-e998f369b1e6\",","\t\t\t\"first_observed\": \"2023-10-11T12:17:10.940Z\",","\t\t\t\"number_observed\": 1","\t\t},","\t\t{","\t\t\t\"id\": \"observed-data--e5d9f23d-8eaf-467e-a785-90c528f2693c\",","\t\t\t\"type\": \"observed-data\",","\t\t\t\"created\": \"2023-10-11T12:20:03.830Z\",","\t\t\t\"objects\": {","\t\t\t\t\"0\": {","\t\t\t\t\t\"type\": \"user-account\",","\t\t\t\t\t\"user_id\": \"frank-adams@baneandox.com\"","\t\t\t\t},","\t\t\t\t\"1\": {","\t\t\t\t\t\"type\": \"ipv4-addr\",","\t\t\t\t\t\"value\": \"172.20.18.20\"","\t\t\t\t},","\t\t\t\t\"2\": {","\t\t\t\t\t\"type\": \"network-traffic\",","\t\t\t\t\t\"dst_ref\": \"1\",","\t\t\t\t\t\"src_ref\": \"3\",","\t\t\t\t\t\"dst_port\": 3306,","\t\t\t\t\t\"src_port\": 44494,","\t\t\t\t\t\"protocols\": [","\t\t\t\t\t\t\"tcp\",","\t\t\t\t\t\t\"ipv4\"","\t\t\t\t\t]","\t\t\t\t},","\t\t\t\t\"3\": {","\t\t\t\t\t\"type\": \"ipv4-addr\",","\t\t\t\t\t\"value\": \"10.10.20.10\"","\t\t\t\t},","\t\t\t\t\"4\": {","\t\t\t\t\t\"type\": \"x-ibm-finding\",","\t\t\t\t\t\"severity\": 100,","\t\t\t\t\t\"name\": \"Abnormal queries to cloud data store\",","\t\t\t\t\t\"ttp_tagging_refs\": [","\t\t\t\t\t\t\"5\",","\t\t\t\t\t\t\"7\"","\t\t\t\t\t]","\t\t\t\t},","\t\t\t\t\"5\": {","\t\t\t\t\t\"type\": \"x-ibm-ttp-tagging\",","\t\t\t\t\t\"extensions\": {","\t\t\t\t\t\t\"mitre-attack-ext\": {","\t\t\t\t\t\t\t\"tactic_name\": \"Collection\"","\t\t\t\t\t\t}","\t\t\t\t\t},","\t\t\t\t\t\"kill_chain_phases\": [","\t\t\t\t\t\t\"6\"","\t\t\t\t\t]","\t\t\t\t},","\t\t\t\t\"6\": {","\t\t\t\t\t\"type\": \"kill-chain-phase\",","\t\t\t\t\t\"phase_name\": \"Collection\"","\t\t\t\t},","\t\t\t\t\"7\": {","\t\t\t\t\t\"type\": \"x-ibm-ttp-tagging\",","\t\t\t\t\t\"extensions\": {","\t\t\t\t\t\t\"mitre-attack-ext\": {","\t\t\t\t\t\t\t\"technique_name\": \"Data from Cloud Storage Object (T1530)\"","\t\t\t\t\t\t}","\t\t\t\t\t}","\t\t\t\t}","\t\t\t},","\t\t\t\"modified\": \"2023-10-11T12:20:03.830Z\",","\t\t\t\"last_observed\": \"2023-10-11T12:20:03.830Z\",","\t\t\t\"created_by_ref\": \"identity--c8241623-3a47-4afc-80cb-36593f29642d\",","\t\t\t\"first_observed\": \"2023-10-11T12:20:03.830Z\",","\t\t\t\"x_com_guardium\": {","\t\t\t\t\"db_user\": \"frank-adams@baneandox.com\",","\t\t\t\t\"new_outlier\": \"false\",","\t\t\t\t\"service_name\": \"172.20.18.20:5.6.27\",","\t\t\t\t\"temp_outlier\": \"false\",","\t\t\t\t\"anomaly_score\": 100,","\t\t\t\t\"error_outlier\": \"false\",","\t\t\t\t\"source_program\": \"MYSQL CLIENT\",","\t\t\t\t\"high_volume_outlier\": \"true\"","\t\t\t},","\t\t\t\"number_observed\": 1","\t\t},","\t\t{","\t\t\t\"id\": \"observed-data--89543845-acd4-8f746cbedce2\",","\t\t\t\"type\": \"observed-data\",","\t\t\t\"created\": \"2023-10-11T12:21:11.750Z\",","\t\t\t\"objects\": {","\t\t\t\t\"0\": {","\t\t\t\t\t\"code\": 1,","\t\t\t\t\t\"type\": \"x-oca-event\",","\t\t\t\t\t\"agent\": \"SecurityComplianceCenter\",","\t\t\t\t\t\"action\": \"Data Transfer\",","\t\t\t\t\t\"nt_ref\": \"2\",","\t\t\t\t\t\"created\": \"2023-10-11T12:21:11.750Z\",","\t\t\t\t\t\"outcome\": \"Success\",","\t\t\t\t\t\"category\": [","\t\t\t\t\t\t\"ThreatManagement\"","\t\t\t\t\t],","\t\t\t\t\t\"host_ref\": \"3\",","\t\t\t\t\t\"provider\": \"SecurityComplianceCenter\",","\t\t\t\t\t\"user_ref\": \"4\"","\t\t\t\t},","\t\t\t\t\"1\": {","\t\t\t\t\t\"type\": \"ipv4-addr\",","\t\t\t\t\t\"value\": \"172.20.18.20\",","\t\t\t\t\t\"resolves_to_refs\": [","\t\t\t\t\t\t\"5\"","\t\t\t\t\t]","\t\t\t\t},","\t\t\t\t\"2\": {","\t\t\t\t\t\"type\": \"network-traffic\",","\t\t\t\t\t\"dst_ref\": \"6\",","\t\t\t\t\t\"src_ref\": \"1\",","\t\t\t\t\t\"dst_port\": 443,","\t\t\t\t\t\"src_port\": 127690,","\t\t\t\t\t\"protocols\": [","\t\t\t\t\t\t\"tcp\"","\t\t\t\t\t]","\t\t\t\t},","\t\t\t\t\"3\": {","\t\t\t\t\t\"type\": \"x-oca-asset\",","\t\t\t\t\t\"ip_refs\": [","\t\t\t\t\t\t\"1\"","\t\t\t\t\t],","\t\t\t\t\t\"hostname\": \"sales-database.baneandox.com\",","\t\t\t\t\t\"host_id\": \"903daa5f5b044309a3587ae40c8fe077\"","\t\t\t\t},","\t\t\t\t\"4\": {","\t\t\t\t\t\"type\": \"user-account\",","\t\t\t\t\t\"user_id\": \"frank-adams@baneandox.com\"","\t\t\t\t},","\t\t\t\t\"5\": {","\t\t\t\t\t\"type\": \"domain-name\",","\t\t\t\t\t\"value\": \"sales-database.baneandox.com\"","\t\t\t\t},","\t\t\t\t\"6\": {","\t\t\t\t\t\"type\": \"ipv4-addr\",","\t\t\t\t\t\"value\": \"128.210.157.251\"","\t\t\t\t},","\t\t\t\t\"7\": {","\t\t\t\t\t\"type\": \"x-ibm-finding\",","\t\t\t\t\t\"severity\": 100,","\t\t\t\t\t\"name\": \"Data Exfiltration to Unsanctioned Apps\",","\t\t\t\t\t\"ttp_tagging_refs\": [","\t\t\t\t\t\t\"8\",","\t\t\t\t\t\t\"10\"","\t\t\t\t\t]","\t\t\t\t},","\t\t\t\t\"8\": {","\t\t\t\t\t\"type\": \"x-ibm-ttp-tagging\",","\t\t\t\t\t\"extensions\": {","\t\t\t\t\t\t\"mitre-attack-ext\": {","\t\t\t\t\t\t\t\"tactic_name\": \"Exfiltration\"","\t\t\t\t\t\t}","\t\t\t\t\t},","\t\t\t\t\t\"kill_chain_phases\": [","\t\t\t\t\t\t\"9\"","\t\t\t\t\t]","\t\t\t\t},","\t\t\t\t\"9\": {","\t\t\t\t\t\"type\": \"kill-chain-phase\",","\t\t\t\t\t\"phase_name\": \"Exfiltration\"","\t\t\t\t},","\t\t\t\t\"10\": {","\t\t\t\t\t\"type\": \"x-ibm-ttp-tagging\",","\t\t\t\t\t\"extensions\": {","\t\t\t\t\t\t\"mitre-attack-ext\": {","\t\t\t\t\t\t\t\"technique_name\": \"Transfer Data to Cloud Account (T1537)\"","\t\t\t\t\t\t}","\t\t\t\t\t}","\t\t\t\t}","\t\t\t},","\t\t\t\"modified\": \"2023-10-11T12:21:11.750Z\",","\t\t\t\"last_observed\": \"2023-10-11T12:21:11.750Z\",","\t\t\t\"created_by_ref\": \"identity--c8241623-3a47-4afc-80cb-36593f29642d\",","\t\t\t\"first_observed\": \"2023-10-11T12:21:11.750Z\",","\t\t\t\"number_observed\": 1","\t\t}","","\t]","}"],"stylingDirectives":[[],[{"start":1,"end":7,"cssClass":"pl-ent"},{"start":9,"end":17,"cssClass":"pl-s"},{"start":9,"end":10,"cssClass":"pl-pds"},{"start":16,"end":17,"cssClass":"pl-pds"}],[{"start":1,"end":5,"cssClass":"pl-ent"},{"start":7,"end":53,"cssClass":"pl-s"},{"start":7,"end":8,"cssClass":"pl-pds"},{"start":52,"end":53,"cssClass":"pl-pds"}],[{"start":1,"end":15,"cssClass":"pl-ent"},{"start":17,"end":22,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":21,"end":22,"cssClass":"pl-pds"}],[{"start":1,"end":10,"cssClass":"pl-ent"}],[{"start":3,"end":9,"cssClass":"pl-ent"},{"start":11,"end":21,"cssClass":"pl-s"},{"start":11,"end":12,"cssClass":"pl-pds"},{"start":20,"end":21,"cssClass":"pl-pds"}],[{"start":3,"end":7,"cssClass":"pl-ent"},{"start":9,"end":57,"cssClass":"pl-s"},{"start":9,"end":10,"cssClass":"pl-pds"},{"start":56,"end":57,"cssClass":"pl-pds"}],[{"start":3,"end":9,"cssClass":"pl-ent"},{"start":11,"end":26,"cssClass":"pl-s"},{"start":11,"end":12,"cssClass":"pl-pds"},{"start":25,"end":26,"cssClass":"pl-pds"}],[{"start":3,"end":19,"cssClass":"pl-ent"},{"start":21,"end":29,"cssClass":"pl-s"},{"start":21,"end":22,"cssClass":"pl-pds"},{"start":28,"end":29,"cssClass":"pl-pds"}],[{"start":3,"end":12,"cssClass":"pl-ent"},{"start":14,"end":40,"cssClass":"pl-s"},{"start":14,"end":15,"cssClass":"pl-pds"},{"start":39,"end":40,"cssClass":"pl-pds"}],[{"start":3,"end":13,"cssClass":"pl-ent"},{"start":15,"end":41,"cssClass":"pl-s"},{"start":15,"end":16,"cssClass":"pl-pds"},{"start":40,"end":41,"cssClass":"pl-pds"}],[],[],[{"start":3,"end":7,"cssClass":"pl-ent"},{"start":9,"end":62,"cssClass":"pl-s"},{"start":9,"end":10,"cssClass":"pl-pds"},{"start":61,"end":62,"cssClass":"pl-pds"}],[{"start":3,"end":9,"cssClass":"pl-ent"},{"start":11,"end":26,"cssClass":"pl-s"},{"start":11,"end":12,"cssClass":"pl-pds"},{"start":25,"end":26,"cssClass":"pl-pds"}],[{"start":3,"end":12,"cssClass":"pl-ent"},{"start":14,"end":40,"cssClass":"pl-s"},{"start":14,"end":15,"cssClass":"pl-pds"},{"start":39,"end":40,"cssClass":"pl-pds"}],[{"start":3,"end":12,"cssClass":"pl-ent"}],[{"start":4,"end":7,"cssClass":"pl-ent"}],[{"start":5,"end":9,"cssClass":"pl-ent"},{"start":11,"end":23,"cssClass":"pl-s"},{"start":11,"end":12,"cssClass":"pl-pds"},{"start":22,"end":23,"cssClass":"pl-pds"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":29,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":28,"end":29,"cssClass":"pl-pds"}],[],[{"start":4,"end":7,"cssClass":"pl-ent"}],[{"start":5,"end":9,"cssClass":"pl-ent"},{"start":11,"end":28,"cssClass":"pl-s"},{"start":11,"end":12,"cssClass":"pl-pds"},{"start":27,"end":28,"cssClass":"pl-pds"}],[{"start":5,"end":9,"cssClass":"pl-ent"},{"start":11,"end":25,"cssClass":"pl-s"},{"start":11,"end":12,"cssClass":"pl-pds"},{"start":24,"end":25,"cssClass":"pl-pds"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":25,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":24,"end":25,"cssClass":"pl-pds"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":27,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":26,"end":27,"cssClass":"pl-pds"}],[{"start":5,"end":13,"cssClass":"pl-ent"},{"start":15,"end":19,"cssClass":"pl-s"},{"start":15,"end":16,"cssClass":"pl-pds"},{"start":18,"end":19,"cssClass":"pl-pds"}],[{"start":5,"end":14,"cssClass":"pl-ent"},{"start":16,"end":33,"cssClass":"pl-s"},{"start":16,"end":17,"cssClass":"pl-pds"},{"start":32,"end":33,"cssClass":"pl-pds"}],[],[{"start":4,"end":7,"cssClass":"pl-ent"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":30,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":29,"end":30,"cssClass":"pl-pds"}],[{"start":5,"end":14,"cssClass":"pl-ent"},{"start":16,"end":19,"cssClass":"pl-s"},{"start":16,"end":17,"cssClass":"pl-pds"},{"start":18,"end":19,"cssClass":"pl-pds"}],[{"start":5,"end":14,"cssClass":"pl-ent"},{"start":16,"end":19,"cssClass":"pl-s"},{"start":16,"end":17,"cssClass":"pl-pds"},{"start":18,"end":19,"cssClass":"pl-pds"}],[{"start":5,"end":15,"cssClass":"pl-ent"},{"start":17,"end":19,"cssClass":"pl-c1"}],[{"start":5,"end":15,"cssClass":"pl-ent"},{"start":17,"end":22,"cssClass":"pl-c1"}],[{"start":5,"end":16,"cssClass":"pl-ent"}],[{"start":6,"end":11,"cssClass":"pl-s"},{"start":6,"end":7,"cssClass":"pl-pds"},{"start":10,"end":11,"cssClass":"pl-pds"}],[],[],[{"start":4,"end":7,"cssClass":"pl-ent"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":23,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":22,"end":23,"cssClass":"pl-pds"}],[{"start":5,"end":18,"cssClass":"pl-ent"},{"start":20,"end":726,"cssClass":"pl-s"},{"start":20,"end":21,"cssClass":"pl-pds"},{"start":725,"end":726,"cssClass":"pl-pds"}],[],[{"start":4,"end":7,"cssClass":"pl-ent"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":26,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":25,"end":26,"cssClass":"pl-pds"}],[{"start":5,"end":13,"cssClass":"pl-ent"},{"start":15,"end":23,"cssClass":"pl-s"},{"start":15,"end":16,"cssClass":"pl-pds"},{"start":22,"end":23,"cssClass":"pl-pds"}],[{"start":5,"end":14,"cssClass":"pl-ent"}],[{"start":6,"end":9,"cssClass":"pl-s"},{"start":6,"end":7,"cssClass":"pl-pds"},{"start":8,"end":9,"cssClass":"pl-pds"}],[{"start":6,"end":9,"cssClass":"pl-s"},{"start":6,"end":7,"cssClass":"pl-pds"},{"start":8,"end":9,"cssClass":"pl-pds"}],[],[{"start":5,"end":15,"cssClass":"pl-ent"},{"start":17,"end":20,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":19,"end":20,"cssClass":"pl-pds"}],[{"start":5,"end":18,"cssClass":"pl-ent"},{"start":20,"end":23,"cssClass":"pl-s"},{"start":20,"end":21,"cssClass":"pl-pds"},{"start":22,"end":23,"cssClass":"pl-pds"}],[{"start":5,"end":19,"cssClass":"pl-ent"},{"start":21,"end":24,"cssClass":"pl-s"},{"start":21,"end":22,"cssClass":"pl-pds"},{"start":23,"end":24,"cssClass":"pl-pds"}],[],[{"start":4,"end":7,"cssClass":"pl-ent"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":24,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":23,"end":24,"cssClass":"pl-pds"}],[{"start":5,"end":12,"cssClass":"pl-ent"},{"start":14,"end":27,"cssClass":"pl-s"},{"start":14,"end":15,"cssClass":"pl-pds"},{"start":26,"end":27,"cssClass":"pl-pds"}],[],[{"start":4,"end":7,"cssClass":"pl-ent"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":24,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":23,"end":24,"cssClass":"pl-pds"}],[{"start":5,"end":12,"cssClass":"pl-ent"},{"start":14,"end":31,"cssClass":"pl-s"},{"start":14,"end":15,"cssClass":"pl-pds"},{"start":30,"end":31,"cssClass":"pl-pds"}],[],[{"start":4,"end":7,"cssClass":"pl-ent"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":26,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":25,"end":26,"cssClass":"pl-pds"}],[{"start":5,"end":14,"cssClass":"pl-ent"}],[{"start":6,"end":9,"cssClass":"pl-s"},{"start":6,"end":7,"cssClass":"pl-pds"},{"start":8,"end":9,"cssClass":"pl-pds"}],[],[],[],[{"start":3,"end":13,"cssClass":"pl-ent"},{"start":15,"end":41,"cssClass":"pl-s"},{"start":15,"end":16,"cssClass":"pl-pds"},{"start":40,"end":41,"cssClass":"pl-pds"}],[{"start":3,"end":18,"cssClass":"pl-ent"},{"start":20,"end":46,"cssClass":"pl-s"},{"start":20,"end":21,"cssClass":"pl-pds"},{"start":45,"end":46,"cssClass":"pl-pds"}],[{"start":3,"end":19,"cssClass":"pl-ent"},{"start":21,"end":69,"cssClass":"pl-s"},{"start":21,"end":22,"cssClass":"pl-pds"},{"start":68,"end":69,"cssClass":"pl-pds"}],[{"start":3,"end":19,"cssClass":"pl-ent"},{"start":21,"end":47,"cssClass":"pl-s"},{"start":21,"end":22,"cssClass":"pl-pds"},{"start":46,"end":47,"cssClass":"pl-pds"}],[{"start":3,"end":20,"cssClass":"pl-ent"},{"start":22,"end":23,"cssClass":"pl-c1"}],[],[],[{"start":3,"end":7,"cssClass":"pl-ent"},{"start":9,"end":62,"cssClass":"pl-s"},{"start":9,"end":10,"cssClass":"pl-pds"},{"start":61,"end":62,"cssClass":"pl-pds"}],[{"start":3,"end":9,"cssClass":"pl-ent"},{"start":11,"end":26,"cssClass":"pl-s"},{"start":11,"end":12,"cssClass":"pl-pds"},{"start":25,"end":26,"cssClass":"pl-pds"}],[{"start":3,"end":12,"cssClass":"pl-ent"},{"start":14,"end":40,"cssClass":"pl-s"},{"start":14,"end":15,"cssClass":"pl-pds"},{"start":39,"end":40,"cssClass":"pl-pds"}],[{"start":3,"end":12,"cssClass":"pl-ent"}],[{"start":4,"end":7,"cssClass":"pl-ent"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":14,"cssClass":"pl-c1"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":26,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":25,"end":26,"cssClass":"pl-pds"}],[{"start":5,"end":12,"cssClass":"pl-ent"},{"start":14,"end":50,"cssClass":"pl-s"},{"start":14,"end":15,"cssClass":"pl-pds"},{"start":49,"end":50,"cssClass":"pl-pds"}],[{"start":5,"end":13,"cssClass":"pl-ent"},{"start":15,"end":31,"cssClass":"pl-s"},{"start":15,"end":16,"cssClass":"pl-pds"},{"start":30,"end":31,"cssClass":"pl-pds"}],[{"start":5,"end":14,"cssClass":"pl-ent"},{"start":16,"end":42,"cssClass":"pl-s"},{"start":16,"end":17,"cssClass":"pl-pds"},{"start":41,"end":42,"cssClass":"pl-pds"}],[{"start":5,"end":14,"cssClass":"pl-ent"},{"start":16,"end":42,"cssClass":"pl-s"},{"start":16,"end":17,"cssClass":"pl-pds"},{"start":41,"end":42,"cssClass":"pl-pds"}],[{"start":5,"end":15,"cssClass":"pl-ent"}],[{"start":6,"end":14,"cssClass":"pl-s"},{"start":6,"end":7,"cssClass":"pl-pds"},{"start":13,"end":14,"cssClass":"pl-pds"}],[],[{"start":5,"end":15,"cssClass":"pl-ent"},{"start":17,"end":20,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":19,"end":20,"cssClass":"pl-pds"}],[{"start":5,"end":15,"cssClass":"pl-ent"},{"start":17,"end":20,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":19,"end":20,"cssClass":"pl-pds"}],[{"start":5,"end":15,"cssClass":"pl-ent"},{"start":17,"end":55,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":54,"end":55,"cssClass":"pl-pds"}],[{"start":5,"end":15,"cssClass":"pl-ent"},{"start":17,"end":20,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":19,"end":20,"cssClass":"pl-pds"}],[{"start":5,"end":18,"cssClass":"pl-ent"},{"start":20,"end":23,"cssClass":"pl-s"},{"start":20,"end":21,"cssClass":"pl-pds"},{"start":22,"end":23,"cssClass":"pl-pds"}],[{"start":5,"end":19,"cssClass":"pl-ent"},{"start":21,"end":24,"cssClass":"pl-s"},{"start":21,"end":22,"cssClass":"pl-pds"},{"start":23,"end":24,"cssClass":"pl-pds"}],[{"start":5,"end":25,"cssClass":"pl-ent"},{"start":27,"end":31,"cssClass":"pl-s"},{"start":27,"end":28,"cssClass":"pl-pds"},{"start":30,"end":31,"cssClass":"pl-pds"}],[],[{"start":4,"end":7,"cssClass":"pl-ent"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":24,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":23,"end":24,"cssClass":"pl-pds"}],[{"start":5,"end":12,"cssClass":"pl-ent"},{"start":14,"end":27,"cssClass":"pl-s"},{"start":14,"end":15,"cssClass":"pl-pds"},{"start":26,"end":27,"cssClass":"pl-pds"}],[{"start":5,"end":23,"cssClass":"pl-ent"}],[{"start":6,"end":10,"cssClass":"pl-s"},{"start":6,"end":7,"cssClass":"pl-pds"},{"start":9,"end":10,"cssClass":"pl-pds"}],[],[],[{"start":4,"end":7,"cssClass":"pl-ent"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":26,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":25,"end":26,"cssClass":"pl-pds"}],[{"start":20,"end":30,"cssClass":"pl-ent"},{"start":32,"end":62,"cssClass":"pl-s"},{"start":32,"end":33,"cssClass":"pl-pds"},{"start":61,"end":62,"cssClass":"pl-pds"}],[{"start":5,"end":14,"cssClass":"pl-ent"}],[{"start":6,"end":9,"cssClass":"pl-s"},{"start":6,"end":7,"cssClass":"pl-pds"},{"start":8,"end":9,"cssClass":"pl-pds"}],[],[],[{"start":4,"end":7,"cssClass":"pl-ent"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":27,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":26,"end":27,"cssClass":"pl-pds"}],[{"start":5,"end":14,"cssClass":"pl-ent"},{"start":16,"end":43,"cssClass":"pl-s"},{"start":16,"end":17,"cssClass":"pl-pds"},{"start":42,"end":43,"cssClass":"pl-pds"}],[],[{"start":4,"end":7,"cssClass":"pl-ent"}],[{"start":5,"end":10,"cssClass":"pl-ent"},{"start":12,"end":17,"cssClass":"pl-c1"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":22,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":21,"end":22,"cssClass":"pl-pds"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":22,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":21,"end":22,"cssClass":"pl-pds"}],[{"start":5,"end":17,"cssClass":"pl-ent"},{"start":19,"end":22,"cssClass":"pl-s"},{"start":19,"end":20,"cssClass":"pl-pds"},{"start":21,"end":22,"cssClass":"pl-pds"}],[{"start":5,"end":17,"cssClass":"pl-ent"},{"start":19,"end":23,"cssClass":"pl-s"},{"start":19,"end":20,"cssClass":"pl-pds"},{"start":22,"end":23,"cssClass":"pl-pds"}],[{"start":5,"end":19,"cssClass":"pl-ent"},{"start":21,"end":62,"cssClass":"pl-s"},{"start":21,"end":22,"cssClass":"pl-pds"},{"start":22,"end":24,"cssClass":"pl-cce"},{"start":26,"end":28,"cssClass":"pl-cce"},{"start":35,"end":37,"cssClass":"pl-cce"},{"start":45,"end":47,"cssClass":"pl-cce"},{"start":54,"end":56,"cssClass":"pl-cce"},{"start":61,"end":62,"cssClass":"pl-pds"}],[{"start":5,"end":23,"cssClass":"pl-ent"},{"start":25,"end":28,"cssClass":"pl-s"},{"start":25,"end":26,"cssClass":"pl-pds"},{"start":27,"end":28,"cssClass":"pl-pds"}],[],[{"start":4,"end":7,"cssClass":"pl-ent"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":23,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":22,"end":23,"cssClass":"pl-pds"}],[],[],[{"start":4,"end":7,"cssClass":"pl-ent"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":19,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":18,"end":19,"cssClass":"pl-pds"}],[{"start":5,"end":13,"cssClass":"pl-ent"}],[{"start":6,"end":11,"cssClass":"pl-ent"},{"start":13,"end":47,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":46,"end":47,"cssClass":"pl-pds"}],[],[],[{"start":4,"end":7,"cssClass":"pl-ent"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":22,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":21,"end":22,"cssClass":"pl-pds"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":19,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":18,"end":19,"cssClass":"pl-pds"}],[{"start":5,"end":27,"cssClass":"pl-ent"},{"start":29,"end":32,"cssClass":"pl-s"},{"start":29,"end":30,"cssClass":"pl-pds"},{"start":31,"end":32,"cssClass":"pl-pds"}],[],[{"start":4,"end":7,"cssClass":"pl-ent"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":36,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":16,"end":18,"cssClass":"pl-cce"},{"start":25,"end":27,"cssClass":"pl-cce"},{"start":35,"end":36,"cssClass":"pl-pds"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":24,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":23,"end":24,"cssClass":"pl-pds"}],[],[{"start":4,"end":7,"cssClass":"pl-ent"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":26,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":25,"end":26,"cssClass":"pl-pds"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":19,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":18,"end":19,"cssClass":"pl-pds"}],[{"start":5,"end":27,"cssClass":"pl-ent"},{"start":29,"end":33,"cssClass":"pl-s"},{"start":29,"end":30,"cssClass":"pl-pds"},{"start":32,"end":33,"cssClass":"pl-pds"}],[],[{"start":4,"end":8,"cssClass":"pl-ent"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":36,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":16,"end":18,"cssClass":"pl-cce"},{"start":25,"end":27,"cssClass":"pl-cce"},{"start":35,"end":36,"cssClass":"pl-pds"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":24,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":23,"end":24,"cssClass":"pl-pds"}],[],[{"start":4,"end":8,"cssClass":"pl-ent"}],[{"start":5,"end":10,"cssClass":"pl-ent"},{"start":12,"end":16,"cssClass":"pl-c1"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":22,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":21,"end":22,"cssClass":"pl-pds"}],[{"start":5,"end":17,"cssClass":"pl-ent"},{"start":19,"end":22,"cssClass":"pl-s"},{"start":19,"end":20,"cssClass":"pl-pds"},{"start":21,"end":22,"cssClass":"pl-pds"}],[{"start":5,"end":19,"cssClass":"pl-ent"},{"start":21,"end":74,"cssClass":"pl-s"},{"start":21,"end":22,"cssClass":"pl-pds"},{"start":24,"end":26,"cssClass":"pl-cce"},{"start":33,"end":35,"cssClass":"pl-cce"},{"start":43,"end":45,"cssClass":"pl-cce"},{"start":73,"end":74,"cssClass":"pl-pds"}],[],[{"start":4,"end":8,"cssClass":"pl-ent"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":26,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":25,"end":26,"cssClass":"pl-pds"}],[{"start":5,"end":12,"cssClass":"pl-ent"},{"start":14,"end":44,"cssClass":"pl-s"},{"start":14,"end":15,"cssClass":"pl-pds"},{"start":43,"end":44,"cssClass":"pl-pds"}],[],[{"start":4,"end":8,"cssClass":"pl-ent"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":28,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":27,"end":28,"cssClass":"pl-pds"}],[{"start":5,"end":15,"cssClass":"pl-ent"},{"start":17,"end":20,"cssClass":"pl-c1"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":42,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":41,"end":42,"cssClass":"pl-pds"}],[{"start":5,"end":23,"cssClass":"pl-ent"}],[{"start":6,"end":10,"cssClass":"pl-s"},{"start":6,"end":7,"cssClass":"pl-pds"},{"start":9,"end":10,"cssClass":"pl-pds"}],[{"start":6,"end":10,"cssClass":"pl-s"},{"start":6,"end":7,"cssClass":"pl-pds"},{"start":9,"end":10,"cssClass":"pl-pds"}],[],[],[{"start":4,"end":8,"cssClass":"pl-ent"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":32,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":31,"end":32,"cssClass":"pl-pds"}],[{"start":5,"end":17,"cssClass":"pl-ent"}],[{"start":6,"end":24,"cssClass":"pl-ent"}],[{"start":7,"end":20,"cssClass":"pl-ent"},{"start":22,"end":33,"cssClass":"pl-s"},{"start":22,"end":23,"cssClass":"pl-pds"},{"start":32,"end":33,"cssClass":"pl-pds"}],[],[],[{"start":5,"end":24,"cssClass":"pl-ent"}],[{"start":6,"end":10,"cssClass":"pl-s"},{"start":6,"end":7,"cssClass":"pl-pds"},{"start":9,"end":10,"cssClass":"pl-pds"}],[],[],[{"start":4,"end":8,"cssClass":"pl-ent"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":31,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":30,"end":31,"cssClass":"pl-pds"}],[{"start":5,"end":17,"cssClass":"pl-ent"},{"start":19,"end":30,"cssClass":"pl-s"},{"start":19,"end":20,"cssClass":"pl-pds"},{"start":29,"end":30,"cssClass":"pl-pds"}],[],[{"start":4,"end":8,"cssClass":"pl-ent"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":32,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":31,"end":32,"cssClass":"pl-pds"}],[{"start":5,"end":17,"cssClass":"pl-ent"}],[{"start":6,"end":24,"cssClass":"pl-ent"}],[{"start":7,"end":23,"cssClass":"pl-ent"},{"start":25,"end":58,"cssClass":"pl-s"},{"start":25,"end":26,"cssClass":"pl-pds"},{"start":57,"end":58,"cssClass":"pl-pds"}],[],[],[],[],[{"start":3,"end":13,"cssClass":"pl-ent"},{"start":15,"end":41,"cssClass":"pl-s"},{"start":15,"end":16,"cssClass":"pl-pds"},{"start":40,"end":41,"cssClass":"pl-pds"}],[{"start":3,"end":18,"cssClass":"pl-ent"},{"start":20,"end":46,"cssClass":"pl-s"},{"start":20,"end":21,"cssClass":"pl-pds"},{"start":45,"end":46,"cssClass":"pl-pds"}],[{"start":3,"end":19,"cssClass":"pl-ent"},{"start":21,"end":69,"cssClass":"pl-s"},{"start":21,"end":22,"cssClass":"pl-pds"},{"start":68,"end":69,"cssClass":"pl-pds"}],[{"start":3,"end":19,"cssClass":"pl-ent"},{"start":21,"end":47,"cssClass":"pl-s"},{"start":21,"end":22,"cssClass":"pl-pds"},{"start":46,"end":47,"cssClass":"pl-pds"}],[{"start":3,"end":20,"cssClass":"pl-ent"},{"start":22,"end":23,"cssClass":"pl-c1"}],[],[],[{"start":3,"end":7,"cssClass":"pl-ent"},{"start":9,"end":62,"cssClass":"pl-s"},{"start":9,"end":10,"cssClass":"pl-pds"},{"start":61,"end":62,"cssClass":"pl-pds"}],[{"start":3,"end":9,"cssClass":"pl-ent"},{"start":11,"end":26,"cssClass":"pl-s"},{"start":11,"end":12,"cssClass":"pl-pds"},{"start":25,"end":26,"cssClass":"pl-pds"}],[{"start":3,"end":12,"cssClass":"pl-ent"},{"start":14,"end":40,"cssClass":"pl-s"},{"start":14,"end":15,"cssClass":"pl-pds"},{"start":39,"end":40,"cssClass":"pl-pds"}],[{"start":3,"end":12,"cssClass":"pl-ent"}],[{"start":4,"end":7,"cssClass":"pl-ent"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":14,"cssClass":"pl-c1"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":26,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":25,"end":26,"cssClass":"pl-pds"}],[{"start":5,"end":12,"cssClass":"pl-ent"},{"start":14,"end":50,"cssClass":"pl-s"},{"start":14,"end":15,"cssClass":"pl-pds"},{"start":49,"end":50,"cssClass":"pl-pds"}],[{"start":5,"end":13,"cssClass":"pl-ent"},{"start":15,"end":31,"cssClass":"pl-s"},{"start":15,"end":16,"cssClass":"pl-pds"},{"start":30,"end":31,"cssClass":"pl-pds"}],[{"start":5,"end":13,"cssClass":"pl-ent"},{"start":15,"end":18,"cssClass":"pl-s"},{"start":15,"end":16,"cssClass":"pl-pds"},{"start":17,"end":18,"cssClass":"pl-pds"}],[{"start":5,"end":14,"cssClass":"pl-ent"},{"start":16,"end":42,"cssClass":"pl-s"},{"start":16,"end":17,"cssClass":"pl-pds"},{"start":41,"end":42,"cssClass":"pl-pds"}],[{"start":5,"end":14,"cssClass":"pl-ent"},{"start":16,"end":42,"cssClass":"pl-s"},{"start":16,"end":17,"cssClass":"pl-pds"},{"start":41,"end":42,"cssClass":"pl-pds"}],[{"start":5,"end":15,"cssClass":"pl-ent"}],[{"start":6,"end":14,"cssClass":"pl-s"},{"start":6,"end":7,"cssClass":"pl-pds"},{"start":13,"end":14,"cssClass":"pl-pds"}],[],[{"start":5,"end":15,"cssClass":"pl-ent"},{"start":17,"end":20,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":19,"end":20,"cssClass":"pl-pds"}],[{"start":5,"end":15,"cssClass":"pl-ent"},{"start":17,"end":20,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":19,"end":20,"cssClass":"pl-pds"}],[{"start":5,"end":15,"cssClass":"pl-ent"},{"start":17,"end":55,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":54,"end":55,"cssClass":"pl-pds"}],[{"start":5,"end":15,"cssClass":"pl-ent"},{"start":17,"end":20,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":19,"end":20,"cssClass":"pl-pds"}],[{"start":5,"end":18,"cssClass":"pl-ent"},{"start":20,"end":23,"cssClass":"pl-s"},{"start":20,"end":21,"cssClass":"pl-pds"},{"start":22,"end":23,"cssClass":"pl-pds"}],[{"start":5,"end":19,"cssClass":"pl-ent"},{"start":21,"end":24,"cssClass":"pl-s"},{"start":21,"end":22,"cssClass":"pl-pds"},{"start":23,"end":24,"cssClass":"pl-pds"}],[{"start":5,"end":25,"cssClass":"pl-ent"},{"start":27,"end":31,"cssClass":"pl-s"},{"start":27,"end":28,"cssClass":"pl-pds"},{"start":30,"end":31,"cssClass":"pl-pds"}],[],[{"start":4,"end":7,"cssClass":"pl-ent"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":24,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":23,"end":24,"cssClass":"pl-pds"}],[{"start":5,"end":12,"cssClass":"pl-ent"},{"start":14,"end":27,"cssClass":"pl-s"},{"start":14,"end":15,"cssClass":"pl-pds"},{"start":26,"end":27,"cssClass":"pl-pds"}],[{"start":5,"end":23,"cssClass":"pl-ent"}],[{"start":6,"end":10,"cssClass":"pl-s"},{"start":6,"end":7,"cssClass":"pl-pds"},{"start":9,"end":10,"cssClass":"pl-pds"}],[],[],[{"start":4,"end":7,"cssClass":"pl-ent"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":30,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":29,"end":30,"cssClass":"pl-pds"}],[{"start":5,"end":14,"cssClass":"pl-ent"},{"start":16,"end":20,"cssClass":"pl-s"},{"start":16,"end":17,"cssClass":"pl-pds"},{"start":19,"end":20,"cssClass":"pl-pds"}],[{"start":5,"end":14,"cssClass":"pl-ent"},{"start":16,"end":19,"cssClass":"pl-s"},{"start":16,"end":17,"cssClass":"pl-pds"},{"start":18,"end":19,"cssClass":"pl-pds"}],[{"start":5,"end":15,"cssClass":"pl-ent"},{"start":17,"end":21,"cssClass":"pl-c1"}],[{"start":5,"end":15,"cssClass":"pl-ent"},{"start":17,"end":22,"cssClass":"pl-c1"}],[{"start":5,"end":16,"cssClass":"pl-ent"}],[{"start":6,"end":11,"cssClass":"pl-s"},{"start":6,"end":7,"cssClass":"pl-pds"},{"start":10,"end":11,"cssClass":"pl-pds"}],[],[],[{"start":4,"end":7,"cssClass":"pl-ent"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":26,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":25,"end":26,"cssClass":"pl-pds"}],[{"start":20,"end":30,"cssClass":"pl-ent"},{"start":32,"end":62,"cssClass":"pl-s"},{"start":32,"end":33,"cssClass":"pl-pds"},{"start":61,"end":62,"cssClass":"pl-pds"}],[{"start":5,"end":14,"cssClass":"pl-ent"}],[{"start":6,"end":9,"cssClass":"pl-s"},{"start":6,"end":7,"cssClass":"pl-pds"},{"start":8,"end":9,"cssClass":"pl-pds"}],[],[],[{"start":4,"end":7,"cssClass":"pl-ent"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":27,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":26,"end":27,"cssClass":"pl-pds"}],[{"start":5,"end":14,"cssClass":"pl-ent"},{"start":16,"end":43,"cssClass":"pl-s"},{"start":16,"end":17,"cssClass":"pl-pds"},{"start":42,"end":43,"cssClass":"pl-pds"}],[],[{"start":4,"end":7,"cssClass":"pl-ent"}],[{"start":5,"end":10,"cssClass":"pl-ent"},{"start":12,"end":17,"cssClass":"pl-c1"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":30,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":29,"end":30,"cssClass":"pl-pds"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":22,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":21,"end":22,"cssClass":"pl-pds"}],[{"start":5,"end":17,"cssClass":"pl-ent"},{"start":19,"end":22,"cssClass":"pl-s"},{"start":19,"end":20,"cssClass":"pl-pds"},{"start":21,"end":22,"cssClass":"pl-pds"}],[{"start":5,"end":17,"cssClass":"pl-ent"},{"start":19,"end":23,"cssClass":"pl-s"},{"start":19,"end":20,"cssClass":"pl-pds"},{"start":22,"end":23,"cssClass":"pl-pds"}],[{"start":5,"end":19,"cssClass":"pl-ent"},{"start":21,"end":102,"cssClass":"pl-s"},{"start":21,"end":22,"cssClass":"pl-pds"},{"start":22,"end":24,"cssClass":"pl-cce"},{"start":26,"end":28,"cssClass":"pl-cce"},{"start":35,"end":37,"cssClass":"pl-cce"},{"start":45,"end":47,"cssClass":"pl-cce"},{"start":62,"end":64,"cssClass":"pl-cce"},{"start":101,"end":102,"cssClass":"pl-pds"}],[{"start":5,"end":23,"cssClass":"pl-ent"},{"start":25,"end":28,"cssClass":"pl-s"},{"start":25,"end":26,"cssClass":"pl-pds"},{"start":27,"end":28,"cssClass":"pl-pds"}],[],[{"start":4,"end":7,"cssClass":"pl-ent"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":23,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":22,"end":23,"cssClass":"pl-pds"}],[],[],[{"start":4,"end":7,"cssClass":"pl-ent"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":19,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":18,"end":19,"cssClass":"pl-pds"}],[{"start":5,"end":13,"cssClass":"pl-ent"}],[{"start":6,"end":11,"cssClass":"pl-ent"},{"start":13,"end":47,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":46,"end":47,"cssClass":"pl-pds"}],[],[],[{"start":4,"end":7,"cssClass":"pl-ent"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":30,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":29,"end":30,"cssClass":"pl-pds"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":19,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":18,"end":19,"cssClass":"pl-pds"}],[{"start":5,"end":27,"cssClass":"pl-ent"},{"start":29,"end":32,"cssClass":"pl-s"},{"start":29,"end":30,"cssClass":"pl-pds"},{"start":31,"end":32,"cssClass":"pl-pds"}],[],[{"start":4,"end":7,"cssClass":"pl-ent"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":36,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":16,"end":18,"cssClass":"pl-cce"},{"start":25,"end":27,"cssClass":"pl-cce"},{"start":35,"end":36,"cssClass":"pl-pds"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":24,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":23,"end":24,"cssClass":"pl-pds"}],[],[{"start":4,"end":8,"cssClass":"pl-ent"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":26,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":25,"end":26,"cssClass":"pl-pds"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":19,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":18,"end":19,"cssClass":"pl-pds"}],[{"start":5,"end":27,"cssClass":"pl-ent"},{"start":29,"end":33,"cssClass":"pl-s"},{"start":29,"end":30,"cssClass":"pl-pds"},{"start":32,"end":33,"cssClass":"pl-pds"}],[],[{"start":4,"end":8,"cssClass":"pl-ent"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":36,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":16,"end":18,"cssClass":"pl-cce"},{"start":25,"end":27,"cssClass":"pl-cce"},{"start":35,"end":36,"cssClass":"pl-pds"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":24,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":23,"end":24,"cssClass":"pl-pds"}],[],[{"start":4,"end":8,"cssClass":"pl-ent"}],[{"start":5,"end":10,"cssClass":"pl-ent"},{"start":12,"end":16,"cssClass":"pl-c1"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":22,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":21,"end":22,"cssClass":"pl-pds"}],[{"start":5,"end":17,"cssClass":"pl-ent"},{"start":19,"end":23,"cssClass":"pl-s"},{"start":19,"end":20,"cssClass":"pl-pds"},{"start":22,"end":23,"cssClass":"pl-pds"}],[{"start":5,"end":19,"cssClass":"pl-ent"},{"start":21,"end":74,"cssClass":"pl-s"},{"start":21,"end":22,"cssClass":"pl-pds"},{"start":24,"end":26,"cssClass":"pl-cce"},{"start":33,"end":35,"cssClass":"pl-cce"},{"start":43,"end":45,"cssClass":"pl-cce"},{"start":73,"end":74,"cssClass":"pl-pds"}],[],[{"start":4,"end":8,"cssClass":"pl-ent"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":26,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":25,"end":26,"cssClass":"pl-pds"}],[{"start":5,"end":12,"cssClass":"pl-ent"},{"start":14,"end":44,"cssClass":"pl-s"},{"start":14,"end":15,"cssClass":"pl-pds"},{"start":43,"end":44,"cssClass":"pl-pds"}],[],[{"start":4,"end":8,"cssClass":"pl-ent"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":24,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":23,"end":24,"cssClass":"pl-pds"}],[{"start":5,"end":12,"cssClass":"pl-ent"},{"start":14,"end":28,"cssClass":"pl-s"},{"start":14,"end":15,"cssClass":"pl-pds"},{"start":27,"end":28,"cssClass":"pl-pds"}],[{"start":5,"end":23,"cssClass":"pl-ent"}],[{"start":6,"end":10,"cssClass":"pl-s"},{"start":6,"end":7,"cssClass":"pl-pds"},{"start":9,"end":10,"cssClass":"pl-pds"}],[],[],[{"start":4,"end":8,"cssClass":"pl-ent"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":26,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":25,"end":26,"cssClass":"pl-pds"}],[{"start":5,"end":12,"cssClass":"pl-ent"},{"start":14,"end":44,"cssClass":"pl-s"},{"start":14,"end":15,"cssClass":"pl-pds"},{"start":43,"end":44,"cssClass":"pl-pds"}],[],[{"start":4,"end":8,"cssClass":"pl-ent"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":28,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":27,"end":28,"cssClass":"pl-pds"}],[{"start":5,"end":15,"cssClass":"pl-ent"},{"start":17,"end":20,"cssClass":"pl-c1"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":61,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":60,"end":61,"cssClass":"pl-pds"}],[{"start":5,"end":23,"cssClass":"pl-ent"}],[{"start":6,"end":10,"cssClass":"pl-s"},{"start":6,"end":7,"cssClass":"pl-pds"},{"start":9,"end":10,"cssClass":"pl-pds"}],[{"start":6,"end":10,"cssClass":"pl-s"},{"start":6,"end":7,"cssClass":"pl-pds"},{"start":9,"end":10,"cssClass":"pl-pds"}],[],[],[{"start":4,"end":8,"cssClass":"pl-ent"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":32,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":31,"end":32,"cssClass":"pl-pds"}],[{"start":5,"end":17,"cssClass":"pl-ent"}],[{"start":6,"end":24,"cssClass":"pl-ent"}],[{"start":7,"end":20,"cssClass":"pl-ent"},{"start":22,"end":39,"cssClass":"pl-s"},{"start":22,"end":23,"cssClass":"pl-pds"},{"start":38,"end":39,"cssClass":"pl-pds"}],[],[],[{"start":5,"end":24,"cssClass":"pl-ent"}],[{"start":6,"end":10,"cssClass":"pl-s"},{"start":6,"end":7,"cssClass":"pl-pds"},{"start":9,"end":10,"cssClass":"pl-pds"}],[],[],[{"start":4,"end":8,"cssClass":"pl-ent"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":31,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":30,"end":31,"cssClass":"pl-pds"}],[{"start":5,"end":17,"cssClass":"pl-ent"},{"start":19,"end":36,"cssClass":"pl-s"},{"start":19,"end":20,"cssClass":"pl-pds"},{"start":35,"end":36,"cssClass":"pl-pds"}],[],[{"start":4,"end":8,"cssClass":"pl-ent"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":32,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":31,"end":32,"cssClass":"pl-pds"}],[{"start":5,"end":17,"cssClass":"pl-ent"}],[{"start":6,"end":24,"cssClass":"pl-ent"}],[{"start":7,"end":23,"cssClass":"pl-ent"},{"start":25,"end":64,"cssClass":"pl-s"},{"start":25,"end":26,"cssClass":"pl-pds"},{"start":63,"end":64,"cssClass":"pl-pds"}],[],[],[],[],[{"start":3,"end":13,"cssClass":"pl-ent"},{"start":15,"end":41,"cssClass":"pl-s"},{"start":15,"end":16,"cssClass":"pl-pds"},{"start":40,"end":41,"cssClass":"pl-pds"}],[{"start":3,"end":18,"cssClass":"pl-ent"},{"start":20,"end":46,"cssClass":"pl-s"},{"start":20,"end":21,"cssClass":"pl-pds"},{"start":45,"end":46,"cssClass":"pl-pds"}],[{"start":3,"end":19,"cssClass":"pl-ent"},{"start":21,"end":69,"cssClass":"pl-s"},{"start":21,"end":22,"cssClass":"pl-pds"},{"start":68,"end":69,"cssClass":"pl-pds"}],[{"start":3,"end":19,"cssClass":"pl-ent"},{"start":21,"end":47,"cssClass":"pl-s"},{"start":21,"end":22,"cssClass":"pl-pds"},{"start":46,"end":47,"cssClass":"pl-pds"}],[{"start":3,"end":20,"cssClass":"pl-ent"},{"start":22,"end":23,"cssClass":"pl-c1"}],[],[],[{"start":3,"end":7,"cssClass":"pl-ent"},{"start":9,"end":62,"cssClass":"pl-s"},{"start":9,"end":10,"cssClass":"pl-pds"},{"start":61,"end":62,"cssClass":"pl-pds"}],[{"start":3,"end":9,"cssClass":"pl-ent"},{"start":11,"end":26,"cssClass":"pl-s"},{"start":11,"end":12,"cssClass":"pl-pds"},{"start":25,"end":26,"cssClass":"pl-pds"}],[{"start":3,"end":12,"cssClass":"pl-ent"},{"start":14,"end":40,"cssClass":"pl-s"},{"start":14,"end":15,"cssClass":"pl-pds"},{"start":39,"end":40,"cssClass":"pl-pds"}],[{"start":3,"end":12,"cssClass":"pl-ent"}],[{"start":4,"end":7,"cssClass":"pl-ent"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":27,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":26,"end":27,"cssClass":"pl-pds"}],[{"start":5,"end":14,"cssClass":"pl-ent"},{"start":16,"end":43,"cssClass":"pl-s"},{"start":16,"end":17,"cssClass":"pl-pds"},{"start":42,"end":43,"cssClass":"pl-pds"}],[],[{"start":4,"end":7,"cssClass":"pl-ent"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":24,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":23,"end":24,"cssClass":"pl-pds"}],[{"start":5,"end":12,"cssClass":"pl-ent"},{"start":14,"end":28,"cssClass":"pl-s"},{"start":14,"end":15,"cssClass":"pl-pds"},{"start":27,"end":28,"cssClass":"pl-pds"}],[],[{"start":4,"end":7,"cssClass":"pl-ent"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":30,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":29,"end":30,"cssClass":"pl-pds"}],[{"start":5,"end":14,"cssClass":"pl-ent"},{"start":16,"end":19,"cssClass":"pl-s"},{"start":16,"end":17,"cssClass":"pl-pds"},{"start":18,"end":19,"cssClass":"pl-pds"}],[{"start":5,"end":14,"cssClass":"pl-ent"},{"start":16,"end":19,"cssClass":"pl-s"},{"start":16,"end":17,"cssClass":"pl-pds"},{"start":18,"end":19,"cssClass":"pl-pds"}],[{"start":5,"end":15,"cssClass":"pl-ent"},{"start":17,"end":21,"cssClass":"pl-c1"}],[{"start":5,"end":15,"cssClass":"pl-ent"},{"start":17,"end":22,"cssClass":"pl-c1"}],[{"start":5,"end":16,"cssClass":"pl-ent"}],[{"start":6,"end":11,"cssClass":"pl-s"},{"start":6,"end":7,"cssClass":"pl-pds"},{"start":10,"end":11,"cssClass":"pl-pds"}],[{"start":6,"end":12,"cssClass":"pl-s"},{"start":6,"end":7,"cssClass":"pl-pds"},{"start":11,"end":12,"cssClass":"pl-pds"}],[],[],[{"start":4,"end":7,"cssClass":"pl-ent"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":24,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":23,"end":24,"cssClass":"pl-pds"}],[{"start":5,"end":12,"cssClass":"pl-ent"},{"start":14,"end":27,"cssClass":"pl-s"},{"start":14,"end":15,"cssClass":"pl-pds"},{"start":26,"end":27,"cssClass":"pl-pds"}],[],[{"start":4,"end":7,"cssClass":"pl-ent"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":28,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":27,"end":28,"cssClass":"pl-pds"}],[{"start":5,"end":15,"cssClass":"pl-ent"},{"start":17,"end":20,"cssClass":"pl-c1"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":51,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":50,"end":51,"cssClass":"pl-pds"}],[{"start":5,"end":23,"cssClass":"pl-ent"}],[{"start":6,"end":9,"cssClass":"pl-s"},{"start":6,"end":7,"cssClass":"pl-pds"},{"start":8,"end":9,"cssClass":"pl-pds"}],[{"start":6,"end":9,"cssClass":"pl-s"},{"start":6,"end":7,"cssClass":"pl-pds"},{"start":8,"end":9,"cssClass":"pl-pds"}],[],[],[{"start":4,"end":7,"cssClass":"pl-ent"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":32,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":31,"end":32,"cssClass":"pl-pds"}],[{"start":5,"end":17,"cssClass":"pl-ent"}],[{"start":6,"end":24,"cssClass":"pl-ent"}],[{"start":7,"end":20,"cssClass":"pl-ent"},{"start":22,"end":34,"cssClass":"pl-s"},{"start":22,"end":23,"cssClass":"pl-pds"},{"start":33,"end":34,"cssClass":"pl-pds"}],[],[],[{"start":5,"end":24,"cssClass":"pl-ent"}],[{"start":6,"end":9,"cssClass":"pl-s"},{"start":6,"end":7,"cssClass":"pl-pds"},{"start":8,"end":9,"cssClass":"pl-pds"}],[],[],[{"start":4,"end":7,"cssClass":"pl-ent"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":31,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":30,"end":31,"cssClass":"pl-pds"}],[{"start":5,"end":17,"cssClass":"pl-ent"},{"start":19,"end":31,"cssClass":"pl-s"},{"start":19,"end":20,"cssClass":"pl-pds"},{"start":30,"end":31,"cssClass":"pl-pds"}],[],[{"start":4,"end":7,"cssClass":"pl-ent"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":32,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":31,"end":32,"cssClass":"pl-pds"}],[{"start":5,"end":17,"cssClass":"pl-ent"}],[{"start":6,"end":24,"cssClass":"pl-ent"}],[{"start":7,"end":23,"cssClass":"pl-ent"},{"start":25,"end":65,"cssClass":"pl-s"},{"start":25,"end":26,"cssClass":"pl-pds"},{"start":64,"end":65,"cssClass":"pl-pds"}],[],[],[],[],[{"start":3,"end":13,"cssClass":"pl-ent"},{"start":15,"end":41,"cssClass":"pl-s"},{"start":15,"end":16,"cssClass":"pl-pds"},{"start":40,"end":41,"cssClass":"pl-pds"}],[{"start":3,"end":18,"cssClass":"pl-ent"},{"start":20,"end":46,"cssClass":"pl-s"},{"start":20,"end":21,"cssClass":"pl-pds"},{"start":45,"end":46,"cssClass":"pl-pds"}],[{"start":3,"end":19,"cssClass":"pl-ent"},{"start":21,"end":69,"cssClass":"pl-s"},{"start":21,"end":22,"cssClass":"pl-pds"},{"start":68,"end":69,"cssClass":"pl-pds"}],[{"start":3,"end":19,"cssClass":"pl-ent"},{"start":21,"end":47,"cssClass":"pl-s"},{"start":21,"end":22,"cssClass":"pl-pds"},{"start":46,"end":47,"cssClass":"pl-pds"}],[{"start":3,"end":19,"cssClass":"pl-ent"}],[{"start":4,"end":13,"cssClass":"pl-ent"},{"start":15,"end":42,"cssClass":"pl-s"},{"start":15,"end":16,"cssClass":"pl-pds"},{"start":41,"end":42,"cssClass":"pl-pds"}],[{"start":4,"end":17,"cssClass":"pl-ent"},{"start":19,"end":26,"cssClass":"pl-s"},{"start":19,"end":20,"cssClass":"pl-pds"},{"start":25,"end":26,"cssClass":"pl-pds"}],[{"start":4,"end":18,"cssClass":"pl-ent"},{"start":20,"end":41,"cssClass":"pl-s"},{"start":20,"end":21,"cssClass":"pl-pds"},{"start":40,"end":41,"cssClass":"pl-pds"}],[{"start":4,"end":18,"cssClass":"pl-ent"},{"start":20,"end":27,"cssClass":"pl-s"},{"start":20,"end":21,"cssClass":"pl-pds"},{"start":26,"end":27,"cssClass":"pl-pds"}],[{"start":4,"end":19,"cssClass":"pl-ent"},{"start":21,"end":24,"cssClass":"pl-c1"}],[{"start":4,"end":19,"cssClass":"pl-ent"},{"start":21,"end":28,"cssClass":"pl-s"},{"start":21,"end":22,"cssClass":"pl-pds"},{"start":27,"end":28,"cssClass":"pl-pds"}],[{"start":4,"end":20,"cssClass":"pl-ent"},{"start":22,"end":36,"cssClass":"pl-s"},{"start":22,"end":23,"cssClass":"pl-pds"},{"start":35,"end":36,"cssClass":"pl-pds"}],[{"start":4,"end":25,"cssClass":"pl-ent"},{"start":27,"end":33,"cssClass":"pl-s"},{"start":27,"end":28,"cssClass":"pl-pds"},{"start":32,"end":33,"cssClass":"pl-pds"}],[],[{"start":3,"end":20,"cssClass":"pl-ent"},{"start":22,"end":23,"cssClass":"pl-c1"}],[],[],[{"start":3,"end":7,"cssClass":"pl-ent"},{"start":9,"end":52,"cssClass":"pl-s"},{"start":9,"end":10,"cssClass":"pl-pds"},{"start":51,"end":52,"cssClass":"pl-pds"}],[{"start":3,"end":9,"cssClass":"pl-ent"},{"start":11,"end":26,"cssClass":"pl-s"},{"start":11,"end":12,"cssClass":"pl-pds"},{"start":25,"end":26,"cssClass":"pl-pds"}],[{"start":3,"end":12,"cssClass":"pl-ent"},{"start":14,"end":40,"cssClass":"pl-s"},{"start":14,"end":15,"cssClass":"pl-pds"},{"start":39,"end":40,"cssClass":"pl-pds"}],[{"start":3,"end":12,"cssClass":"pl-ent"}],[{"start":4,"end":7,"cssClass":"pl-ent"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":14,"cssClass":"pl-c1"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":26,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":25,"end":26,"cssClass":"pl-pds"}],[{"start":5,"end":12,"cssClass":"pl-ent"},{"start":14,"end":40,"cssClass":"pl-s"},{"start":14,"end":15,"cssClass":"pl-pds"},{"start":39,"end":40,"cssClass":"pl-pds"}],[{"start":5,"end":13,"cssClass":"pl-ent"},{"start":15,"end":30,"cssClass":"pl-s"},{"start":15,"end":16,"cssClass":"pl-pds"},{"start":29,"end":30,"cssClass":"pl-pds"}],[{"start":5,"end":13,"cssClass":"pl-ent"},{"start":15,"end":18,"cssClass":"pl-s"},{"start":15,"end":16,"cssClass":"pl-pds"},{"start":17,"end":18,"cssClass":"pl-pds"}],[{"start":5,"end":14,"cssClass":"pl-ent"},{"start":16,"end":42,"cssClass":"pl-s"},{"start":16,"end":17,"cssClass":"pl-pds"},{"start":41,"end":42,"cssClass":"pl-pds"}],[{"start":5,"end":14,"cssClass":"pl-ent"},{"start":16,"end":25,"cssClass":"pl-s"},{"start":16,"end":17,"cssClass":"pl-pds"},{"start":24,"end":25,"cssClass":"pl-pds"}],[{"start":5,"end":15,"cssClass":"pl-ent"}],[{"start":6,"end":24,"cssClass":"pl-s"},{"start":6,"end":7,"cssClass":"pl-pds"},{"start":23,"end":24,"cssClass":"pl-pds"}],[],[{"start":5,"end":15,"cssClass":"pl-ent"},{"start":17,"end":20,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":19,"end":20,"cssClass":"pl-pds"}],[{"start":5,"end":15,"cssClass":"pl-ent"},{"start":17,"end":43,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":42,"end":43,"cssClass":"pl-pds"}],[{"start":5,"end":15,"cssClass":"pl-ent"},{"start":17,"end":20,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":19,"end":20,"cssClass":"pl-pds"}],[],[{"start":4,"end":7,"cssClass":"pl-ent"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":24,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":23,"end":24,"cssClass":"pl-pds"}],[{"start":5,"end":12,"cssClass":"pl-ent"},{"start":14,"end":28,"cssClass":"pl-s"},{"start":14,"end":15,"cssClass":"pl-pds"},{"start":27,"end":28,"cssClass":"pl-pds"}],[{"start":5,"end":23,"cssClass":"pl-ent"}],[{"start":6,"end":9,"cssClass":"pl-s"},{"start":6,"end":7,"cssClass":"pl-pds"},{"start":8,"end":9,"cssClass":"pl-pds"}],[],[],[{"start":4,"end":7,"cssClass":"pl-ent"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":30,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":29,"end":30,"cssClass":"pl-pds"}],[{"start":5,"end":14,"cssClass":"pl-ent"},{"start":16,"end":19,"cssClass":"pl-s"},{"start":16,"end":17,"cssClass":"pl-pds"},{"start":18,"end":19,"cssClass":"pl-pds"}],[{"start":5,"end":14,"cssClass":"pl-ent"},{"start":16,"end":19,"cssClass":"pl-s"},{"start":16,"end":17,"cssClass":"pl-pds"},{"start":18,"end":19,"cssClass":"pl-pds"}],[{"start":5,"end":15,"cssClass":"pl-ent"},{"start":17,"end":20,"cssClass":"pl-c1"}],[{"start":5,"end":15,"cssClass":"pl-ent"},{"start":17,"end":23,"cssClass":"pl-c1"}],[{"start":5,"end":16,"cssClass":"pl-ent"}],[{"start":6,"end":11,"cssClass":"pl-s"},{"start":6,"end":7,"cssClass":"pl-pds"},{"start":10,"end":11,"cssClass":"pl-pds"}],[],[],[{"start":4,"end":7,"cssClass":"pl-ent"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":26,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":25,"end":26,"cssClass":"pl-pds"}],[{"start":5,"end":14,"cssClass":"pl-ent"}],[{"start":6,"end":9,"cssClass":"pl-s"},{"start":6,"end":7,"cssClass":"pl-pds"},{"start":8,"end":9,"cssClass":"pl-pds"}],[],[{"start":5,"end":15,"cssClass":"pl-ent"},{"start":17,"end":47,"cssClass":"pl-s"},{"start":17,"end":18,"cssClass":"pl-pds"},{"start":46,"end":47,"cssClass":"pl-pds"}],[{"start":5,"end":14,"cssClass":"pl-ent"},{"start":16,"end":50,"cssClass":"pl-s"},{"start":16,"end":17,"cssClass":"pl-pds"},{"start":49,"end":50,"cssClass":"pl-pds"}],[],[{"start":4,"end":7,"cssClass":"pl-ent"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":27,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":26,"end":27,"cssClass":"pl-pds"}],[{"start":5,"end":14,"cssClass":"pl-ent"},{"start":16,"end":43,"cssClass":"pl-s"},{"start":16,"end":17,"cssClass":"pl-pds"},{"start":42,"end":43,"cssClass":"pl-pds"}],[],[{"start":4,"end":7,"cssClass":"pl-ent"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":26,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":25,"end":26,"cssClass":"pl-pds"}],[{"start":5,"end":12,"cssClass":"pl-ent"},{"start":14,"end":44,"cssClass":"pl-s"},{"start":14,"end":15,"cssClass":"pl-pds"},{"start":43,"end":44,"cssClass":"pl-pds"}],[],[{"start":4,"end":7,"cssClass":"pl-ent"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":24,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":23,"end":24,"cssClass":"pl-pds"}],[{"start":5,"end":12,"cssClass":"pl-ent"},{"start":14,"end":31,"cssClass":"pl-s"},{"start":14,"end":15,"cssClass":"pl-pds"},{"start":30,"end":31,"cssClass":"pl-pds"}],[],[{"start":4,"end":7,"cssClass":"pl-ent"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":28,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":27,"end":28,"cssClass":"pl-pds"}],[{"start":5,"end":15,"cssClass":"pl-ent"},{"start":17,"end":20,"cssClass":"pl-c1"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":53,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":52,"end":53,"cssClass":"pl-pds"}],[{"start":5,"end":23,"cssClass":"pl-ent"}],[{"start":6,"end":9,"cssClass":"pl-s"},{"start":6,"end":7,"cssClass":"pl-pds"},{"start":8,"end":9,"cssClass":"pl-pds"}],[{"start":6,"end":10,"cssClass":"pl-s"},{"start":6,"end":7,"cssClass":"pl-pds"},{"start":9,"end":10,"cssClass":"pl-pds"}],[],[],[{"start":4,"end":7,"cssClass":"pl-ent"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":32,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":31,"end":32,"cssClass":"pl-pds"}],[{"start":5,"end":17,"cssClass":"pl-ent"}],[{"start":6,"end":24,"cssClass":"pl-ent"}],[{"start":7,"end":20,"cssClass":"pl-ent"},{"start":22,"end":36,"cssClass":"pl-s"},{"start":22,"end":23,"cssClass":"pl-pds"},{"start":35,"end":36,"cssClass":"pl-pds"}],[],[],[{"start":5,"end":24,"cssClass":"pl-ent"}],[{"start":6,"end":9,"cssClass":"pl-s"},{"start":6,"end":7,"cssClass":"pl-pds"},{"start":8,"end":9,"cssClass":"pl-pds"}],[],[],[{"start":4,"end":7,"cssClass":"pl-ent"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":31,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":30,"end":31,"cssClass":"pl-pds"}],[{"start":5,"end":17,"cssClass":"pl-ent"},{"start":19,"end":33,"cssClass":"pl-s"},{"start":19,"end":20,"cssClass":"pl-pds"},{"start":32,"end":33,"cssClass":"pl-pds"}],[],[{"start":4,"end":8,"cssClass":"pl-ent"}],[{"start":5,"end":11,"cssClass":"pl-ent"},{"start":13,"end":32,"cssClass":"pl-s"},{"start":13,"end":14,"cssClass":"pl-pds"},{"start":31,"end":32,"cssClass":"pl-pds"}],[{"start":5,"end":17,"cssClass":"pl-ent"}],[{"start":6,"end":24,"cssClass":"pl-ent"}],[{"start":7,"end":23,"cssClass":"pl-ent"},{"start":25,"end":65,"cssClass":"pl-s"},{"start":25,"end":26,"cssClass":"pl-pds"},{"start":64,"end":65,"cssClass":"pl-pds"}],[],[],[],[],[{"start":3,"end":13,"cssClass":"pl-ent"},{"start":15,"end":41,"cssClass":"pl-s"},{"start":15,"end":16,"cssClass":"pl-pds"},{"start":40,"end":41,"cssClass":"pl-pds"}],[{"start":3,"end":18,"cssClass":"pl-ent"},{"start":20,"end":46,"cssClass":"pl-s"},{"start":20,"end":21,"cssClass":"pl-pds"},{"start":45,"end":46,"cssClass":"pl-pds"}],[{"start":3,"end":19,"cssClass":"pl-ent"},{"start":21,"end":69,"cssClass":"pl-s"},{"start":21,"end":22,"cssClass":"pl-pds"},{"start":68,"end":69,"cssClass":"pl-pds"}],[{"start":3,"end":19,"cssClass":"pl-ent"},{"start":21,"end":47,"cssClass":"pl-s"},{"start":21,"end":22,"cssClass":"pl-pds"},{"start":46,"end":47,"cssClass":"pl-pds"}],[{"start":3,"end":20,"cssClass":"pl-ent"},{"start":22,"end":23,"cssClass":"pl-c1"}],[],[],[],[]],"csv":null,"csvError":null,"dependabotInfo":{"showConfigurationBanner":false,"configFilePath":null,"networkDependabotPath":"/jasoneflood/stixbundles/network/updates","dismissConfigurationNoticePath":"/settings/dismiss-notice/dependabot_configuration_notice","configurationNoticeDismissed":null,"repoAlertsPath":"/jasoneflood/stixbundles/security/dependabot","repoSecurityAndAnalysisPath":"/jasoneflood/stixbundles/settings/security_analysis","repoOwnerIsOrg":false,"currentUserCanAdminRepo":false},"displayName":"QRadar.json","displayUrl":"https://github.com/jasoneflood/stixbundles/blob/main/EOTSHARED/QRadar.json?raw=true","headerInfo":{"blobSize":"16 KB","deleteInfo":{"deleteTooltip":"You must be signed in to make or propose changes"},"editInfo":{"editTooltip":"You must be signed in to make or propose changes"},"ghDesktopPath":"https://desktop.github.com","gitLfsPath":null,"onBranch":true,"shortPath":"7e28057","siteNavLoginPath":"/login?return_to=https%3A%2F%2Fgithub.com%2Fjasoneflood%2Fstixbundles%2Fblob%2Fmain%2FEOTSHARED%2FQRadar.json","isCSV":false,"isRichtext":false,"toc":null,"lineInfo":{"truncatedLoc":"527","truncatedSloc":"526"},"mode":"file"},"image":false,"isCodeownersFile":null,"isPlain":false,"isValidLegacyIssueTemplate":false,"issueTemplateHelpUrl":"https://docs.github.com/articles/about-issue-and-pull-request-templates","issueTemplate":null,"discussionTemplate":null,"language":"JSON","languageID":174,"large":false,"loggedIn":false,"newDiscussionPath":"/jasoneflood/stixbundles/discussions/new","newIssuePath":"/jasoneflood/stixbundles/issues/new","planSupportInfo":{"repoIsFork":null,"repoOwnedByCurrentUser":null,"requestFullPath":"/jasoneflood/stixbundles/blob/main/EOTSHARED/QRadar.json","showFreeOrgGatedFeatureMessage":null,"showPlanSupportBanner":null,"upgradeDataAttributes":null,"upgradePath":null},"publishBannersInfo":{"dismissActionNoticePath":"/settings/dismiss-notice/publish_action_from_dockerfile","dismissStackNoticePath":"/settings/dismiss-notice/publish_stack_from_file","releasePath":"/jasoneflood/stixbundles/releases/new?marketplace=true","showPublishActionBanner":false,"showPublishStackBanner":false},"rawBlobUrl":"https://github.com/jasoneflood/stixbundles/raw/main/EOTSHARED/QRadar.json","renderImageOrRaw":false,"richText":null,"renderedFileInfo":null,"shortPath":null,"tabSize":8,"topBannersInfo":{"overridingGlobalFundingFile":false,"globalPreferredFundingPath":null,"repoOwner":"jasoneflood","repoName":"stixbundles","showInvalidCitationWarning":false,"citationHelpUrl":"https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/about-citation-files","showDependabotConfigurationBanner":false,"actionsOnboardingTip":null},"truncated":false,"viewable":true,"workflowRedirectUrl":null,"symbols":{"timedOut":false,"notAnalyzed":true,"symbols":[]}},"copilotInfo":null,"csrf_tokens":{"/jasoneflood/stixbundles/branches":{"post":"QhDqm9Gj0g8N42Hi4kh1Hq7ZwSH6JGn2KiQgCH5TWgBRJcoRfl1m1psKNXsfe0fWxRlN8arpjDQKQsH2q_VV0A"},"/repos/preferences":{"post":"3Uaa2-HoDcuxjs75gqYbYOYJpxl0TWyDXhOzZaEc4xS7REXHvSZ1EVk2x1ZbXOB9irTRoak5NEtfNy8V3ZjQ7w"}}},"title":"stixbundles/EOTSHARED/QRadar.json at main · jasoneflood/stixbundles"}
+{
+    "type": "bundle",
+    "id": "bundle--281fe97a-35d8-4b84-be2e-253047cc6274",
+    "spec_version": "2.0",
+    "objects": [
+        {
+            "type": "identity",
+            "id": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
+            "name": "shifter_proxy",
+            "identity_class": "events",
+            "created": "2023-10-11T13:01:38.295Z",
+            "modified": "2023-10-11T13:01:38.295Z"
+        },
+        {
+            "id": "observed-data--41376883-01d2-4ed7-9f11-80349bce4a1b",
+            "type": "observed-data",
+            "created": "2023-10-11T12:13:20.874Z",
+            "objects": {
+                "0": {
+                    "id": "CIDD706957",
+                    "type": "x-mss-customer"
+                },
+                "1": {
+                    "id": "PR0000000037382",
+                    "ip": "198.23.124.4",
+                    "name": "bao-us-pa1",
+                    "type": "x-mss-device",
+                    "vendor": "49",
+                    "version": "Palo Oct 11.1.8"
+                },
+                "2": {
+                    "type": "network-traffic",
+                    "dst_ref": "6",
+                    "src_ref": "5",
+                    "dst_port": 80,
+                    "src_port": 49888,
+                    "protocols": [
+                        "tcp"
+                    ]
+                },
+                "3": {
+                    "type": "artifact",
+                    "payload_bin": "T2N0IDExIDEyOjEzOjEzIDEwLjEwLjIwLjEgIDEsMjAyMy8xMC8xMSAxMjoxMzoxMiwwMDc5NTEwMDAwMzU1OTIsVFJBRkZJQyxlbmQsMjMxMCwyMDIzLzEwLzExIDEyOjEzOjEyLDEwLjEwLjIwLjEwLDEyOC4yMTAuMTU3LjI1MSwwLjAuMC4wLDAuMC4wLjAsUEEtdG8tQ1AtcW94LCwsd2ViLWJyb3dzaW5nLHZzeXMxLFByaXZhdGUsVlBOLGV0aGVybmV0MS8yLHR1bm5lbC4yLE1TUyBMb2cgRm9yd2FyZGluZywyMDIzLzEwLzExIDEyOjI0OjEyLDIxMzM1MCwxLDQ5ODg4LDgwLDAsMCwweDcwLHRjcCxhbGxvdywzNTMyLDc1NCwyNzc4LDE0LDIwMjMvMTAvMTEgMTI6MjQ6MDAsMCxwcml2YXRlLWlwLWFkZHJlc3NlcywwLDgyNTY5NDgzMTksMHgwLDEwLjEwLjAuMC0xMC4zMS4yNTUuMjU1LDEwLjEwLjAuMC0xMC4zMS4yNTUuMjU1LDAsNyw3LHRjcC1maW4sMCwwLDAsMCwseGZyLXVzLXBhMSxmcm9tLXBvbGljeSwsLDAsLDAsLE4vQSwwLDAsMCwwLGQ0YzM0ZmRlLWU5MDctNDU4Ny1iMmU3LTc4ZjA2YjIxMGQzYywwLDAsLCwsLCws"
+                },
+                "4": {
+                    "type": "x-oca-event",
+                    "action": "ACCEPT",
+                    "ip_refs": [
+                        "5",
+                        "6"
+                    ],
+                    "host_ref": "7",
+                    "network_ref": "2",
+                    "original_ref": "3"
+                },
+                "5": {
+                    "type": "ipv4-addr",
+                    "value": "10.10.20.10"
+                },
+                "6": {
+                    "type": "ipv4-addr",
+                    "value": "128.210.157.251"
+                },
+                "7": {
+                    "type": "x-oca-asset",
+                    "ip_refs": [
+                        "5"
+                    ]
+                }
+            },
+            "modified": "2023-10-11T12:13:20.874Z",
+            "last_observed": "2023-10-11T12:13:20.874Z",
+            "created_by_ref": "identity--c8241623-3a47-4afc-80cb-36593f29642d",
+            "first_observed": "2023-10-11T12:13:20.874Z",
+            "number_observed": 1
+        },
+        {
+            "id": "observed-data--9054384e-5f99-4bf0-acd4-8f746cbedce2",
+            "type": "observed-data",
+            "created": "2023-10-11T12:15:55.950Z",
+            "objects": {
+                "0": {
+                    "code": 1,
+                    "type": "x-oca-event",
+                    "agent": "WindowsAuthServer @ frank-adams-pc",
+                    "action": "Process Create",
+                    "created": "2023-10-11T12:15:55.950Z",
+                    "outcome": "Process Creation Success",
+                    "category": [
+                        "System"
+                    ],
+                    "file_ref": "6",
+                    "host_ref": "2",
+                    "provider": "Microsoft Windows Security Event Log",
+                    "user_ref": "3",
+                    "process_ref": "4",
+                    "original_ref": "5",
+                    "parent_process_ref": "11"
+                },
+                "1": {
+                    "type": "ipv4-addr",
+                    "value": "10.10.20.10",
+                    "resolves_to_refs": [
+                        "12"
+                    ]
+                },
+                "2": {
+                    "type": "x-oca-asset",
+                    "hostname": "frank-adams-pc.baneandox.com",
+                    "ip_refs": [
+                        "1"
+                    ]
+                },
+                "3": {
+                    "type": "user-account",
+                    "user_id": "frank-adams@baneandox.com"
+                },
+                "4": {
+                    "pid": 26326,
+                    "name": "net.exe",
+                    "type": "process",
+                    "binary_ref": "7",
+                    "parent_ref": "11",
+                    "command_line": "\"C:\\WINDOWS\\SysWOW64\net.exe\" view",
+                    "creator_user_ref": "3"
+                },
+                "5": {
+                    "type": "artifact",
+                    "payload_bin": "PDEzPk9jdCAxMSAxMjoxNTo0OCBmcmFuay1hZGFtcy1wYyBBZ2VudERldmljZT1XaW5kb3dzTG9nICAgQWdlbnRMb2dGaWxlPU1pY3Jvc29mdC1XaW5kb3dzLVN5c21vbi9PcGVyYXRpb25hbCAgIFBsdWdpblZlcnNpb249Ny4yLjkuNzIgIFNvdXJjZT1NaWNyb3NvZnQtV2luZG93cy1TeXNtb24gQ29tcHV0ZXI9ZnJhbmstYWRhbXMtcGMgT3JpZ2luYXRpbmdDb21wdXRlcj1mcmFuay1hZGFtcy1wYyBVc2VyPVNZU1RFTSAgRG9tYWluPU5UIEFVVEhPUklUWSBFdmVudElEPTEgICBFdmVudElEQ29kZT0xICAgRXZlbnRUeXBlPTQgRXZlbnRDYXRlZ29yeT0xIFJlY29yZE51bWJlcj0xODYxNzIxICAgIFRpbWVHZW5lcmF0ZWQ9NjE2NTUxNjY5NDggVGltZVdyaXR0ZW49MTY5NTk4OTc0OCBMZXZlbD1JbmZvcm1hdGlvbmFsIEtleXdvcmRzPTB4ODAwMDAwMDAwMDAwMDAwMCBUYXNrPVN5c21vblRhc2stU1lTTU9OX0NSRUFURV9QUk9DRVNTICAgT3Bjb2RlPUluZm8gTWVzc2FnZT1Qcm9jZXNzIENyZWF0ZTogUnVsZU5hbWU6IC0gVXRjVGltZTogMjAyMy0xMC0xMSAxMjoxNTo0Ni4xMTcgUHJvY2Vzc0d1aWQ6IHsyNTNhY2Y2Ny0zYTY2LTYwMDAtNmY3MC0wMTAwMDAwMDBiMDB9IFByb2Nlc3NJZDogMjYzMjQgSW1hZ2U6IEM6XFdpbmRvd3NcU3lzV09XNjRcbmV0LmV4ZSBGaWxlVmVyc2lvbjogMTAuMC4xOTA0MS41NDYgKFdpbkJ1aWxkLjE2MDEwMS4wODAwKSBEZXNjcmlwdGlvbjogQ09NIFN1cnJvZ2F0ZSBQcm9kdWN0OiBNaWNyb3NvZnTUueKApiBXaW5kb3dz1LnigKYgT3BlcmF0aW5nIFN5c3RlbSBDb21wYW55OiBNaWNyb3NvZnQgQ29ycG9yYXRpb24gT3JpZ2luYWxGaWxlTmFtZTogbmV0LmV4ZSBDb21tYW5kTGluZTogIkM6XFdJTkRPV1NcU3lzV09XNjRcbmV0LmV4ZSB2aWV3IiBDdXJyZW50RGlyZWN0b3J5OiBDOlxXSU5ET1dTXHN5c3RlbTMyXCBVc2VyOiBBenVyZUFEXFMtMS01LTggTG9nb25HdWlkOiB7MjUzYWNmNjctMzVkOC01ZmU4LTM0YWMtNjIxODAwMDAwMDAwfSBMb2dvbklkOiAweDE4NjJBQzM0IFRlcm1pbmFsU2Vzc2lvbklkOiAyIEludGVncml0eUxldmVsOiBNZWRpdW0gSGFzaGVzOiBNRDU9M0YzQzk0ODVGOEY5N0FDMDRDOEU0M0VGNDQ2M0E2OEQsU0hBMjU2PTNFRDY5Q0FBQjAzNTI1OEUwMDhFRkJDRjQwREIzMDU4OTFCNDBCQTAyQ0EyNzM3RTIwREVGQTdDMkQ0QUZBRjcsSU1QSEFTSD1CNkE2QzUyNDdFRkJEMjYxMEUzREVBNDQ2NDlENzA0MSBQYXJlbnRQcm9jZXNzR3VpZDogezI1M2FjZjY3LTIwNTktNWZlNS0wZjAwLTAwMDAwMDAwMGIwMH0gUGFyZW50UHJvY2Vzc0lkOiAxMTY0IFBhcmVudEltYWdlOiBDOlxXaW5kb3dzXFN5c3RlbTMyXHN2Y2hvc3QuZXhlIFBhcmVudENvbW1hbmRMaW5lOiBDOlxXSU5ET1dTXHN5c3RlbTMyXHN2Y2hvc3QuZXhlIC1rIERjb21MYXVuY2ggLXA="
+                },
+                "6": {
+                    "type": "file",
+                    "hashes": {
+                        "MD5": "3F3C9485F8F97AC04C8E43EF4463A68D"
+                    }
+                },
+                "7": {
+                    "name": "net.exe",
+                    "type": "file",
+                    "parent_directory_ref": "8"
+                },
+                "8": {
+                    "path": "C:\\Windows\\SysWOW64",
+                    "type": "directory"
+                },
+                "9": {
+                    "name": "svchost.exe",
+                    "type": "file",
+                    "parent_directory_ref": "10"
+                },
+                "10": {
+                    "path": "C:\\Windows\\System32",
+                    "type": "directory"
+                },
+                "11": {
+                    "pid": 1164,
+                    "type": "process",
+                    "binary_ref": "9",
+                    "command_line": "C:\\WINDOWS\\system32\\svchost.exe -k DcomLaunch -p"
+                },
+                "12": {
+                    "type": "domain-name",
+                    "value": "frank-adams-pc.baneandox.com"
+                },
+                "13": {
+                    "type": "x-ibm-finding",
+                    "severity": 100,
+                    "name": "Windows Network Enumeration",
+                    "ttp_tagging_refs": [
+                        "14",
+                        "16"
+                    ]
+                },
+                "14": {
+                    "type": "x-ibm-ttp-tagging",
+                    "extensions": {
+                        "mitre-attack-ext": {
+                            "tactic_name": "Discovery"
+                        }
+                    },
+                    "kill_chain_phases": [
+                        "15"
+                    ]
+                },
+                "15": {
+                    "type": "kill-chain-phase",
+                    "phase_name": "Discovery"
+                },
+                "16": {
+                    "type": "x-ibm-ttp-tagging",
+                    "extensions": {
+                        "mitre-attack-ext": {
+                            "technique_name": "Remote System Discovery (T1018)"
+                        }
+                    }
+                }
+            },
+            "modified": "2023-10-11T12:15:55.950Z",
+            "last_observed": "2023-10-11T12:15:55.950Z",
+            "created_by_ref": "identity--3079a446-1a08-40d0-a1bb-e998f369b1e6",
+            "first_observed": "2023-10-11T12:15:55.950Z",
+            "number_observed": 1
+        },
+        {
+            "id": "observed-data--3054384e-5f99-4bf0-acd4-8f746cbedce2",
+            "type": "observed-data",
+            "created": "2023-10-11T12:17:10.940Z",
+            "objects": {
+                "0": {
+                    "code": 1,
+                    "type": "x-oca-event",
+                    "agent": "WindowsAuthServer @ frank-adams-pc",
+                    "action": "Process Create",
+                    "nt_ref": "2",
+                    "created": "2023-10-11T12:17:10.940Z",
+                    "outcome": "Process Creation Success",
+                    "category": [
+                        "System"
+                    ],
+                    "file_ref": "7",
+                    "host_ref": "3",
+                    "provider": "Microsoft Windows Security Event Log",
+                    "user_ref": "4",
+                    "process_ref": "5",
+                    "original_ref": "6",
+                    "parent_process_ref": "12"
+                },
+                "1": {
+                    "type": "ipv4-addr",
+                    "value": "10.10.20.10",
+                    "resolves_to_refs": [
+                        "13"
+                    ]
+                },
+                "2": {
+                    "type": "network-traffic",
+                    "dst_ref": "14",
+                    "src_ref": "1",
+                    "dst_port": 5985,
+                    "src_port": 23178,
+                    "protocols": [
+                        "tcp"
+                    ]
+                },
+                "3": {
+                    "type": "x-oca-asset",
+                    "hostname": "frank-adams-pc.baneandox.com",
+                    "ip_refs": [
+                        "1"
+                    ]
+                },
+                "4": {
+                    "type": "user-account",
+                    "user_id": "frank-adams@baneandox.com"
+                },
+                "5": {
+                    "pid": 26329,
+                    "name": "wsmprovhost.exe",
+                    "type": "process",
+                    "binary_ref": "8",
+                    "parent_ref": "12",
+                    "command_line": "\"C:\\WINDOWS\\SysWOW64\\wsmprovhost.exe\" connect sales-database.baneandox.com",
+                    "creator_user_ref": "4"
+                },
+                "6": {
+                    "type": "artifact",
+                    "payload_bin": "PDEzPk9jdCAxMSAxMjoxNzoxMiBmcmFuay1hZGFtcy1wYyBBZ2VudERldmljZT1XaW5kb3dzTG9nICAgQWdlbnRMb2dGaWxlPU1pY3Jvc29mdC1XaW5kb3dzLVN5c21vbi9PcGVyYXRpb25hbCAgIFBsdWdpblZlcnNpb249Ny4yLjkuNzIgIFNvdXJjZT1NaWNyb3NvZnQtV2luZG93cy1TeXNtb24gQ29tcHV0ZXI9ZnJhbmstYWRhbXMtcGMgT3JpZ2luYXRpbmdDb21wdXRlcj1mcmFuay1hZGFtcy1wYyBVc2VyPVNZU1RFTSAgRG9tYWluPU5UIEFVVEhPUklUWSBFdmVudElEPTEgICBFdmVudElEQ29kZT0xICAgRXZlbnRUeXBlPTQgRXZlbnRDYXRlZ29yeT0xIFJlY29yZE51bWJlcj0xODYxNzIxICAgIFRpbWVHZW5lcmF0ZWQ9NjE2NTUxNjcwMzIgIFRpbWVXcml0dGVuPTYxNjU1MTY3MDMyICBMZXZlbD1JbmZvcm1hdGlvbmFsIEtleXdvcmRzPTB4ODAwMDAwMDAwMDAwMDAwMCBUYXNrPVN5c21vblRhc2stU1lTTU9OX0NSRUFURV9QUk9DRVNTICAgT3Bjb2RlPUluZm8gTWVzc2FnZT1Qcm9jZXNzIENyZWF0ZTogUnVsZU5hbWU6IC0gVXRjVGltZTogMjAyMy0xMC0xMSAxMjoxNzoxMi4xMTcgUHJvY2Vzc0d1aWQ6IHsyNTNhY2Y2Ny0zYTY2LTYwMDAtNmY3MC0wMTAwMDAwMDBiMDB9IFByb2Nlc3NJZDogMjYzMjQgSW1hZ2U6IEM6XFdpbmRvd3NcU3lzV09XNjRcbmV0LmV4ZSBGaWxlVmVyc2lvbjogMTAuMC4xOTA0MS41NDYgKFdpbkJ1aWxkLjE2MDEwMS4wODAwKSBEZXNjcmlwdGlvbjogQ09NIFN1cnJvZ2F0ZSBQcm9kdWN0OiBNaWNyb3NvZnTUueKApiBXaW5kb3dz1LnigKYgT3BlcmF0aW5nIFN5c3RlbSBDb21wYW55OiBNaWNyb3NvZnQgQ29ycG9yYXRpb24gT3JpZ2luYWxGaWxlTmFtZTogbmV0LmV4ZSBDb21tYW5kTGluZTogIkM6XFdJTkRPV1NcU3lzV09XNjRcbmV0LmV4ZSB2aWV3IiBDdXJyZW50RGlyZWN0b3J5OiBDOlxXSU5ET1dTXHN5c3RlbTMyXCBVc2VyOiBBenVyZUFEXGZyYW5rLWFkYW1zTG9nb25HdWlkOiB7MjUzYWNmNjctMzVkOC01ZmU4LTM0YWMtNjIxODAwMDAwMDAwfSBMb2dvbklkOiAweDE4NjJBQzM0IFRlcm1pbmFsU2Vzc2lvbklkOiAyIEludGVncml0eUxldmVsOiBNZWRpdW0gSGFzaGVzOiBNRDU9NkYzQzk0ODVGOEY5N0FDMDRDOEU0M0VGNDQ2M0E2OEMsU0hBMjU2PTNFRDY5Q0FBQjAzNTI1OEUwMDhFRkJDRjQwREIzMDU4OTFCNDBCQTAyQ0EyNzM3RTIwREVGQTdDMkQ0QUZBRjcsSU1QSEFTSD1CNkE2QzUyNDdFRkJEMjYxMEUzREVBNDQ2NDlENzA0MSBQYXJlbnRQcm9jZXNzR3VpZDogezI1M2FjZjY3LTIwNTktNWZlNS0wZjAwLTAwMDAwMDAwMGIwMH0gUGFyZW50UHJvY2Vzc0lkOiAxMTY0IFBhcmVudEltYWdlOiBDOlxXaW5kb3dzXFN5c3RlbTMyXHN2Y2hvc3QuZXhlIFBhcmVudENvbW1hbmRMaW5lOiBDOlxXSU5ET1dTXHN5c3RlbTMyXHN2Y2hvc3QuZXhlIC1rIERjb21MYXVuY2ggLXA="
+                },
+                "7": {
+                    "type": "file",
+                    "hashes": {
+                        "MD5": "2F3C9485F8F97AC04C8E43EF4463A68D"
+                    }
+                },
+                "8": {
+                    "name": "wsmprovhost.exe",
+                    "type": "file",
+                    "parent_directory_ref": "9"
+                },
+                "9": {
+                    "path": "C:\\Windows\\SysWOW64",
+                    "type": "directory"
+                },
+                "10": {
+                    "name": "svchost.exe",
+                    "type": "file",
+                    "parent_directory_ref": "11"
+                },
+                "11": {
+                    "path": "C:\\Windows\\System32",
+                    "type": "directory"
+                },
+                "12": {
+                    "pid": 1164,
+                    "type": "process",
+                    "binary_ref": "10",
+                    "command_line": "C:\\WINDOWS\\system32\\svchost.exe -k DcomLaunch -p"
+                },
+                "13": {
+                    "type": "domain-name",
+                    "value": "frank-adams-pc.baneandox.com"
+                },
+                "14": {
+                    "type": "ipv4-addr",
+                    "value": "172.20.18.20",
+                    "resolves_to_refs": [
+                        "15"
+                    ]
+                },
+                "15": {
+                    "type": "domain-name",
+                    "value": "sales-database.baneandox.com"
+                },
+                "16": {
+                    "type": "x-ibm-finding",
+                    "severity": 100,
+                    "name": "Remote PowerShell Session Host Process (WinRM)",
+                    "ttp_tagging_refs": [
+                        "17",
+                        "19"
+                    ]
+                },
+                "17": {
+                    "type": "x-ibm-ttp-tagging",
+                    "extensions": {
+                        "mitre-attack-ext": {
+                            "tactic_name": "LateralMovement"
+                        }
+                    },
+                    "kill_chain_phases": [
+                        "18"
+                    ]
+                },
+                "18": {
+                    "type": "kill-chain-phase",
+                    "phase_name": "LateralMovement"
+                },
+                "19": {
+                    "type": "x-ibm-ttp-tagging",
+                    "extensions": {
+                        "mitre-attack-ext": {
+                            "technique_name": "Windows Remote Management (T1021.006)"
+                        }
+                    }
+                }
+            },
+            "modified": "2023-10-11T12:17:10.940Z",
+            "last_observed": "2023-10-11T12:17:10.940Z",
+            "created_by_ref": "identity--3079a446-1a08-40d0-a1bb-e998f369b1e6",
+            "first_observed": "2023-10-11T12:17:10.940Z",
+            "number_observed": 1
+        },
+        {
+            "id": "observed-data--e5d9f23d-8eaf-467e-a785-90c528f2693c",
+            "type": "observed-data",
+            "created": "2023-10-11T12:20:03.830Z",
+            "objects": {
+                "0": {
+                    "type": "user-account",
+                    "user_id": "frank-adams@baneandox.com"
+                },
+                "1": {
+                    "type": "ipv4-addr",
+                    "value": "172.20.18.20"
+                },
+                "2": {
+                    "type": "network-traffic",
+                    "dst_ref": "1",
+                    "src_ref": "3",
+                    "dst_port": 3306,
+                    "src_port": 44494,
+                    "protocols": [
+                        "tcp",
+                        "ipv4"
+                    ]
+                },
+                "3": {
+                    "type": "ipv4-addr",
+                    "value": "10.10.20.10"
+                },
+                "4": {
+                    "type": "x-ibm-finding",
+                    "severity": 100,
+                    "name": "Abnormal queries to cloud data store",
+                    "ttp_tagging_refs": [
+                        "5",
+                        "7"
+                    ]
+                },
+                "5": {
+                    "type": "x-ibm-ttp-tagging",
+                    "extensions": {
+                        "mitre-attack-ext": {
+                            "tactic_name": "Collection"
+                        }
+                    },
+                    "kill_chain_phases": [
+                        "6"
+                    ]
+                },
+                "6": {
+                    "type": "kill-chain-phase",
+                    "phase_name": "Collection"
+                },
+                "7": {
+                    "type": "x-ibm-ttp-tagging",
+                    "extensions": {
+                        "mitre-attack-ext": {
+                            "technique_name": "Data from Cloud Storage Object (T1530)"
+                        }
+                    }
+                }
+            },
+            "modified": "2023-10-11T12:20:03.830Z",
+            "last_observed": "2023-10-11T12:20:03.830Z",
+            "created_by_ref": "identity--c8241623-3a47-4afc-80cb-36593f29642d",
+            "first_observed": "2023-10-11T12:20:03.830Z",
+            "x_com_guardium": {
+                "db_user": "frank-adams@baneandox.com",
+                "new_outlier": "false",
+                "service_name": "172.20.18.20:5.6.27",
+                "temp_outlier": "false",
+                "anomaly_score": 100,
+                "error_outlier": "false",
+                "source_program": "MYSQL CLIENT",
+                "high_volume_outlier": "true"
+            },
+            "number_observed": 1
+        },
+        {
+            "id": "observed-data--89543845-acd4-8f746cbedce2",
+            "type": "observed-data",
+            "created": "2023-10-11T12:21:11.750Z",
+            "objects": {
+                "0": {
+                    "code": 1,
+                    "type": "x-oca-event",
+                    "agent": "SecurityComplianceCenter",
+                    "action": "Data Transfer",
+                    "nt_ref": "2",
+                    "created": "2023-10-11T12:21:11.750Z",
+                    "outcome": "Success",
+                    "category": [
+                        "ThreatManagement"
+                    ],
+                    "host_ref": "3",
+                    "provider": "SecurityComplianceCenter",
+                    "user_ref": "4"
+                },
+                "1": {
+                    "type": "ipv4-addr",
+                    "value": "172.20.18.20",
+                    "resolves_to_refs": [
+                        "5"
+                    ]
+                },
+                "2": {
+                    "type": "network-traffic",
+                    "dst_ref": "6",
+                    "src_ref": "1",
+                    "dst_port": 443,
+                    "src_port": 127690,
+                    "protocols": [
+                        "tcp"
+                    ]
+                },
+                "3": {
+                    "type": "x-oca-asset",
+                    "ip_refs": [
+                        "1"
+                    ],
+                    "hostname": "sales-database.baneandox.com",
+                    "host_id": "903daa5f5b044309a3587ae40c8fe077"
+                },
+                "4": {
+                    "type": "user-account",
+                    "user_id": "frank-adams@baneandox.com"
+                },
+                "5": {
+                    "type": "domain-name",
+                    "value": "sales-database.baneandox.com"
+                },
+                "6": {
+                    "type": "ipv4-addr",
+                    "value": "128.210.157.251"
+                },
+                "7": {
+                    "type": "x-ibm-finding",
+                    "severity": 100,
+                    "name": "Data Exfiltration to Unsanctioned Apps",
+                    "ttp_tagging_refs": [
+                        "8",
+                        "10"
+                    ]
+                },
+                "8": {
+                    "type": "x-ibm-ttp-tagging",
+                    "extensions": {
+                        "mitre-attack-ext": {
+                            "tactic_name": "Exfiltration"
+                        }
+                    },
+                    "kill_chain_phases": [
+                        "9"
+                    ]
+                },
+                "9": {
+                    "type": "kill-chain-phase",
+                    "phase_name": "Exfiltration"
+                },
+                "10": {
+                    "type": "x-ibm-ttp-tagging",
+                    "extensions": {
+                        "mitre-attack-ext": {
+                            "technique_name": "Transfer Data to Cloud Account (T1537)"
+                        }
+                    }
+                }
+            },
+            "modified": "2023-10-11T12:21:11.750Z",
+            "last_observed": "2023-10-11T12:21:11.750Z",
+            "created_by_ref": "identity--c8241623-3a47-4afc-80cb-36593f29642d",
+            "first_observed": "2023-10-11T12:21:11.750Z",
+            "number_observed": 1
+        }
+    ]
+}
