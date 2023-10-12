@@ -8,13 +8,13 @@
             "id": "identity--f431f809-377b-45e0-aa1c-6a4751cae5ff",
             "name": "shifter_proxy",
             "identity_class": "events",
-            "created": "2023-10-11T13:01:38.295Z",
-            "modified": "2023-10-11T13:01:38.295Z"
+            "created": "2023-10-12T13:01:38.295Z",
+            "modified": "2023-10-12T13:01:38.295Z"
         },
         {
             "id": "observed-data--41376883-01d2-4ed7-9f11-80349bce4a1b",
             "type": "observed-data",
-            "created": "2023-10-11T12:13:20.874Z",
+            "created": "2023-10-12T12:13:20.874Z",
             "objects": {
                 "0": {
                     "id": "CIDD706957",
@@ -40,7 +40,7 @@
                 },
                 "3": {
                     "type": "artifact",
-                    "payload_bin": "T2N0IDExIDEyOjEzOjEzIDEwLjEwLjIwLjEgIDEsMjAyMy8xMC8xMSAxMjoxMzoxMiwwMDc5NTEwMDAwMzU1OTIsVFJBRkZJQyxlbmQsMjMxMCwyMDIzLzEwLzExIDEyOjEzOjEyLDEwLjEwLjIwLjEwLDEyOC4yMTAuMTU3LjI1MSwwLjAuMC4wLDAuMC4wLjAsUEEtdG8tQ1AtcW94LCwsd2ViLWJyb3dzaW5nLHZzeXMxLFByaXZhdGUsVlBOLGV0aGVybmV0MS8yLHR1bm5lbC4yLE1TUyBMb2cgRm9yd2FyZGluZywyMDIzLzEwLzExIDEyOjI0OjEyLDIxMzM1MCwxLDQ5ODg4LDgwLDAsMCwweDcwLHRjcCxhbGxvdywzNTMyLDc1NCwyNzc4LDE0LDIwMjMvMTAvMTEgMTI6MjQ6MDAsMCxwcml2YXRlLWlwLWFkZHJlc3NlcywwLDgyNTY5NDgzMTksMHgwLDEwLjEwLjAuMC0xMC4zMS4yNTUuMjU1LDEwLjEwLjAuMC0xMC4zMS4yNTUuMjU1LDAsNyw3LHRjcC1maW4sMCwwLDAsMCwseGZyLXVzLXBhMSxmcm9tLXBvbGljeSwsLDAsLDAsLE4vQSwwLDAsMCwwLGQ0YzM0ZmRlLWU5MDctNDU4Ny1iMmU3LTc4ZjA2YjIxMGQzYywwLDAsLCwsLCws"
+                    "payload_bin": "T2N0IDEyIDEyOjEzOjEzIDEwLjEwLjIwLjEgIDEsMjAyMy8xMC8xMiAxMjoxMzoxMiwwMDc5NTEwMDAwMzU1OTIsVFJBRkZJQyxlbmQsMjMxMCwyMDIzLzEwLzEyIDEyOjEzOjEyLDEwLjEwLjIwLjEwLDEyOC4yMTAuMTU3LjI1MSwwLjAuMC4wLDAuMC4wLjAsUEEtdG8tQ1AtcW94LCwsd2ViLWJyb3dzaW5nLHZzeXMxLFByaXZhdGUsVlBOLGV0aGVybmV0MS8yLHR1bm5lbC4yLE1TUyBMb2cgRm9yd2FyZGluZywyMDIzLzEwLzEyIDEyOjI0OjEyLDIxMzM1MCwxLDQ5ODg4LDgwLDAsMCwweDcwLHRjcCxhbGxvdywzNTMyLDc1NCwyNzc4LDE0LDIwMjMvMTAvMTIgMTI6MjQ6MDAsMCxwcml2YXRlLWlwLWFkZHJlc3NlcywwLDgyNTY5NDgzMTksMHgwLDEwLjEwLjAuMC0xMC4zMS4yNTUuMjU1LDEwLjEwLjAuMC0xMC4zMS4yNTUuMjU1LDAsNyw3LHRjcC1maW4sMCwwLDAsMCwseGZyLXVzLXBhMSxmcm9tLXBvbGljeSwsLDAsLDAsLE4vQSwwLDAsMCwwLGQ0YzM0ZmRlLWU5MDctNDU4Ny1iMmU3LTc4ZjA2YjIxMGQzYywwLDAsLCwsLCws"
                 },
                 "4": {
                     "type": "x-oca-event",
@@ -68,23 +68,23 @@
                     ]
                 }
             },
-            "modified": "2023-10-11T12:13:20.874Z",
-            "last_observed": "2023-10-11T12:13:20.874Z",
+            "modified": "2023-10-12T12:13:20.874Z",
+            "last_observed": "2023-10-12T12:13:20.874Z",
             "created_by_ref": "identity--c8241623-3a47-4afc-80cb-36593f29642d",
-            "first_observed": "2023-10-11T12:13:20.874Z",
+            "first_observed": "2023-10-12T12:13:20.874Z",
             "number_observed": 1
         },
         {
             "id": "observed-data--9054384e-5f99-4bf0-acd4-8f746cbedce2",
             "type": "observed-data",
-            "created": "2023-10-11T12:15:55.950Z",
+            "created": "2023-10-12T12:15:55.950Z",
             "objects": {
                 "0": {
                     "code": 1,
                     "type": "x-oca-event",
                     "agent": "WindowsAuthServer @ frank-adams-pc",
                     "action": "Process Create",
-                    "created": "2023-10-11T12:15:55.950Z",
+                    "created": "2023-10-12T12:15:55.950Z",
                     "outcome": "Process Creation Success",
                     "category": [
                         "System"
@@ -126,7 +126,7 @@
                 },
                 "5": {
                     "type": "artifact",
-                    "payload_bin": "PDEzPk9jdCAxMSAxMjoxNTo0OCBmcmFuay1hZGFtcy1wYyBBZ2VudERldmljZT1XaW5kb3dzTG9nICAgQWdlbnRMb2dGaWxlPU1pY3Jvc29mdC1XaW5kb3dzLVN5c21vbi9PcGVyYXRpb25hbCAgIFBsdWdpblZlcnNpb249Ny4yLjkuNzIgIFNvdXJjZT1NaWNyb3NvZnQtV2luZG93cy1TeXNtb24gQ29tcHV0ZXI9ZnJhbmstYWRhbXMtcGMgT3JpZ2luYXRpbmdDb21wdXRlcj1mcmFuay1hZGFtcy1wYyBVc2VyPVNZU1RFTSAgRG9tYWluPU5UIEFVVEhPUklUWSBFdmVudElEPTEgICBFdmVudElEQ29kZT0xICAgRXZlbnRUeXBlPTQgRXZlbnRDYXRlZ29yeT0xIFJlY29yZE51bWJlcj0xODYxNzIxICAgIFRpbWVHZW5lcmF0ZWQ9NjE2NTUxNjY5NDggVGltZVdyaXR0ZW49MTY5NTk4OTc0OCBMZXZlbD1JbmZvcm1hdGlvbmFsIEtleXdvcmRzPTB4ODAwMDAwMDAwMDAwMDAwMCBUYXNrPVN5c21vblRhc2stU1lTTU9OX0NSRUFURV9QUk9DRVNTICAgT3Bjb2RlPUluZm8gTWVzc2FnZT1Qcm9jZXNzIENyZWF0ZTogUnVsZU5hbWU6IC0gVXRjVGltZTogMjAyMy0xMC0xMSAxMjoxNTo0Ni4xMTcgUHJvY2Vzc0d1aWQ6IHsyNTNhY2Y2Ny0zYTY2LTYwMDAtNmY3MC0wMTAwMDAwMDBiMDB9IFByb2Nlc3NJZDogMjYzMjQgSW1hZ2U6IEM6XFdpbmRvd3NcU3lzV09XNjRcbmV0LmV4ZSBGaWxlVmVyc2lvbjogMTAuMC4xOTA0MS41NDYgKFdpbkJ1aWxkLjE2MDEwMS4wODAwKSBEZXNjcmlwdGlvbjogQ09NIFN1cnJvZ2F0ZSBQcm9kdWN0OiBNaWNyb3NvZnTUueKApiBXaW5kb3dz1LnigKYgT3BlcmF0aW5nIFN5c3RlbSBDb21wYW55OiBNaWNyb3NvZnQgQ29ycG9yYXRpb24gT3JpZ2luYWxGaWxlTmFtZTogbmV0LmV4ZSBDb21tYW5kTGluZTogIkM6XFdJTkRPV1NcU3lzV09XNjRcbmV0LmV4ZSB2aWV3IiBDdXJyZW50RGlyZWN0b3J5OiBDOlxXSU5ET1dTXHN5c3RlbTMyXCBVc2VyOiBBenVyZUFEXFMtMS01LTggTG9nb25HdWlkOiB7MjUzYWNmNjctMzVkOC01ZmU4LTM0YWMtNjIxODAwMDAwMDAwfSBMb2dvbklkOiAweDE4NjJBQzM0IFRlcm1pbmFsU2Vzc2lvbklkOiAyIEludGVncml0eUxldmVsOiBNZWRpdW0gSGFzaGVzOiBNRDU9M0YzQzk0ODVGOEY5N0FDMDRDOEU0M0VGNDQ2M0E2OEQsU0hBMjU2PTNFRDY5Q0FBQjAzNTI1OEUwMDhFRkJDRjQwREIzMDU4OTFCNDBCQTAyQ0EyNzM3RTIwREVGQTdDMkQ0QUZBRjcsSU1QSEFTSD1CNkE2QzUyNDdFRkJEMjYxMEUzREVBNDQ2NDlENzA0MSBQYXJlbnRQcm9jZXNzR3VpZDogezI1M2FjZjY3LTIwNTktNWZlNS0wZjAwLTAwMDAwMDAwMGIwMH0gUGFyZW50UHJvY2Vzc0lkOiAxMTY0IFBhcmVudEltYWdlOiBDOlxXaW5kb3dzXFN5c3RlbTMyXHN2Y2hvc3QuZXhlIFBhcmVudENvbW1hbmRMaW5lOiBDOlxXSU5ET1dTXHN5c3RlbTMyXHN2Y2hvc3QuZXhlIC1rIERjb21MYXVuY2ggLXA="
+                    "payload_bin": "PDEzPk9jdCAxMiAxMjoxNTo0OCBmcmFuay1hZGFtcy1wYyBBZ2VudERldmljZT1XaW5kb3dzTG9nICAgQWdlbnRMb2dGaWxlPU1pY3Jvc29mdC1XaW5kb3dzLVN5c21vbi9PcGVyYXRpb25hbCAgIFBsdWdpblZlcnNpb249Ny4yLjkuNzIgIFNvdXJjZT1NaWNyb3NvZnQtV2luZG93cy1TeXNtb24gQ29tcHV0ZXI9ZnJhbmstYWRhbXMtcGMgT3JpZ2luYXRpbmdDb21wdXRlcj1mcmFuay1hZGFtcy1wYyBVc2VyPVNZU1RFTSAgRG9tYWluPU5UIEFVVEhPUklUWSBFdmVudElEPTEgICBFdmVudElEQ29kZT0xICAgRXZlbnRUeXBlPTQgRXZlbnRDYXRlZ29yeT0xIFJlY29yZE51bWJlcj0xODYxNzIxICAgIFRpbWVHZW5lcmF0ZWQ9NjE2NTUxNjY5NDggVGltZVdyaXR0ZW49MTY5NTk4OTc0OCBMZXZlbD1JbmZvcm1hdGlvbmFsIEtleXdvcmRzPTB4ODAwMDAwMDAwMDAwMDAwMCBUYXNrPVN5c21vblRhc2stU1lTTU9OX0NSRUFURV9QUk9DRVNTICAgT3Bjb2RlPUluZm8gTWVzc2FnZT1Qcm9jZXNzIENyZWF0ZTogUnVsZU5hbWU6IC0gVXRjVGltZTogMjAyMy0xMC0xMiAxMjoxNTo0Ni4xMTcgUHJvY2Vzc0d1aWQ6IHsyNTNhY2Y2Ny0zYTY2LTYwMDAtNmY3MC0wMTAwMDAwMDBiMDB9IFByb2Nlc3NJZDogMjYzMjQgSW1hZ2U6IEM6XFdpbmRvd3NcU3lzV09XNjRcbmV0LmV4ZSBGaWxlVmVyc2lvbjogMTAuMC4xOTA0MS41NDYgKFdpbkJ1aWxkLjE2MDEwMS4wODAwKSBEZXNjcmlwdGlvbjogQ09NIFN1cnJvZ2F0ZSBQcm9kdWN0OiBNaWNyb3NvZnTUueKApiBXaW5kb3dz1LnigKYgT3BlcmF0aW5nIFN5c3RlbSBDb21wYW55OiBNaWNyb3NvZnQgQ29ycG9yYXRpb24gT3JpZ2luYWxGaWxlTmFtZTogbmV0LmV4ZSBDb21tYW5kTGluZTogIkM6XFdJTkRPV1NcU3lzV09XNjRcbmV0LmV4ZSB2aWV3IiBDdXJyZW50RGlyZWN0b3J5OiBDOlxXSU5ET1dTXHN5c3RlbTMyXCBVc2VyOiBBenVyZUFEXFMtMS01LTggTG9nb25HdWlkOiB7MjUzYWNmNjctMzVkOC01ZmU4LTM0YWMtNjIxODAwMDAwMDAwfSBMb2dvbklkOiAweDE4NjJBQzM0IFRlcm1pbmFsU2Vzc2lvbklkOiAyIEludGVncml0eUxldmVsOiBNZWRpdW0gSGFzaGVzOiBNRDU9M0YzQzk0ODVGOEY5N0FDMDRDOEU0M0VGNDQ2M0E2OEQsU0hBMjU2PTNFRDY5Q0FBQjAzNTI1OEUwMDhFRkJDRjQwREIzMDU4OTFCNDBCQTAyQ0EyNzM3RTIwREVGQTdDMkQ0QUZBRjcsSU1QSEFTSD1CNkE2QzUyNDdFRkJEMjYxMEUzREVBNDQ2NDlENzA0MSBQYXJlbnRQcm9jZXNzR3VpZDogezI1M2FjZjY3LTIwNTktNWZlNS0wZjAwLTAwMDAwMDAwMGIwMH0gUGFyZW50UHJvY2Vzc0lkOiAxMTY0IFBhcmVudEltYWdlOiBDOlxXaW5kb3dzXFN5c3RlbTMyXHN2Y2hvc3QuZXhlIFBhcmVudENvbW1hbmRMaW5lOiBDOlxXSU5ET1dTXHN5c3RlbTMyXHN2Y2hvc3QuZXhlIC1rIERjb21MYXVuY2ggLXA="
                 },
                 "6": {
                     "type": "file",
@@ -195,16 +195,16 @@
                     }
                 }
             },
-            "modified": "2023-10-11T12:15:55.950Z",
-            "last_observed": "2023-10-11T12:15:55.950Z",
+            "modified": "2023-10-12T12:15:55.950Z",
+            "last_observed": "2023-10-12T12:15:55.950Z",
             "created_by_ref": "identity--3079a446-1a08-40d0-a1bb-e998f369b1e6",
-            "first_observed": "2023-10-11T12:15:55.950Z",
+            "first_observed": "2023-10-12T12:15:55.950Z",
             "number_observed": 1
         },
         {
             "id": "observed-data--3054384e-5f99-4bf0-acd4-8f746cbedce2",
             "type": "observed-data",
-            "created": "2023-10-11T12:17:10.940Z",
+            "created": "2023-10-12T12:17:10.940Z",
             "objects": {
                 "0": {
                     "code": 1,
@@ -212,7 +212,7 @@
                     "agent": "WindowsAuthServer @ frank-adams-pc",
                     "action": "Process Create",
                     "nt_ref": "2",
-                    "created": "2023-10-11T12:17:10.940Z",
+                    "created": "2023-10-12T12:17:10.940Z",
                     "outcome": "Process Creation Success",
                     "category": [
                         "System"
@@ -264,7 +264,7 @@
                 },
                 "6": {
                     "type": "artifact",
-                    "payload_bin": "PDEzPk9jdCAxMSAxMjoxNzoxMiBmcmFuay1hZGFtcy1wYyBBZ2VudERldmljZT1XaW5kb3dzTG9nICAgQWdlbnRMb2dGaWxlPU1pY3Jvc29mdC1XaW5kb3dzLVN5c21vbi9PcGVyYXRpb25hbCAgIFBsdWdpblZlcnNpb249Ny4yLjkuNzIgIFNvdXJjZT1NaWNyb3NvZnQtV2luZG93cy1TeXNtb24gQ29tcHV0ZXI9ZnJhbmstYWRhbXMtcGMgT3JpZ2luYXRpbmdDb21wdXRlcj1mcmFuay1hZGFtcy1wYyBVc2VyPVNZU1RFTSAgRG9tYWluPU5UIEFVVEhPUklUWSBFdmVudElEPTEgICBFdmVudElEQ29kZT0xICAgRXZlbnRUeXBlPTQgRXZlbnRDYXRlZ29yeT0xIFJlY29yZE51bWJlcj0xODYxNzIxICAgIFRpbWVHZW5lcmF0ZWQ9NjE2NTUxNjcwMzIgIFRpbWVXcml0dGVuPTYxNjU1MTY3MDMyICBMZXZlbD1JbmZvcm1hdGlvbmFsIEtleXdvcmRzPTB4ODAwMDAwMDAwMDAwMDAwMCBUYXNrPVN5c21vblRhc2stU1lTTU9OX0NSRUFURV9QUk9DRVNTICAgT3Bjb2RlPUluZm8gTWVzc2FnZT1Qcm9jZXNzIENyZWF0ZTogUnVsZU5hbWU6IC0gVXRjVGltZTogMjAyMy0xMC0xMSAxMjoxNzoxMi4xMTcgUHJvY2Vzc0d1aWQ6IHsyNTNhY2Y2Ny0zYTY2LTYwMDAtNmY3MC0wMTAwMDAwMDBiMDB9IFByb2Nlc3NJZDogMjYzMjQgSW1hZ2U6IEM6XFdpbmRvd3NcU3lzV09XNjRcbmV0LmV4ZSBGaWxlVmVyc2lvbjogMTAuMC4xOTA0MS41NDYgKFdpbkJ1aWxkLjE2MDEwMS4wODAwKSBEZXNjcmlwdGlvbjogQ09NIFN1cnJvZ2F0ZSBQcm9kdWN0OiBNaWNyb3NvZnTUueKApiBXaW5kb3dz1LnigKYgT3BlcmF0aW5nIFN5c3RlbSBDb21wYW55OiBNaWNyb3NvZnQgQ29ycG9yYXRpb24gT3JpZ2luYWxGaWxlTmFtZTogbmV0LmV4ZSBDb21tYW5kTGluZTogIkM6XFdJTkRPV1NcU3lzV09XNjRcbmV0LmV4ZSB2aWV3IiBDdXJyZW50RGlyZWN0b3J5OiBDOlxXSU5ET1dTXHN5c3RlbTMyXCBVc2VyOiBBenVyZUFEXGZyYW5rLWFkYW1zTG9nb25HdWlkOiB7MjUzYWNmNjctMzVkOC01ZmU4LTM0YWMtNjIxODAwMDAwMDAwfSBMb2dvbklkOiAweDE4NjJBQzM0IFRlcm1pbmFsU2Vzc2lvbklkOiAyIEludGVncml0eUxldmVsOiBNZWRpdW0gSGFzaGVzOiBNRDU9NkYzQzk0ODVGOEY5N0FDMDRDOEU0M0VGNDQ2M0E2OEMsU0hBMjU2PTNFRDY5Q0FBQjAzNTI1OEUwMDhFRkJDRjQwREIzMDU4OTFCNDBCQTAyQ0EyNzM3RTIwREVGQTdDMkQ0QUZBRjcsSU1QSEFTSD1CNkE2QzUyNDdFRkJEMjYxMEUzREVBNDQ2NDlENzA0MSBQYXJlbnRQcm9jZXNzR3VpZDogezI1M2FjZjY3LTIwNTktNWZlNS0wZjAwLTAwMDAwMDAwMGIwMH0gUGFyZW50UHJvY2Vzc0lkOiAxMTY0IFBhcmVudEltYWdlOiBDOlxXaW5kb3dzXFN5c3RlbTMyXHN2Y2hvc3QuZXhlIFBhcmVudENvbW1hbmRMaW5lOiBDOlxXSU5ET1dTXHN5c3RlbTMyXHN2Y2hvc3QuZXhlIC1rIERjb21MYXVuY2ggLXA="
+                    "payload_bin": "PDEzPk9jdCAxMiAxMjoxNzoxMiBmcmFuay1hZGFtcy1wYyBBZ2VudERldmljZT1XaW5kb3dzTG9nICAgQWdlbnRMb2dGaWxlPU1pY3Jvc29mdC1XaW5kb3dzLVN5c21vbi9PcGVyYXRpb25hbCAgIFBsdWdpblZlcnNpb249Ny4yLjkuNzIgIFNvdXJjZT1NaWNyb3NvZnQtV2luZG93cy1TeXNtb24gQ29tcHV0ZXI9ZnJhbmstYWRhbXMtcGMgT3JpZ2luYXRpbmdDb21wdXRlcj1mcmFuay1hZGFtcy1wYyBVc2VyPVNZU1RFTSAgRG9tYWluPU5UIEFVVEhPUklUWSBFdmVudElEPTEgICBFdmVudElEQ29kZT0xICAgRXZlbnRUeXBlPTQgRXZlbnRDYXRlZ29yeT0xIFJlY29yZE51bWJlcj0xODYxNzIxICAgIFRpbWVHZW5lcmF0ZWQ9NjE2NTUxNjcwMzIgIFRpbWVXcml0dGVuPTYxNjU1MTY3MDMyICBMZXZlbD1JbmZvcm1hdGlvbmFsIEtleXdvcmRzPTB4ODAwMDAwMDAwMDAwMDAwMCBUYXNrPVN5c21vblRhc2stU1lTTU9OX0NSRUFURV9QUk9DRVNTICAgT3Bjb2RlPUluZm8gTWVzc2FnZT1Qcm9jZXNzIENyZWF0ZTogUnVsZU5hbWU6IC0gVXRjVGltZTogMjAyMy0xMC0xMiAxMjoxNzoxMi4xMTcgUHJvY2Vzc0d1aWQ6IHsyNTNhY2Y2Ny0zYTY2LTYwMDAtNmY3MC0wMTAwMDAwMDBiMDB9IFByb2Nlc3NJZDogMjYzMjQgSW1hZ2U6IEM6XFdpbmRvd3NcU3lzV09XNjRcbmV0LmV4ZSBGaWxlVmVyc2lvbjogMTAuMC4xOTA0MS41NDYgKFdpbkJ1aWxkLjE2MDEwMS4wODAwKSBEZXNjcmlwdGlvbjogQ09NIFN1cnJvZ2F0ZSBQcm9kdWN0OiBNaWNyb3NvZnTUueKApiBXaW5kb3dz1LnigKYgT3BlcmF0aW5nIFN5c3RlbSBDb21wYW55OiBNaWNyb3NvZnQgQ29ycG9yYXRpb24gT3JpZ2luYWxGaWxlTmFtZTogbmV0LmV4ZSBDb21tYW5kTGluZTogIkM6XFdJTkRPV1NcU3lzV09XNjRcbmV0LmV4ZSB2aWV3IiBDdXJyZW50RGlyZWN0b3J5OiBDOlxXSU5ET1dTXHN5c3RlbTMyXCBVc2VyOiBBenVyZUFEXGZyYW5rLWFkYW1zTG9nb25HdWlkOiB7MjUzYWNmNjctMzVkOC01ZmU4LTM0YWMtNjIxODAwMDAwMDAwfSBMb2dvbklkOiAweDE4NjJBQzM0IFRlcm1pbmFsU2Vzc2lvbklkOiAyIEludGVncml0eUxldmVsOiBNZWRpdW0gSGFzaGVzOiBNRDU9NkYzQzk0ODVGOEY5N0FDMDRDOEU0M0VGNDQ2M0E2OEMsU0hBMjU2PTNFRDY5Q0FBQjAzNTI1OEUwMDhFRkJDRjQwREIzMDU4OTFCNDBCQTAyQ0EyNzM3RTIwREVGQTdDMkQ0QUZBRjcsSU1QSEFTSD1CNkE2QzUyNDdFRkJEMjYxMEUzREVBNDQ2NDlENzA0MSBQYXJlbnRQcm9jZXNzR3VpZDogezI1M2FjZjY3LTIwNTktNWZlNS0wZjAwLTAwMDAwMDAwMGIwMH0gUGFyZW50UHJvY2Vzc0lkOiAxMTY0IFBhcmVudEltYWdlOiBDOlxXaW5kb3dzXFN5c3RlbTMyXHN2Y2hvc3QuZXhlIFBhcmVudENvbW1hbmRMaW5lOiBDOlxXSU5ET1dTXHN5c3RlbTMyXHN2Y2hvc3QuZXhlIC1rIERjb21MYXVuY2ggLXA="
                 },
                 "7": {
                     "type": "file",
@@ -344,16 +344,16 @@
                     }
                 }
             },
-            "modified": "2023-10-11T12:17:10.940Z",
-            "last_observed": "2023-10-11T12:17:10.940Z",
+            "modified": "2023-10-12T12:17:10.940Z",
+            "last_observed": "2023-10-12T12:17:10.940Z",
             "created_by_ref": "identity--3079a446-1a08-40d0-a1bb-e998f369b1e6",
-            "first_observed": "2023-10-11T12:17:10.940Z",
+            "first_observed": "2023-10-12T12:17:10.940Z",
             "number_observed": 1
         },
         {
             "id": "observed-data--e5d9f23d-8eaf-467e-a785-90c528f2693c",
             "type": "observed-data",
-            "created": "2023-10-11T12:20:03.830Z",
+            "created": "2023-10-12T12:20:03.830Z",
             "objects": {
                 "0": {
                     "type": "user-account",
@@ -411,10 +411,10 @@
                     }
                 }
             },
-            "modified": "2023-10-11T12:20:03.830Z",
-            "last_observed": "2023-10-11T12:20:03.830Z",
+            "modified": "2023-10-12T12:20:03.830Z",
+            "last_observed": "2023-10-12T12:20:03.830Z",
             "created_by_ref": "identity--c8241623-3a47-4afc-80cb-36593f29642d",
-            "first_observed": "2023-10-11T12:20:03.830Z",
+            "first_observed": "2023-10-12T12:20:03.830Z",
             "x_com_guardium": {
                 "db_user": "frank-adams@baneandox.com",
                 "new_outlier": "false",
@@ -430,7 +430,7 @@
         {
             "id": "observed-data--89543845-acd4-8f746cbedce2",
             "type": "observed-data",
-            "created": "2023-10-11T12:21:11.750Z",
+            "created": "2023-10-12T12:21:11.750Z",
             "objects": {
                 "0": {
                     "code": 1,
@@ -438,7 +438,7 @@
                     "agent": "SecurityComplianceCenter",
                     "action": "Data Transfer",
                     "nt_ref": "2",
-                    "created": "2023-10-11T12:21:11.750Z",
+                    "created": "2023-10-12T12:21:11.750Z",
                     "outcome": "Success",
                     "category": [
                         "ThreatManagement"
@@ -517,10 +517,10 @@
                     }
                 }
             },
-            "modified": "2023-10-11T12:21:11.750Z",
-            "last_observed": "2023-10-11T12:21:11.750Z",
+            "modified": "2023-10-12T12:21:11.750Z",
+            "last_observed": "2023-10-12T12:21:11.750Z",
             "created_by_ref": "identity--c8241623-3a47-4afc-80cb-36593f29642d",
-            "first_observed": "2023-10-11T12:21:11.750Z",
+            "first_observed": "2023-10-12T12:21:11.750Z",
             "number_observed": 1
         }
     ]
